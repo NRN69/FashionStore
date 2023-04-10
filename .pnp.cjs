@@ -36,6 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bootstrap", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:5.2.3"],\
             ["bootstrap-icons", "npm:1.10.4"],\
             ["esbuild", "npm:0.17.15"],\
+            ["lineicons", "npm:1.0.3"],\
             ["postcss", "npm:8.4.21"],\
             ["postcss-cli", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.1.0"],\
             ["sass", "npm:1.61.0"]\
@@ -453,6 +454,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["bootstrap", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:5.2.3"],\
             ["bootstrap-icons", "npm:1.10.4"],\
             ["esbuild", "npm:0.17.15"],\
+            ["lineicons", "npm:1.0.3"],\
             ["postcss", "npm:8.4.21"],\
             ["postcss-cli", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.1.0"],\
             ["sass", "npm:1.61.0"]\
@@ -1269,6 +1271,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lilconfig-npm-2.1.0-a179261924-8549bb352b.zip/node_modules/lilconfig/",\
           "packageDependencies": [\
             ["lilconfig", "npm:2.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["lineicons", [\
+        ["npm:1.0.3", {\
+          "packageLocation": "./.yarn/cache/lineicons-npm-1.0.3-4202d6f8fa-3d2a8f06f3.zip/node_modules/lineicons/",\
+          "packageDependencies": [\
+            ["lineicons", "npm:1.0.3"]\
           ],\
           "linkType": "HARD"\
         }]\
