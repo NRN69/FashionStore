@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keywords %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <%= stylesheet_link_tag "bootstrap.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "LineIcons.3.0", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tiny-slider", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "glightbox.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
+
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <%= render 'shared/header' %>
+
+  <body>
+
+    <%= render 'shared/carousel' %>
+
+    <%= yield %>
+
+  </body>
+
+  <%= render 'shared/footer' %>
+
+  <!-- ========================= scroll-top ========================= -->
+  <a href="#" class="scroll-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+</html>

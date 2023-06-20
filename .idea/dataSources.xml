@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="fashionstore_development@localhost" uuid="eee03e90-ced3-4d85-b693-8eb73c9dc123">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/fashionstore_development</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="fashionstore_test@localhost" uuid="2cea30ff-0ea5-43c7-91bc-16513b47f591">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/fashionstore_test</jdbc-url>
+    </data-source>
+  </component>
+</project>

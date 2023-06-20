@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.generators" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.rakeTasks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/nrn.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.pnp.loader.mjs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.ruby-version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@gar-promisify-npm-1.1.3-ac1a325862-4059f790e2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@hotwired-stimulus-npm-3.2.1-3f55e71bcc-2617b10fb3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@hotwired-turbo-npm-7.3.0-579167aa60-ccc03c980e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@hotwired-turbo-rails-npm-7.3.0-e0a5879ade-14e29fc7ab.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@nodelib-fs.scandir-npm-2.1.5-89c67370dd-a970d595bd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@nodelib-fs.stat-npm-2.0.5-01f4dd3030-012480b5ca.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@nodelib-fs.walk-npm-1.2.8-b4a89da548-190c643f15.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@npmcli-fs-npm-2.1.2-08d434e77b-405074965e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@npmcli-move-file-npm-2.0.1-b593d8f741-52dc02259d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@popperjs-core-npm-2.11.7-c1bac58243-5b65537478.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@rails-actioncable-npm-7.0.4-dc155e2932-b31cae4051.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@tootallnate-once-npm-2.0.0-e36cf4f140-ad87447820.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/abbrev-npm-1.1.1-3659247eab-a4a97ec07d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/agent-base-npm-6.0.2-428f325a93-f52b6872cc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/agentkeepalive-npm-4.3.0-ac3d8e6807-982453aa44.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/aggregate-error-npm-3.1.0-415a406f4e-1101a33f21.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/animate.css-npm-4.1.1-5c526dcd84-c7eb915404.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ansi-regex-npm-5.0.1-c963a48615-2aa4bb54ca.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ansi-styles-npm-4.3.0-245c7d42c7-513b44c3b2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/anymatch-npm-3.1.3-bc81d103b1-3e044fd6d1.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/aproba-npm-2.0.0-8716bcfde6-5615cadcfb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/are-we-there-yet-npm-3.0.1-3395b1512f-52590c2486.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/autoprefixer-npm-10.4.14-1e0b8c34fb-e9f18e664a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/balanced-match-npm-1.0.2-a53c126459-9706c088a2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/binary-extensions-npm-2.2.0-180c33fec7-ccd267956c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/bootstrap-npm-5.2.3-7458283a23-0211805dec.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/brace-expansion-npm-1.1.11-fb95eb05ad-faf34a7bb0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/brace-expansion-npm-2.0.1-17aa2616f9-a61e7cd2e8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/braces-npm-3.0.2-782240b28a-e2a8e769a8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/browserslist-npm-4.21.5-e3b9e9d029-9755986b22.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/cacache-npm-16.1.3-4e2088ed0d-d91409e6e5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/caniuse-lite-npm-1.0.30001473-956b0afe61-007ad17463.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/chokidar-npm-3.5.3-c5f9b0a56a-b49fcde401.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/chownr-npm-2.0.0-638f1c9c61-c57cf9dd07.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/clean-stack-npm-2.2.0-a8ce435a5c-2ac8cd2b2f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/cliui-npm-8.0.1-3b029092cf-79648b3b00.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/color-convert-npm-2.0.1-79730e935b-79e6bdb9fd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/color-name-npm-1.1.4-025792b0ea-b044585952.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/color-support-npm-1.1.3-3be5c53455-9b73568176.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-902a9f5d89.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/console-control-strings-npm-1.1.0-e3160e5275-8755d76787.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/debug-npm-4.3.4-4513954577-3dbad3f94e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/delegates-npm-1.0.0-9b1942d75f-a51744d9b5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/depd-npm-2.0.0-b6c51a4b43-abbe19c768.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/dependency-graph-npm-0.11.0-658e382681-477204beaa.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/dir-glob-npm-3.0.1-1aea628b1b-fa05e18324.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/electron-to-chromium-npm-1.4.347-5da2a109d1-87b60c906d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/emoji-regex-npm-8.0.0-213764015c-d4c5c39d5a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/encoding-npm-0.1.13-82a1837d30-bb98632f8f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/env-paths-npm-2.2.1-7c7577428c-65b5df55a8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/err-code-npm-2.0.3-082e0ff9a7-8b7b1be20d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/escalade-npm-3.1.1-e02da076aa-a3e2a99f07.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fast-glob-npm-3.2.12-162763bbae-0b1990f6ce.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fastq-npm-1.15.0-1013f6514e-0170e6bfcd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fill-range-npm-7.0.1-b8b1817caa-cc283f4e65.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fraction.js-npm-4.2.0-28efe4afc7-8c76a6e21d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fs-extra-npm-11.1.1-ca44602180-fb883c6824.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fs-minipass-npm-2.1.0-501ef87306-1b8d128dae.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fs.realpath-npm-1.0.0-c8f05d8126-99ddea01a7.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/fsevents-npm-2.3.2-a881d6ac9f-97ade64e75.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/gauge-npm-4.0.4-8f878385e9-788b6bfe52.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/get-caller-file-npm-2.0.5-80e8a86305-b9769a836d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/get-stdin-npm-9.0.0-4221477153-5972bc34d0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/glob-npm-7.2.3-2d866d17a5-29452e97b3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/glob-npm-8.1.0-65f64af8b1-92fbea3221.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/glob-parent-npm-5.1.2-021ab32634-f4f2bfe242.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/globby-npm-13.1.3-3b0bb18d0b-93f06e0200.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/graceful-fs-npm-4.2.11-24bb648a68-ac85f94da9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/has-unicode-npm-2.0.1-893adb4747-1eab07a743.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/http-cache-semantics-npm-4.1.1-1120131375-83ac0bc60b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/http-proxy-agent-npm-5.0.0-7f1f121b83-e2ee1ff165.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/https-proxy-agent-npm-5.0.1-42d65f358e-571fccdf38.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/humanize-ms-npm-1.2.1-e942bd7329-9c7a74a282.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/iconv-lite-npm-0.6.3-24b8aae27e-3f60d47a5c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ignore-npm-5.2.4-fbe6e989e5-3d4c309c60.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/immutable-npm-4.3.0-6120b6947c-bbd7ea99e2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/imurmurhash-npm-0.1.4-610c5068a0-7cae75c8cd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/indent-string-npm-4.0.0-7b717435b2-824cfb9929.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/infer-owner-npm-1.0.4-685ac3d2af-181e732764.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/inflight-npm-1.0.6-ccedb4b908-f4f76aa072.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/inherits-npm-2.0.4-c66b3957a0-4a48a73384.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ip-npm-2.0.0-204facb3cc-cfcfac6b87.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/is-binary-path-npm-2.1.0-e61d46f557-84192eb88c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/is-extglob-npm-2.1.1-0870ea68b5-df033653d0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/is-fullwidth-code-point-npm-3.0.0-1ecf4ebee5-44a30c2945.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/is-glob-npm-4.0.3-cb87bf1bdb-d381c1319f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/is-lambda-npm-1.0.1-7ab55bc8a8-93a32f0194.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/is-number-npm-7.0.0-060086935c-456ac6f8e0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/isexe-npm-2.0.0-b58870bd2e-26bf6c5480.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/jsonfile-npm-6.1.0-20a4796cee-7af3b8e1ac.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/lilconfig-npm-2.1.0-a179261924-8549bb352b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/lru-cache-npm-6.0.0-b4c8668fe1-f97f499f89.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/lru-cache-npm-7.18.3-e68be5b11c-e550d77238.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/make-fetch-happen-npm-10.2.1-f1cc7cd2df-2332eb9a8e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/merge2-npm-1.4.1-a2507bd06c-7268db63ed.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/micromatch-npm-4.0.5-cfab5d7669-02a17b671c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minimatch-npm-3.1.2-9405269906-c154e56640.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minimatch-npm-5.1.6-1e71429f4c-7564208ef8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minipass-collect-npm-1.0.2-3b4676eab5-14df761028.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minipass-fetch-npm-2.1.2-9b21a5c930-3f216be791.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minipass-flush-npm-1.0.5-efe79d9826-56269a0b22.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minipass-npm-3.3.6-b8d93a945b-a30d083c80.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minipass-npm-4.2.5-25860eb433-4f9c19af23.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minipass-pipeline-npm-1.2.4-5924cb077f-b14240dac0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minipass-sized-npm-1.0.3-306d86f432-79076749fc.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/minizlib-npm-2.1.2-ea89cd0cfb-f1fdeac0b0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/mkdirp-npm-1.0.4-37f6ef56b9-a96865108c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ms-npm-2.1.2-ec0c1512ff-673cdb2c31.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ms-npm-2.1.3-81ff3cfac1-aa92de6080.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/nanoid-npm-3.3.6-e6d6ae7e71-7d0eda6570.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/negotiator-npm-0.6.3-9d50e36171-b8ffeb1e26.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/node-gyp-npm-9.3.1-43540bab9c-b860e9976f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/node-releases-npm-2.0.10-f8e2d9a776-d784ecde25.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/nopt-npm-6.0.0-5ea8050815-82149371f8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/normalize-path-npm-3.0.0-658ba7d77f-88eeb4da89.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/normalize-range-npm-0.1.2-bec5e259e2-9b2f14f093.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/npmlog-npm-6.0.2-e0e69455c7-ae238cd264.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/once-npm-1.4.0-ccf03ef07a-cd0a885013.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/p-map-npm-4.0.0-4677ae07c7-cb0ab21ec0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/path-is-absolute-npm-1.0.1-31bc695ffd-060840f92c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/path-type-npm-4.0.0-10d47fc86a-5b1e2daa24.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/picocolors-npm-1.0.0-d81e0b1927-a2e8092dd8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/picomatch-npm-2.3.1-c782cfd986-050c865ce8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/pify-npm-2.3.0-8b63310934-9503aaeaf4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-cli-npm-10.1.0-a45841d3d2-c900cc48cb.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-load-config-npm-4.0.1-351eb776f5-b61f890499.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-npm-8.4.21-9ad76bf58d-e39ac60ccd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-reporter-npm-7.0.5-9f0f60ad8b-ed450a6fbf.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-value-parser-npm-4.2.0-3cef602a6a-819ffab0c9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/pretty-hrtime-npm-1.0.3-32fd75fcbd-bae0e6832f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/promise-inflight-npm-1.0.1-5bb925afac-2274948309.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/promise-retry-npm-2.0.1-871f0b01b7-f96a3f6d90.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/queue-microtask-npm-1.2.3-fcc98e4e2d-b676f8c040.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/read-cache-npm-1.0.0-00fa89ed05-cffc728b9e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/readable-stream-npm-3.6.2-d2a6069158-bdcbe6c22e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/readdirp-npm-3.6.0-f950cc74ab-1ced032e6e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/require-directory-npm-2.1.1-8608aee50b-fb47e70bf0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/retry-npm-0.12.0-72ac7fb4cc-623bd7d2e5.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/reusify-npm-1.0.4-95ac4aec11-c3076ebcc2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/rimraf-npm-3.0.2-2cb7dac69a-87f4164e39.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/run-parallel-npm-1.2.0-3f47ff2034-cb4f97ad25.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/safe-buffer-npm-5.2.1-3481c8aa9b-b99c4b41fd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/safer-buffer-npm-2.1.2-8d5c0b705e-cab8f25ae6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/semver-npm-7.3.8-25a996cb4f-ba9c7cbbf2.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/set-blocking-npm-2.0.0-49e2cffa24-6e65a05f7c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/signal-exit-npm-3.0.7-bd270458a3-a2f098f247.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/slash-npm-4.0.0-ce4bbc4a80-da8e4af737.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/slash-npm-5.0.0-ae16ec7b63-1fa799ee16.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/smart-buffer-npm-4.2.0-5ac3f668bb-b5167a7142.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/socks-npm-2.7.1-17f2b53052-259d9e3e8e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/socks-proxy-agent-npm-7.0.0-7aacf32ea0-7205543701.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/source-map-js-npm-1.0.2-ee4f9f9b30-c049a7fc4d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/ssri-npm-9.0.1-33ce27f4f8-fb58f5e46b.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/string-width-npm-4.2.3-2c27177bae-e52c10dc3f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/string_decoder-npm-1.3.0-2422117fd0-8417646695.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/strip-ansi-npm-6.0.1-caddc7cb40-f3cd25890a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/tar-npm-6.1.13-3234e72781-8a278bed12.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/thenby-npm-1.3.4-766aefdf7d-2d2ef3d67f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/to-regex-range-npm-5.0.1-f1e8263b00-f76fa01b3d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/unique-filename-npm-2.0.1-183c6c7c2b-807acf3381.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/unique-slug-npm-3.0.0-0b82e51577-49f8d915ba.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/universalify-npm-2.0.0-03b8b418a8-2406a4edf4.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/update-browserslist-db-npm-1.0.10-676baf0b9f-12db73b4f6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/util-deprecate-npm-1.0.2-e3fe1a219c-474acf1146.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/which-npm-2.0.2-320ddf72f7-1a5c563d3c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/wide-align-npm-1.1.5-889d77e592-d5fc37cd56.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/wrap-ansi-npm-7.0.0-ad6e1a0554-a790b846fd.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/wrappy-npm-1.0.2-916de4d4b3-159da4805f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/y18n-npm-5.0.8-5f3a0a7e62-54f0fb9562.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/yallist-npm-4.0.0-b493d9e907-343617202a.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/yaml-npm-2.2.1-b7f7f5e84d-84f68cbe46.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/yargs-npm-17.7.1-0758ec0e50-3d8a43c336.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/yargs-parser-npm-21.1.1-8fdc003314-ed2d96a616.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/PULL_REQUEST_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/workflows/release-please.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/workflows/tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/workflows/visual-studio.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.ready" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/addon.gypi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/bin/node-gyp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Error-pre-versions-of-node-cannot-be-installed.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Force-npm-to-use-global-node-gyp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Home.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Linking-to-OpenSSL.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Updating-npm-bundled-node-gyp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/binding.gyp-files-in-the-wild.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.flake8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/Python_tests.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/node-gyp.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/nodejs-windows.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/release-please.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/AUTHORS" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/data/win/large-pdb-shim.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/gyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/gyp.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/gyp_main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSNew.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSProject.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSToolFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSUserFile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSUtil.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSVersion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/common.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/common_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/easy_xml_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/analyzer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/android.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/compile_commands_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/dump_dependency_json.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/eclipse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/gypd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/gypsh.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/xcode.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/xcode_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/input.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/input_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/mac_tool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/simple_copy.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/win_tool.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xcode_ninja.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xml_fix.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pyproject.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/test_gyp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/Xcode/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.pbfilespec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.xclangspec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/gyp-tests.el" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/gyp.el" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/run-unit-tests.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/testdata/media.gyp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/testdata/media.gyp.fontified" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/graphviz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/pretty_gyp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/pretty_sln.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/pretty_vcproj.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/Find-VisualStudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/clean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/configure.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/create-config-gypi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/find-node-directory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/find-python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/find-visualstudio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/install.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/node-gyp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/process-release.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/rebuild.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/remove.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/macOS_Catalina.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/macOS_Catalina_acid_test.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/src/win_delay_load_hook.cc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_BuildTools_minimal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_Community_workload.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_Express.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_Unusable.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2019_BuildTools_minimal.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2019_Community_workload.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2019_Preview.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/certs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/nodedir/include/node/config.gypi" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/test-charmap.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/process-exec-sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/simple-proxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-addon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-configure-python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-create-config-gypi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-download.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-accessible-sync.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-node-directory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-python.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-visualstudio.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-install.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-process-release.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/update-gyp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarnrc.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile.dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/builds/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/avo/resources/product_resource.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/product_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/application.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/hello_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/application_record.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/brand.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/concerns/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_carousel.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/dev" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/rails" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/rake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/cable.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/permissions_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/storage.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230424101401_create_brands.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/assets/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/tasks/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/422.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/500.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/main_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/controllers/product_controller_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/brands.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/helpers/product_helper_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/brand_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/requests/product_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/storage/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/pids/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tmp/storage/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vendor/.keep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="ProjectId" id="2NUtKadJLTquRAHxJC0Zo8uStyM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jsx.switch.disabled" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/assets/images/hero" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/assets/images/hero" />
+      <recent name="$PROJECT_DIR$/app/assets" />
+      <recent name="$PROJECT_DIR$/app/javascript/controllers" />
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/assets/css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Rails.Development: FashionStore">
+    <configuration name="Development: FashionStore" type="RailsRunConfigurationType" factoryName="Rails">
+      <module name="FashionStore" />
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Production: FashionStore" type="RailsRunConfigurationType" factoryName="Rails">
+      <module name="FashionStore" />
+      <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="spec: FashionStore" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="FashionStore" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_VERBOSE" VALUE="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test: FashionStore" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="FashionStore" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_VERBOSE" VALUE="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@f75367cf" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8ee6a7c1" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="" />
+      <created>1679730425200</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679730425200</updated>
+      <workItem from="1679730426620" duration="6593000" />
+      <workItem from="1679737022067" duration="1536000" />
+      <workItem from="1680240924038" duration="1636000" />
+      <workItem from="1680242900046" duration="3331000" />
+      <workItem from="1680936464781" duration="8678000" />
+      <workItem from="1681120803599" duration="1596000" />
+      <workItem from="1681123399630" duration="9562000" />
+      <workItem from="1682325640487" duration="6085000" />
+      <workItem from="1687250953133" duration="9694000" />
+    </task>
+    <task id="LOCAL-00001" summary="Init">
+      <created>1680242341699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680242341699</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init pnp repair">
+      <created>1680243380532</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680243380532</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add gems">
+      <created>1680244417589</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680244417589</updated>
+    </task>
+    <task id="LOCAL-00004" summary="rspec config add">
+      <created>1680938341160</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1680938341160</updated>
+    </task>
+    <task id="LOCAL-00005" summary="migrate to propshaft">
+      <created>1681132930082</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681132930082</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Init" />
+    <MESSAGE value="Init pnp repair" />
+    <MESSAGE value="add gems" />
+    <MESSAGE value="rspec config add" />
+    <MESSAGE value="migrate to propshaft" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrate to propshaft" />
+  </component>
+</project>
