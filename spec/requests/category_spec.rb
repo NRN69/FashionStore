@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Products", type: :request do
+RSpec.describe "Categories", type: :request do
   describe "GET /index" do
   end
 end

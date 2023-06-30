@@ -93,6 +93,7 @@ a {
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
+  color: #FF69B4;
 }
 
 audio,
@@ -993,7 +994,7 @@ right: -7px;
 
 .breadcrumbs .breadcrumb-nav li,
 .breadcrumbs .breadcrumb-nav li a {
-  color: #888;
+  color: #FF69B4;
   font-size: 14px;
   font-weight: 500;
 }
@@ -1521,13 +1522,13 @@ top: -1px;
   border: none;
 }
 
-.header .topbar .top-middle .useful-links li a {
+.header .topbar .top-middle .useful-links .text-noaction {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
 }
 
-.header .topbar .top-middle .useful-links li a:hover {
+.header .topbar .top-middle .useful-links .text-pink {
   color: #FF69B4;
 }
 
@@ -2102,7 +2103,7 @@ top: -1px;
     color: #FF69B4;!important;
   }
 
-  .header .navbar .navbar-nav .nav-item a.active {
+  .header .navbar .navbar-nav .nav-item .active {
     color: #FF69B4; !important;
   }
 
@@ -2159,7 +2160,7 @@ top: -1px;
     visibility: visible;
   }
 
-  .header .navbar-nav .nav-item .sub-menu li.active {
+  .header .navbar-nav .nav-item .sub-menu .active {
     background: #fff !important;
     color: #FF69B4; !important;
   }

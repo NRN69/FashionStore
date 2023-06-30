@@ -1,0 +1,252 @@
+<% currently_at 'Home' %>
+
+<!-- Start Trending Product Area -->
+<section class="trending-product section" style="margin-top: 12px;">
+  <div class="container">
+      <div class="row">
+        <ol class="breadcrumb mx-3">
+          <li><a href="/"><%= render_breadcrumbs %></a></li>
+          >
+          <li class="active"><%= @product.title %></li>
+        </ol>
+          <div class="col-lg-5 col-md-4">
+            <% unless @product.galleries == [] %>
+              <!-- Start Single Product -->
+              <div class="single-product">
+                <div class="product-image">
+                  <div id="carouselExampleDarkProducts" class="carousel carousel-dark slide" data-bs-ride="false">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <% @product.galleries.each do |item| %>
+                      <div class="carousel-item active">
+                        <%= image_tag item.img, alt: "product#{@product.id}", class: 'd-block w-100' %>
+                        <div class="carousel-caption d-none d-md-block">
+                        </div>
+                      </div>
+                      <% end %>
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <!-- End Single Product -->
+
+            <% else %>
+            <!-- Start Single Product -->
+            <div class="single-product">
+              <div class="product-image">
+                <div id="carouselExampleDarkProducts" class="carousel carousel-dark slide" data-bs-ride="false">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <%= image_tag 'products/product-1.jpg', alt: "product#{@product.id}", class: 'd-block w-100' %>
+                      <div class="carousel-caption d-none d-md-block">
+
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <%= image_tag 'products/product-2.jpg', alt: "product#{@product.id}", class: 'd-block w-100' %>
+                      <div class="carousel-caption d-none d-md-block">
+
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <%= image_tag 'products/product-3.jpg', alt: "product#{@product.id}", class: 'd-block w-100' %>
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- End Single Product -->
+        <% end %>
+
+        <div class="col-lg-7 col-md-4">
+          <!-- Start Single Product -->
+          <div class="single-product">
+            <div class="product-info">
+              <span class="category">Watches</span>
+              <h4 class="title">
+                  <%= @product.title %>
+              </h4><br>
+              <h5 class="description">
+                <%= @product.description %>
+              </h5><br>
+              <h5 class="color">
+                Color:
+                <%= @product.color.upcase %>
+              </h5><br>
+
+              <div class="price">
+                                <span> Price:
+                                  <%= @product.price %>$
+                                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!-- End Trending Product Area -->
+
+<!-- Start Recent Products Area -->
+<% if recent_products.any? %>
+  <section class="banner section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>Recently Products</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <% recent_products.each do |recently| %>
+          <div class="col-lg-3 col-md-4">
+            <!-- Start Single Product -->
+            <div class="single-product">
+              <div class="product-image">
+                <a href="<%= recently.id %>">
+                  <%= image_tag recently.img %>
+                </a>
+              </div>
+              <div class="product-info">
+                <span class="category">Watches</span>
+                <h4 class="title">
+                  <a href="<%= recently.id %>">
+                    <%= recently.title %></a>
+                </h4>
+                <div class="price">
+                                <span> Price:
+                                  <%= recently.price %>$
+                                </span>
+                </div>
+              </div>
+            </div>
+            <!-- End Single Product -->
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </section>
+  <% end %>
+<!-- End Recent Products Area -->
+
+<!-- Start Related Products Area -->
+<% unless @product.related.nil? %>
+  <section class="banner section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title">
+              <h2>Related Products</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <% @product.related.each do |related| %>
+            <div class="col-lg-3 col-md-4">
+              <!-- Start Single Product -->
+              <div class="single-product">
+                <div class="product-image">
+                  <a href="<%= related.id %>">
+                    <%= image_tag related.img %></a>
+                </div>
+                <div class="product-info">
+                  <span class="category">Watches</span>
+                  <h4 class="title">
+                    <a href="<%= related.id %>">
+                      <%= related.title %></a>
+                  </h4>
+                  <div class="price">
+                              <span> Price:
+                                <%= related.price %>$
+                              </span>
+                  </div>
+                </div>
+              </div>
+              <!-- End Single Product -->
+            </div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </section>
+<!-- End Related Products Area -->
+
+<!-- Start Shipping Info -->
+<section class="shipping-info">
+  <div class="container">
+    <ul>
+      <!-- Free Shipping -->
+      <li>
+        <div class="media-icon">
+          <i class="lni lni-delivery"></i>
+        </div>
+        <div class="media-body">
+          <h5>Free Shipping</h5>
+          <span>On order over $99</span>
+        </div>
+      </li>
+      <!-- Money Return -->
+      <li>
+        <div class="media-icon">
+          <i class="lni lni-support"></i>
+        </div>
+        <div class="media-body">
+          <h5>24/7 Support.</h5>
+          <span>Live Chat Or Call.</span>
+        </div>
+      </li>
+      <!-- Support 24/7 -->
+      <li>
+        <div class="media-icon">
+          <i class="lni lni-credit-cards"></i>
+        </div>
+        <div class="media-body">
+          <h5>Online Payment.</h5>
+          <span>Secure Payment Services.</span>
+        </div>
+      </li>
+      <!-- Safe Payment -->
+      <li>
+        <div class="media-icon">
+          <i class="lni lni-reload"></i>
+        </div>
+        <div class="media-body">
+          <h5>Easy Return.</h5>
+          <span>Hassle Free Shopping.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<!-- End Shipping Info -->

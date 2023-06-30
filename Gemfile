@@ -29,10 +29,11 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
 
+  gem 'cleanup'
   gem 'database_cleaner'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot'
-  gem 'ffaker'
+  gem 'faker'
   gem 'pry'
   gem 'rails-controller-testing'
   gem 'rspec-json_expectations'
