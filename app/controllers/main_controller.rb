@@ -4,7 +4,11 @@ class MainController < ApplicationController
 
   def index
     @brands = Brand.limit(3)
-    @hits = Product.all.limit(8)
+    @hits = if params[:query].present?
+              Product.where('title LIKE ?', "%#{params[:query]}%")
+            else
+              Product.all.limit(8)
+            end
   end
 
   def set_page_options

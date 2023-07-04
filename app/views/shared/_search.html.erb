@@ -1,0 +1,20 @@
+
+  <div class="col-lg-5 col-md-7 d-xs-none">
+    <!-- Start Main Menu Search -->
+    <div class="main-menu-search">
+      <%= form_with(url:root_path, method: :get, data: {controller: 'search-form', turbo_frame: 'hits', turbo_action: 'advance'}) do |form| %>
+        <div class="navbar-search search-style-5">
+          <div class="search-input">
+            <%= form.text_field :query, class: 'search-input', placeholder: 'Search', data: { action: 'input->search-form#search'} %>
+          </div>
+          <div class="search-btn">
+
+            <%= button_tag( type: form.submit) do %>
+              <i class="bi bi-search"></i>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <!-- End Main Menu Search -->
+  </div>

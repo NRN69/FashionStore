@@ -2,54 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/avo/resources/galerry_resource.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/avo/resources/related_product_resource.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/avo/categories_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/avo/galerries_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/avo/related_products_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/category_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/category_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/gallery.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/related_product.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/category/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/product/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230630120248_create_related_products.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230630133443_create_galerries.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230630141359_create_categories.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/controllers/category_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/categories.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/category_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/gallery_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/related_product_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/category_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/search_form_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_search.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/shared/_social.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/product_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/category/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/category/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/product/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/product_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/product_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/brands.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/brands.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/main_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/main_helper_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/product_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/product_helper_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/product_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/main_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/main_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/product_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/product_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -311,12 +277,7 @@
     <option name="allServicesViewState">
       <serviceView>
         <treeState>
-          <expand>
-            <path>
-              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1cafac0c" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-            </path>
-          </expand>
+          <expand />
           <select />
         </treeState>
       </serviceView>
@@ -345,7 +306,8 @@
       <workItem from="1688019602454" duration="1234000" />
       <workItem from="1688105469701" duration="1394000" />
       <workItem from="1688106887146" duration="2080000" />
-      <workItem from="1688109035489" duration="27958000" />
+      <workItem from="1688109035489" duration="28192000" />
+      <workItem from="1688462926211" duration="19287000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -389,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687262409101</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add products, category, galleries, related product, recently product">
+      <created>1688137833419</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688137833419</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -416,6 +385,7 @@
     <MESSAGE value="rspec config add" />
     <MESSAGE value="migrate to propshaft" />
     <MESSAGE value="Recolored template" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recolored template" />
+    <MESSAGE value="Add products, category, galleries, related product, recently product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add products, category, galleries, related product, recently product" />
   </component>
 </project>

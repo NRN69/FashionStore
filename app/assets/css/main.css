@@ -2221,7 +2221,7 @@ top: -1px;
     color: #FF69B4;!important;
   }
 
-  .header .navbar .navbar-nav .nav-item a.active {
+  .header .navbar .navbar-nav .nav-item .active {
     color: #FF69B4; !important;
   }
 
@@ -2390,6 +2390,14 @@ top: 2px;
   visibility: visible;
   top: 0;
 }
+.inner-sub-category a {
+  color: #888;
+  margin-left: 35px;
+}
+
+.inner-sub-category a:hover {
+  color: #FF69B4;
+}
 
 .header .mega-category-menu .sub-category li .inner-sub-category {
   padding: 15px 0;
@@ -2416,7 +2424,7 @@ top: 2px;
   margin: 0;
 }
 
-.header .mega-category-menu .sub-category li .inner-sub-category li a {
+.header .mega-category-menu .sub-category li .inner-sub-category {
   color: #081828;
   text-transform: capitalize;
   font-size: 14px;

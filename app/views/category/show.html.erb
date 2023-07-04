@@ -1,0 +1,87 @@
+<% currently_at 'Home' %>
+
+<!-- Start Trending Product Area -->
+<section class="trending-product section" style="margin-top: 12px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2><%= @category.title %> <%= "for #{@category.parent.title}" unless @category.parent.nil? %></h2>
+        </div>
+      </div>
+    </div>
+    <% if @category.products.empty? %>
+      <h2> No Products</h2>
+    <% else %>
+      <div class="row">
+        <% @category.products.each do |product| %>
+          <div class="col-lg-3 col-md-4">
+            <!-- Start Single Product -->
+            <div class="single-product">
+              <div class="product-image">
+                <a href="product/<%= product.id %>">
+                  <%= image_tag product.img %></a>
+                <div class="button">
+                  <a href="product-details.html" class="btn"><i class="bi bi-cart"></i> Add to Cart</a>
+                </div>
+              </div>
+              <div class="product-info">
+                <span class="category"><%= product.title %></span>
+                <h4 class="title">
+                  <a href="product/<%= product.id %>">
+                    <%= product.title %></a>
+                </h4>
+                <div class="price">
+                                <span>Price:
+                                  <%= product.price %>$
+                                </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <!-- End Single Product -->
+      </div>
+    <% end %>
+  </div>
+</section>
+<!-- End Trending Product Area -->
+
+<!-- Start Banner Area -->
+<section class="banner section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="single-banner" style="background-image:url('assets/images/banner/banner-1-bg.jpg')">
+          <div class="content">
+            <h2>Smart Watch 2.0</h2>
+            <p>Space Gray Aluminum Case with <br>Black/Volt Real Sport Band </p>
+            <div class="button">
+              <a href="product-grids.html" class="btn">View Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="single-banner custom-responsive-margin"
+             style="background-image:url('assets/images/banner/banner-2-bg.jpg')">
+          <div class="content">
+            <h2>Smart Headphone</h2>
+            <p>Lorem ipsum dolor sit amet, <br>eiusmod tempor
+              incididunt ut labore.</p>
+            <div class="button">
+              <a href="product-grids.html" class="btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Banner Area -->
+
+
+
+
+
+
