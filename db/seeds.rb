@@ -2,15 +2,14 @@
 
 require 'faker'
 
-
 # table brands
 
 brand_attributes = [{
-                      title: Faker::Lorem.word,
-                      bytitle: Faker::Lorem.word,
-                      img: 'products/product-2.jpg',
-                      description: Faker::Superhero.name
-                    },
+  title: Faker::Lorem.word,
+  bytitle: Faker::Lorem.word,
+  img: 'products/product-2.jpg',
+  description: Faker::Superhero.name
+},
                     {
                       title: Faker::Lorem.word,
                       bytitle: Faker::Lorem.word,
@@ -44,24 +43,35 @@ end
 #
 # # table categories
 
-
 women = Category.create(title: 'Women', bytitle: 'women', keywords: 'women', description: 'for women')
-summer2 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer', parent: women)
-winter2 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter', parent: women)
-spring2 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring', parent: women)
-autumn2 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn', parent: women)
+summer2 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer',
+                          parent: women)
+winter2 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter',
+                          parent: women)
+spring2 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring',
+                          parent: women)
+autumn2 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn',
+                          parent: women)
 
 men = Category.create(title: 'Men', bytitle: 'men', keywords: 'men', description: 'for men')
-summer1 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer', parent: men)
-winter1 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter', parent: men)
-spring1 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring', parent: men)
-autumn1 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn', parent: men)
+summer1 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer',
+                          parent: men)
+winter1 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter',
+                          parent: men)
+spring1 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring',
+                          parent: men)
+autumn1 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn',
+                          parent: men)
 
 kids = Category.create(title: 'Kids', bytitle: 'kids', keywords: 'kids', description: 'for kids')
-summer3 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer', parent: kids)
-winter3 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter', parent: kids)
-spring3 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring', parent: kids)
-autumn3 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn', parent: kids)
+summer3 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer',
+                          parent: kids)
+winter3 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter',
+                          parent: kids)
+spring3 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring',
+                          parent: kids)
+autumn3 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn',
+                          parent: kids)
 # # - - - - - - - -
 
 # table products
@@ -333,7 +343,6 @@ product_attributes = [
     hit: 1
   }
 
-
 ]
 
 product_attributes.each do |attr|
@@ -342,17 +351,8 @@ end
 
 # - - - - -
 
-
 # table related products
 
 # look into migration related_products
 
 # - - - - - - - -
-
-
-
-
-
-
-
-

@@ -1,8 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe ProductController, type: :controller do
-
-
   describe 'GET #show' do
     let(:product) { create :product }
 

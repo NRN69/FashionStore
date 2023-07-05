@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe CategoryController, type: :controller do
-
   describe 'GET #show' do
     let(:category) { create :category }
     let!(:products) { create_list :product, 2, category: category}

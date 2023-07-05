@@ -1,9 +1,10 @@
+# frozen_string_literal: true
+
 class CreateRelatedProducts < ActiveRecord::Migration[7.0]
   def change
     create_table :related_products, id: false do |t|
       t.integer :product_id
       t.integer :related_id
-
     end
 
     insert <<~SQL.squish

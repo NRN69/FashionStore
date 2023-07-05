@@ -10,41 +10,7 @@
           <li class="active"><%= @product.title %></li>
         </ol>
           <div class="col-lg-5 col-md-4">
-            <% unless @product.galleries == [] %>
-              <!-- Start Single Product -->
-              <div class="single-product">
-                <div class="product-image">
-                  <div id="carouselExampleDarkProducts" class="carousel carousel-dark slide" data-bs-ride="false">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner">
-                      <% @product.galleries.each do |item| %>
-                      <div class="carousel-item active">
-                        <%= image_tag item.img, alt: "product#{@product.id}", class: 'd-block w-100' %>
-                        <div class="carousel-caption d-none d-md-block">
-                        </div>
-                      </div>
-                      <% end %>
-
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              </div>
-              <!-- End Single Product -->
-
-            <% else %>
+            <% if @product.galleries == [] %>
             <!-- Start Single Product -->
             <div class="single-product">
               <div class="product-image">
@@ -56,19 +22,19 @@
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active">
-                      <%= image_tag 'products/product-1.jpg', alt: "product#{@product.id}", class: 'd-block w-100' %>
+                      <%=  image_tag 'products/product-1.jpg', alt: "product#{@product.id}", class: 'd-block w-100'  %>
                       <div class="carousel-caption d-none d-md-block">
 
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <%= image_tag 'products/product-2.jpg', alt: "product#{@product.id}", class: 'd-block w-100' %>
+                      <%=  image_tag 'products/product-2.jpg', alt: "product#{@product.id}", class: 'd-block w-100'  %>
                       <div class="carousel-caption d-none d-md-block">
 
                       </div>
                     </div>
                     <div class="carousel-item">
-                      <%= image_tag 'products/product-3.jpg', alt: "product#{@product.id}", class: 'd-block w-100' %>
+                      <%=  image_tag 'products/product-3.jpg', alt: "product#{@product.id}", class: 'd-block w-100'  %>
                       <div class="carousel-caption d-none d-md-block">
                       </div>
                     </div>
@@ -84,9 +50,43 @@
                 </div>
               </div>
             </div>
-          </div>
-        <!-- End Single Product -->
-        <% end %>
+            </div>
+            <!-- End Single Product -->
+            <%  else  %>
+            <!-- Start Single Product -->
+            <div class="single-product">
+              <div class="product-image">
+                <div id="carouselExampleDarkProducts" class="carousel carousel-dark slide" data-bs-ride="false">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <%  @product.galleries.each do |item|  %>
+                    <div class="carousel-item active">
+                      <%=  image_tag item.img, alt: "product#{@product.id}", class: 'd-block w-100'  %>
+                      <div class="carousel-caption d-none d-md-block">
+                      </div>
+                    </div>
+                    <%  end  %>
+
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDarkProducts" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- End Single Product -->
+
+            <% end %>
 
         <div class="col-lg-7 col-md-4">
           <!-- Start Single Product -->

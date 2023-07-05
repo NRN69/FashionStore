@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_06_30_143011) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_05_082643) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -19,6 +19,11 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_30_143011) do
     t.string "bytitle"
     t.string "img"
     t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -37,6 +42,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_30_143011) do
   create_table "galleries", force: :cascade do |t|
     t.integer "product_id"
     t.string "img"
+  end
+
+  create_table "orderables", force: :cascade do |t|
+    t.bigint "product_id", null: false
+    t.bigint "cart_id", null: false
+    t.integer "quantity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["cart_id"], name: "index_orderables_on_cart_id"
+    t.index ["product_id"], name: "index_orderables_on_product_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -61,4 +76,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_06_30_143011) do
     t.integer "related_id"
   end
 
+  add_foreign_key "orderables", "carts"
+  add_foreign_key "orderables", "products"
 end

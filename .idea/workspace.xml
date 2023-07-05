@@ -1,21 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/search_form_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_search.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_social.html.erb" afterDir="false" />
+    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="Add category, add search">
+      <change afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/avo/resources/cart_resource.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/avo/resources/orderable_resource.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/avo/carts_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/avo/orderables_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/cart_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/cart_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/orderable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/cart/_cart.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/cart/_orderables.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/cart/show.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230705082430_create_carts.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/helpers/cart_helper_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/cart_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/orderable_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/requests/cart_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/views/cart/show.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/nrn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/nrn.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@esbuild-linux-x64-npm-0.17.15-74688e548f-8.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@popperjs-core-npm-2.11.7-c1bac58243-5b65537478.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/bootstrap-icons-npm-1.10.4-da897c241e-d76333e46d.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/bootstrap-npm-5.2.3-7458283a23-0211805dec.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/esbuild-npm-0.17.15-92a377fdce-4e3640d7bc.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/postcss-npm-8.4.21-9ad76bf58d-e39ac60ccd.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.61.0-26fc20ae8e-31bfb3719f.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.17.15-74688e548f/node_modules/@esbuild/linux-x64/.ready" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.17.15-74688e548f/node_modules/@esbuild/linux-x64/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.17.15-74688e548f/node_modules/@esbuild/linux-x64/bin/esbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.17.15-74688e548f/node_modules/@esbuild/linux-x64/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/.ready" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/bin/esbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/install.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/lib/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/lib/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.17.15-92a377fdce/node_modules/esbuild/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rakefile" beforeDir="false" afterPath="$PROJECT_DIR$/Rakefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/galerry_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/galerry_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/product_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/product_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/related_product_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/related_product_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/channel.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/channels/application_cable/connection.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/categories_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/galerries_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/galerries_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/related_products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/related_products_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/category_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/category_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/product_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/category_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/category_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/main_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/main_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/product_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/product_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jobs/application_job.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/jobs/application_job.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/mailers/application_mailer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/mailers/application_mailer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/application_record.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/application_record.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/brand.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/brand.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/gallery.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/gallery.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/related_product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/related_product.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/category/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/category/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/product/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/product/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/rails" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rails" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/rake" beforeDir="false" afterPath="$PROJECT_DIR$/bin/rake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/setup" beforeDir="false" afterPath="$PROJECT_DIR$/bin/setup" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ru" beforeDir="false" afterPath="$PROJECT_DIR$/config.ru" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/boot.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/boot.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/production.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/production.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/test.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/test.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/avo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/avo.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/content_security_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/permissions_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/permissions_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/puma.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/puma.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230424101401_create_brands.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230424101401_create_brands.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630120248_create_related_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630120248_create_related_products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630133443_create_galerries.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630133443_create_galerries.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630141359_create_categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630141359_create_categories.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/category_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/category_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/main_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/main_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/product_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/product_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/brands.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/brands.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/categories.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/category_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/category_helper_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/main_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/main_helper_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/product_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/product_helper_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/brand_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/brand_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/category_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/category_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/gallery_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/gallery_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/product_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/product_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/related_product_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/related_product_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/category_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/category_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/main_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/main_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/product_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/product_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,26 +186,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_development@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fashionstore_development: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="categories: table" type="69fad909:PgImplModel$LocalTable" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_development@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fashionstore_development: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="products: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -307,7 +400,8 @@
       <workItem from="1688105469701" duration="1394000" />
       <workItem from="1688106887146" duration="2080000" />
       <workItem from="1688109035489" duration="28192000" />
-      <workItem from="1688462926211" duration="19287000" />
+      <workItem from="1688462926211" duration="20271000" />
+      <workItem from="1688537505887" duration="31077000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -358,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688137833419</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add category, add search">
+      <created>1688472327278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688472327278</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +487,7 @@
     <MESSAGE value="migrate to propshaft" />
     <MESSAGE value="Recolored template" />
     <MESSAGE value="Add products, category, galleries, related product, recently product" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add products, category, galleries, related product, recently product" />
+    <MESSAGE value="Add category, add search" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add category, add search" />
   </component>
 </project>

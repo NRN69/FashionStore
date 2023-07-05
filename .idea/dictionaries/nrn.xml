@@ -8,7 +8,10 @@
       <w>jbuilder</w>
       <w>jsbundling</w>
       <w>navbar</w>
+      <w>orderable</w>
+      <w>orderables</w>
       <w>propshaft</w>
+      <w>rubocop</w>
       <w>shoulda</w>
       <w>webdrivers</w>
     </words>

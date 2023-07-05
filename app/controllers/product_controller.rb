@@ -1,5 +1,6 @@
-class ProductController < ApplicationController
+# frozen_string_literal: true
 
+class ProductController < ApplicationController
   after_action :register_visit, only: [:show]
 
   def show

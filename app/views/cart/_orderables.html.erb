@@ -1,0 +1,56 @@
+<!-- Shopping Item -->
+<div class="shopping-item">
+  <div class="dropdown-cart-header">
+    <span>
+      <% if @cart.quantity == 1 %>
+        1 Item
+      <% else %>
+        <%= @cart.quantity %> Items
+      <% end %>
+    </span>
+    <%= link_to 'View Cart', cart_path, target: '_blank' %>
+
+    <% @cart.orderables.each do |orderable| %>
+      <% product = orderable.product %>
+        <div id="<%= "cart-#{product.id}" %>" class="my-3">
+          <ul class="shopping-list">
+            <li>
+              <%= form_with(url: cart_remove_path) do |form| %>
+                <%= form.hidden_field :id, value: orderable.id %>
+                <%= button_tag(type: form.submit, class: 'btn') do %>
+                  <a href="" class="remove" title="Remove this item">
+                    <i class="bi bi-x-lg"></i></a>
+                <% end %>
+              <% end %>
+              <div class="cart-img-head">
+                <a class="cart-img" href="product/<%= product.id %>">
+                  <%= image_tag product.img, class: 'img', alt: '#' %>
+                </a>
+              </div>
+
+              <div class="content">
+                <h4 ><a href="product/<%= product.id %>" class="text-start"><%= product.title.capitalize %></a></h4><br>
+                <%= form_with(url: cart_add_path) do |form| %>
+                <div class="quantity">
+                  <%= form.hidden_field :id, value: product.id %>
+                  <%= form.number_field :quantity, value: orderable.quantity, min: 0, max: 9 %>
+                  <span> x<%=product.price %>$</span>
+                </div>
+                <% end %>
+              </div>
+            </li>
+          </ul>
+        </div>
+    <% end %>
+    <div class="bottom">
+      <div class="total">
+        <span>Total</span>
+        <span class="total-amount"><%= @cart.total.round(2) %>$</span>
+      </div>
+    <div class="button">
+      <%= button_to 'Checkout', '', class: 'btn animate'  %>
+    </div>
+    </div>
+  </div>
+</div>
+<!--/ End Shopping Item -->

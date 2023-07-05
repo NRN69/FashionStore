@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -18,7 +20,7 @@ gem 'oj'
 gem 'oj_mimic_json'
 gem 'pg', '~> 1.1'
 gem 'propshaft'
-gem 'puma', '~> 5.0'
+gem 'puma', '~> 6.3'
 gem 'rails', '~> 7.0.4'
 gem 'rails-i18n', '~> 7.0.6'
 gem 'simple_form'
@@ -26,10 +28,7 @@ gem 'stimulus-rails'
 gem 'turbo-rails', '~> 1.0.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-
 group :development, :test do
-
-  gem 'cleanup'
   gem 'database_cleaner'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot'
@@ -38,13 +37,11 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'rspec-json_expectations'
   gem 'rspec-rails'
-
+  gem 'rubocop', require: false
 end
 
 group :development do
-
   gem 'web-console'
-
 end
 
 group :test do
