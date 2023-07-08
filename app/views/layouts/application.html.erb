@@ -22,24 +22,33 @@
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
   </head>
 
-  <%= yield :header %>
-
   <body>
 
+    <header class="header navbar-area">
 
+      <%= render 'shared/header/top_header' %>
+      <%= render 'shared/header/middle_header' %>
+      <%= yield :bottom_header %>
+
+    </header>
+
+    <div id="flash">
+
+      <%= render 'shared/flash' %>
+
+    </div>
     <%= render 'shared/carousel' %>
 
     <%= yield %>
 
     <%= render 'shared/social' %>
 
+    <%= render 'shared/footer' %>
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+
   </body>
-
-  <%= render 'shared/footer' %>
-
-  <!-- ========================= scroll-top ========================= -->
-  <a href="#" class="scroll-top">
-    <i class="bi bi-arrow-up"></i>
-  </a>
-
 </html>

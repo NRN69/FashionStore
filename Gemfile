@@ -10,8 +10,10 @@ gem 'ancestry'
 gem 'avo'
 gem 'bootsnap', require: false
 gem 'breadcrumbs_on_rails'
+gem "chartkick"
 gem 'country_select'
 gem 'cssbundling-rails'
+gem 'devise'
 gem 'foreman', github: 'ddollar/foreman'
 gem 'jbuilder'
 gem 'jsbundling-rails'

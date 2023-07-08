@@ -8,5 +8,10 @@ class CategoryResource < Avo::BaseResource
   # end
 
   field :id, as: :id
+  field :title, as: :text, name: 'name'
+  field :bytitle, as: :text
+  field :description, as: :text
+  field :created_at, as: :date, name: 'create date', format: "dd-LL-yyyy"
+  field :update_at, as: :date, name: 'update date', format: "dd-LL-yyyy"
   # add fields here
 end

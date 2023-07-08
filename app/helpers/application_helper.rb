@@ -15,6 +15,6 @@ module ApplicationHelper
   end
 
   def currently_at(current_page = '')
-    render partial: 'shared/header', locals: { current_page: current_page}
+    render partial: 'shared/header/bottom_header', locals: { current_page: current_page}
   end
 end

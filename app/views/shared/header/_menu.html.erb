@@ -2,7 +2,7 @@
   <% cache sub do %>
       <%= nav_tab "- #{sub.title}", "/category/#{sub.id}" %>
       <ul>
-        <li> <%= render 'shared/menu', category: sub, cached: true %></li>
+        <li> <%= render 'shared/header/menu', category: sub, cached: true %></li>
       </ul>
   <% end %>
 <% end %>

@@ -1272,8 +1272,8 @@ top: -1px;
   font-size: 14px;
   font-weight: 600;
   padding: 13px 30px;
-  background-color: #fff9fc;
-  color: #FF69B4;
+  background-color: #FF69B4;
+  color: #FFF;
   border-color: #FF69B4;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -1310,7 +1310,7 @@ top: -1px;
 }
 
 .button .btn:hover {
-  color: #fff;
+  color: #081828;
   background-color: #FF69B4;
   -webkit-box-shadow: 0px 4px 4px #0000000f;
   box-shadow: 0px 4px 4px #0000000f;
@@ -1590,7 +1590,7 @@ top: -1px;
 }
 
 .header .topbar .top-end .user-login li a:hover {
-  color: #FF69B4;
+  color: #081828;
 }
 
 .header .header-middle {
@@ -3425,7 +3425,14 @@ top: 2px;
 .trending-product .section-title {
   margin-bottom: 20px;
 }
+.section-title a {
+    color: #FF69B4;
+    margin-top: 6px;
+}
 
+.section-title a:hover {
+    color: #081828;
+}
 /*======================================
     Banner CSS
 ========================================*/

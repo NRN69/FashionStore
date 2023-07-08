@@ -6,5 +6,8 @@ class CartResource < Avo::BaseResource
   # end
 
   field :id, as: :id
+  field :user_id, as: :id
+  field :created_at, as: :date, name: 'create date', format: "dd-LL-yyyy"
+  field :updated_at, as: :date, name: 'update date', format: "dd-LL-yyyy"
   # add fields here
 end

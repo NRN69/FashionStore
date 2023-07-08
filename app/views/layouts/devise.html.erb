@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keywords %>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.svg" />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+
+    <%= stylesheet_link_tag "bootstrap.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "LineIcons.3.0", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tiny-slider", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "glightbox.min", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
+
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+  </head>
+
+  <body>
+
+  <header class="header navbar-area">
+
+    <%= render 'shared/header/top_header' %>
+    <%= render 'shared/header/middle_header' %>
+    <%= yield :bottom_header %>
+
+  </header>
+
+  <div id="flash">
+
+    <%= render 'shared/flash' %>
+
+  </div>
+
+
+  <section>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-8">
+          <div class="section-title py-3">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%= render 'shared/social' %>
+
+  <%= render 'shared/footer' %>
+
+  <!-- ========================= scroll-top ========================= -->
+  <a href="#" class="scroll-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+
+  </body>
+</html>
