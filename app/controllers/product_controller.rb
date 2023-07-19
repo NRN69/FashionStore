@@ -24,6 +24,8 @@ class ProductController < ApplicationController
     session[:viewed_products] = ([@product.id] + session[:viewed_products]).uniq.take(4)
   end
 
+  private
+
   def set_page_options
     set_meta_tags product.slice(:title, :keywords, :description)
     add_breadcrumb 'Home', :root_path, title: 'Home'

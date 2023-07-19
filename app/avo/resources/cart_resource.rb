@@ -5,8 +5,10 @@ class CartResource < Avo::BaseResource
   #   scope.ransack(id_eq: params[:q], m: "or").result(distinct: false)
   # end
 
-  field :id, as: :id
+
   field :user_id, as: :id
+  field :user, as: :belongs_to, name: 'User', use_resource: UserResource, required: true
+  field :orderables, as: :has_many, name: 'Orderables', use_resource: OrderableResource, required: true
   field :created_at, as: :date, name: 'create date', format: "dd-LL-yyyy"
   field :updated_at, as: :date, name: 'update date', format: "dd-LL-yyyy"
   # add fields here

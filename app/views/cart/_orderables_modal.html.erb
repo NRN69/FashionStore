@@ -8,11 +8,11 @@
         <%= @cart.quantity %> Items
       <% end %>
     </span>
-    <%= link_to 'View Cart', cart_path, target: '_blank' %>
+    <%= link_to 'View Cart', cart_path %>
 
     <% @cart.orderables.each do |orderable| %>
       <% product = orderable.product %>
-        <div id="<%= "cart-#{product.id}" %>" class="my-3">
+        <div id="<%= "cart-modal#{product.id}" %>" class="my-3">
           <ul class="shopping-list">
             <li>
               <%= form_with(url: cart_remove_path) do |form| %>

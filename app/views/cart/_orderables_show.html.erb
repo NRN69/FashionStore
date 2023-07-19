@@ -1,0 +1,49 @@
+<% @cart.orderables.each do |orderable| %>
+  <% product = orderable.product %>
+    <!-- Start Single Product -->
+    <div id="<%="cart-show-#{product.id}" %>">
+      <div class="single-product">
+        <table>
+          <tr>
+            <td>
+              <%= link_to image_tag(product.img, size: 100), product %>
+            </td>
+            <td>
+              <span class="px-5">Category: <%= orderable.product.category.title %></span>
+            </td>
+            <td>
+              <span>
+                <%= link_to product.title, product %>
+              </span>
+            </td>
+            <td>
+              <span>Price: <%= product.price %>$ x </span>
+            </td>
+            <th>
+              <span>
+                <%= form_with(url: cart_add_path) do |form| %>
+                  <%= form.hidden_field :id, value: product.id %>
+                  <%= form.number_field :quantity, value: orderable.quantity, min: 0, max: 9 %>
+                  <%= button_tag(type: form.submit, class: 'btn') do %>
+                      <i class="bi bi-check-lg"></i>
+                  <% end %>
+                <% end %>
+              </span>
+            </th>
+            <td><span class="px-5">Total: <%= orderable.total %>$</span></td>
+            <th>
+              <span>
+                <%= form_with(url: cart_remove_path) do |form| %>
+                  <%= form.hidden_field :id, value: orderable.id %>
+                  <%= button_tag(type: form.submit, class: 'btn') do %>
+                    <i class="bi bi-x-lg"></i>
+                  <% end %>
+                <% end %>
+              </span>
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <!-- End Single Product -->
+<% end %>

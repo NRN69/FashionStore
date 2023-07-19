@@ -1,0 +1,8 @@
+<% category.children.each do |sub| %>
+  <% cache sub do %>
+      <%= link_to" #{sub.title}", "/category/#{sub.id}" %>
+      <ul>
+        <li> <%= render 'shared/menu', category: sub, cached: true %></li>
+      </ul>
+  <% end %>
+<% end %>

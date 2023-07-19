@@ -1,9 +1,0 @@
-<%= turbo_frame_tag 'cart' do %>
-  <% if @cart.orderables.count > 0 %>
-    <%= render 'cart/orderables' %>
-  <% else %>
-    <div class="shopping-item">
-      <p>Your Cart is Empty</p>
-    </div>
-  <% end %>
-<% end %>

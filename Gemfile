@@ -23,6 +23,7 @@ gem 'oj_mimic_json'
 gem 'pg', '~> 1.1'
 gem 'propshaft'
 gem 'puma', '~> 6.3'
+gem "pundit"
 gem 'rails', '~> 7.0.4'
 gem 'rails-i18n', '~> 7.0.6'
 gem 'simple_form'

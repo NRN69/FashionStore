@@ -1,0 +1,12 @@
+
+
+    <%= turbo_frame_tag 'cart-modal' do %>
+      <% if @cart.orderables.count > 0 %>
+        <%= render 'cart/orderables_modal' %>
+      <% else %>
+        <div class="shopping-item">
+          <p>Your Cart is Empty</p>
+        </div>
+      <% end %>
+    <% end %>
+

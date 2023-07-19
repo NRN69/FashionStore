@@ -12,8 +12,10 @@ class MainController < ApplicationController
             end
   end
 
+  private
+
   def set_page_options
-    @page_title = 'Fashion Store'
+    @page_title = ''
     @page_description = 'Woman Wears'
     @page_keywords = 'Dresses Shirts and More'
   end

@@ -8,7 +8,7 @@ Avo.configure do |config|
   # config.prefix_path = "/internal"
 
   # Where should the user be redirected when visting the `/avo` url
-  # config.home_path = nil
+  config.home_path = '/admin/resources/products'
 
   ## == Licensing ==
   config.license = 'community' # change this to 'pro' when you add the license key
@@ -20,21 +20,21 @@ Avo.configure do |config|
   end
 
   ## == Authentication ==
-  config.current_user_method = :current_user.try(:admin)
+  config.current_user_method = :current_user
   # config.authenticate_with do
   # end
 
   ## == Authorization ==
-  # config.authorization_methods = {
-  #   index: 'index?',
-  #   show: 'show?',
-  #   edit: 'edit?',
-  #   new: 'new?',
-  #   update: 'update?',
-  #   create: 'create?',
-  #   destroy: 'destroy?',
-  #   search: 'search?',
-  # }
+  config.authorization_methods = {
+    index: 'index?',
+    show: 'show?',
+    edit: 'edit?',
+    new: 'new?',
+    update: 'update?',
+    create: 'create?',
+    destroy: 'destroy?',
+    search: 'search?',
+  }
   # config.raise_error_on_missing_policy = false
   # config.authorization_client = :pundit
 
@@ -48,7 +48,7 @@ Avo.configure do |config|
   # config.per_page = 24
   # config.per_page_steps = [12, 24, 48, 72]
   config.via_per_page = 8
-  # config.id_links_to_resource = false
+  config.id_links_to_resource = false
   # config.cache_resources_on_index_view = true
   ## permanent enable or disable cache_resource_filters, default value is false
   # config.cache_resource_filters = false

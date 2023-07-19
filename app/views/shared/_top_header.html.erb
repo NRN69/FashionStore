@@ -32,7 +32,7 @@
 
               <li>
 
-                <% if current_user.try(:admin) %>
+                <% if current_user.admin? %>
                   <%= link_to 'Panel', avo_path %>
                 <% else %>
                   <%= link_to 'Edit', edit_user_registration_path(current_user) %>
@@ -57,3 +57,4 @@
   </div>
 </div>
 <!-- End Topbar -->
+

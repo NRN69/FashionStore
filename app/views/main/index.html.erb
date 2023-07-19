@@ -1,145 +1,112 @@
-<% currently_at 'Home' %>
-
-    <!-- Start Trending Product Area -->
-    <section class="trending-product section" style="margin-top: 12px;">
-        <div class="container">
-          <% if params[:query].present? %>
-            <%= turbo_frame_tag  "hits" do %>
-              <div class="row">
-                  <div class="col-12">
-                      <div class="section-title">
-                          <h2>Search Result</h2>
-                      </div>
+<!-- Start Trending Product Area -->
+<section class="trending-product section" style="margin-top: 12px;">
+    <div class="container">
+      <% if params[:query].present? %>
+        <%= turbo_frame_tag  "hits" do %>
+          <div class="row">
+              <div class="col-12">
+                  <div class="section-title">
+                      <h2>Search Result</h2>
                   </div>
               </div>
+          </div>
 
-              <% if @hits.nil? %>
-                <h2> No Products</h2>
-              <% else %>
-                <div class="row">
-                  <% @hits.hit.each do |h| %>
-                    <div class="col-lg-3 col-md-4">
-                      <!-- Start Single Product -->
-                      <div id="<%= dom_id h %>">
-                        <div class="single-product">
-                          <div class="product-image">
-                            <a href="product/<%= h.id %>">
-                              <%= image_tag h.img %></a>
-                            <div class="button">
-                              <%= form_with(url: cart_add_path) do |form| %>
-                                <%= form.hidden_field :id, value: h.id %>
-                                <%= form.hidden_field :quantity, value: 1 %>
-                                <%= button_tag(type: form.submit, class: 'btn') do %>
-                                  <i class="bi bi-cart"></i> Add to Cart
-                                <% end %>
-                              <% end %>
-                            </div>
-                          </div>
-                          <div class="product-info">
-                            <span class="category"></span>
-                            <h4 class="title">
-                              <a href="product/<%= h.id %>">
-                                <%= h.title %></a>
-                            </h4>
-                            <div class="price">
-                                        <span>Price:
-                                          <%= h.price %>$
-                                        </span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Single Product -->
-                    </div>
-                  <% end %>
-                </div>
-              <% end %>
-            <% end %>
-
+          <% if @hits.nil? %>
+            <h2> No Products</h2>
           <% else %>
             <div class="row">
-              <div class="col-12">
-                <div class="section-title">
-                  <h2>Trending Product</h2>
-                </div>
-              </div>
-            </div>
-
-            <% if @hits.nil? %>
-              <h2> No Products</h2>
-            <% else %>
-              <div class="row">
-                <% @hits.hit.each do |h| %>
-                  <div class="col-lg-3 col-md-4">
-                    <!-- Start Single Product -->
-                      <div id="<%= dom_id h %>">
-                        <div class="single-product">
-                          <div class="product-image">
-                            <a href="product/<%= h.id %>">
-                              <%= image_tag h.img %></a>
-                            <div class="button">
-                              <%= form_with(url: cart_add_path) do |form| %>
-                                <%= form.hidden_field :id, value: h.id %>
-                                <%= form.hidden_field :quantity, value: 1 %>
-                                <%= button_tag(type: form.submit, class: 'btn') do %>
-                                  <i class="bi bi-cart"></i> Add to Cart
-                                <% end %>
-                              <% end %>
-                            </div>
-                          </div>
-                          <div class="product-info">
-                            <span class="category"></span>
-                            <h4 class="title">
-                              <a href="product/<%= h.id %>">
-                                <%= h.title %></a>
-                            </h4>
-                            <div class="price">
-                                        <span>Price:
-                                          <%= h.price %>$
-                                        </span>
-                            </div>
-                          </div>
+              <% @hits.hit.each do |h| %>
+                <div class="col-lg-3 col-md-4">
+                  <!-- Start Single Product -->
+                  <div id="<%= dom_id h %>">
+                    <div class="single-product">
+                      <div class="product-image">
+                        <a href="product/<%= h.id %>">
+                          <%= image_tag h.img %></a>
+                        <div class="button">
+                          <%= form_with(url: cart_add_path) do |form| %>
+                            <%= form.hidden_field :id, value: h.id %>
+                            <%= form.hidden_field :quantity, value: 1 %>
+                            <%= button_tag(type: form.submit, class: 'btn') do %>
+                              <i class="bi bi-cart"></i> Add to Cart
+                            <% end %>
+                          <% end %>
                         </div>
                       </div>
-                    <!-- End Single Product -->
+                      <div class="product-info">
+                        <span class="category"></span>
+                        <h4 class="title">
+                          <a href="product/<%= h.id %>">
+                            <%= h.title %></a>
+                        </h4>
+                        <div class="price">
+                                    <span>Price:
+                                      <%= h.price %>$
+                                    </span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                <% end %>
+                  <!-- End Single Product -->
+                </div>
+              <% end %>
+            </div>
+          <% end %>
+        <% end %>
+
+      <% else %>
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title">
+              <h2>Trending Product</h2>
+            </div>
+          </div>
+        </div>
+
+        <% if @hits.nil? %>
+          <h2> No Products</h2>
+        <% else %>
+          <div class="row">
+            <% @hits.hit.each do |h| %>
+              <div class="col-lg-3 col-md-4">
+                <!-- Start Single Product -->
+                  <div id="<%= dom_id h %>">
+                    <div class="single-product">
+                      <div class="product-image">
+                        <a href="product/<%= h.id %>">
+                          <%= image_tag h.img %></a>
+                        <div class="button">
+                          <%= form_with(url: cart_add_path) do |form| %>
+                            <%= form.hidden_field :id, value: h.id %>
+                            <%= form.hidden_field :quantity, value: 1 %>
+                            <%= button_tag(type: form.submit, class: 'btn') do %>
+                              <i class="bi bi-cart"></i> Add to Cart
+                            <% end %>
+                          <% end %>
+                        </div>
+                      </div>
+                      <div class="product-info">
+                        <span class="category"></span>
+                        <h4 class="title">
+                          <a href="product/<%= h.id %>">
+                            <%= h.title %></a>
+                        </h4>
+                        <div class="price">
+                                    <span>Price:
+                                      <%= h.price %>$
+                                    </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <!-- End Single Product -->
               </div>
             <% end %>
-          <% end %>
-        </div>
-    </section>
-    <!-- End Trending Product Area -->
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+</section>
+<!-- End Trending Product Area -->
 
-    <!-- Start Banner Area -->
-    <section class="banner section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="single-banner" style="background-image:url('assets/images/banner/banner-1-bg.jpg')">
-                        <div class="content">
-                            <h2>Smart Watch 2.0</h2>
-                            <p>Space Gray Aluminum Case with <br>Black/Volt Real Sport Band </p>
-                            <div class="button">
-                                <a href="product-grids.html" class="btn">View Details</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                    <div class="single-banner custom-responsive-margin"
-                        style="background-image:url('assets/images/banner/banner-2-bg.jpg')">
-                        <div class="content">
-                            <h2>Smart Headphone</h2>
-                            <p>Lorem ipsum dolor sit amet, <br>eiusmod tempor
-                                incididunt ut labore.</p>
-                            <div class="button">
-                                <a href="product-grids.html" class="btn">Shop Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Banner Area -->
+<%= render 'shared/banner_area' %>

@@ -1,4 +1,4 @@
-<% currently_at 'Home' %>
+
 
 <!-- Start Trending Product Area -->
 <section class="trending-product section" style="margin-top: 12px;">
@@ -92,7 +92,7 @@
           <!-- Start Single Product -->
           <div class="single-product">
             <div class="product-info">
-              <span class="category">Watches</span>
+              <span class="category"><%= @product.category.title %></span>
               <h4 class="title">
                   <%= @product.title %>
               </h4><br>
@@ -108,6 +108,15 @@
                                 <span> Price:
                                   <%= @product.price %>$
                                 </span>
+              </div>
+              <div class="button my-4">
+                <%= form_with(url: cart_add_path) do |form| %>
+                  <%= form.hidden_field :id, value:@product.id %>
+                  <%= form.hidden_field :quantity, value: 1 %>
+                  <%= button_tag(type: form.submit, class: 'btn') do %>
+                    <i class="bi bi-cart"></i> Add to Cart
+                  <% end %>
+                <% end %>
               </div>
             </div>
           </div>

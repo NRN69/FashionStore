@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
+  include Pundit::Authorization
   before_action :set_render_cart
   before_action :initialize_cart
 
@@ -9,11 +10,16 @@ class ApplicationController < ActionController::Base
   end
 
   def initialize_cart
-    @cart ||= Cart.find_by(id: session[:cart_id])
-
-    if @cart.nil?
-      @cart = Cart.create
-      session[:cart_id] = @cart.id
-    end
+    @cart ||= Cart.find_or_create_by(user: current_user)
   end
+
+  # def initialize_cart
+  #   @cart ||= Cart.find_or_create_by(user: current_user)
+  # end
+  #
+  # def orderables
+  #   initialize_cart.orderables
+  # end
+  #
+  # helper_method :initialize_cart, :orderables
 end

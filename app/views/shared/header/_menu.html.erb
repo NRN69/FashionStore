@@ -1,8 +1,0 @@
-<% category.children.each do |sub| %>
-  <% cache sub do %>
-      <%= nav_tab "- #{sub.title}", "/category/#{sub.id}" %>
-      <ul>
-        <li> <%= render 'shared/header/menu', category: sub, cached: true %></li>
-      </ul>
-  <% end %>
-<% end %>

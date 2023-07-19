@@ -10,7 +10,7 @@
         <!-- End Header Logo -->
       </div>
 
-      <%= render 'shared/header/search' %>
+      <%= render 'shared/search' %>
 
 
       <div class="col-lg-4 col-md-2 col-5">
@@ -24,24 +24,10 @@
             </h3>
           </div>
           <div class="navbar-cart">
-            <div class="wishlist">
-              <a href="javascript:void(0)">
-                <i class="bi bi-moon"></i>
-              </a>
-            </div>
-            <div class="wishlist">
-              <a href="javascript:void(0)">
-                <i class="bi bi-heart"></i>
-                <span class="total-items">0</span>
-              </a>
-            </div>
-            <div class="cart-items">
-              <a href="javascript:void(0)" class="main-btn">
-                <i class="bi bi-cart"></i>
-                <span class="total-items"><%= @cart.quantity %></span>
-              </a>
-              <%= render 'cart/cart' if @render_cart %>
-            </div>
+
+            <%= render 'shared/theme' %>
+            <%= render 'cart/cart_quantity' %>
+
           </div>
         </div>
       </div>

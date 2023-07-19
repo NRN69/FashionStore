@@ -4,7 +4,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keywords %>
+    <%= display_meta_tags site: 'FashionStore',title: @page_title, description: @page_description, keywords: @page_keywords %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
     <%= stylesheet_link_tag "bootstrap.min", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "LineIcons.3.0", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "tiny-slider", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "glightbox.min", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
 
 
@@ -26,9 +23,9 @@
 
     <header class="header navbar-area">
 
-      <%= render 'shared/header/top_header' %>
-      <%= render 'shared/header/middle_header' %>
-      <%= yield :bottom_header %>
+      <%= render 'shared/top_header' %>
+      <%= render 'shared/middle_header' %>
+      <%= render 'shared/bottom_header' %>
 
     </header>
 

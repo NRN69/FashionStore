@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
 
     <%= stylesheet_link_tag "bootstrap.min", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "LineIcons.3.0", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "tiny-slider", "data-turbo-track": "reload" %>
-    <%= stylesheet_link_tag "glightbox.min", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "main", "data-turbo-track": "reload" %>
 
 
@@ -26,9 +23,9 @@
 
   <header class="header navbar-area">
 
-    <%= render 'shared/header/top_header' %>
-    <%= render 'shared/header/middle_header' %>
-    <%= yield :bottom_header %>
+    <%= render 'shared/top_header' %>
+    <%= render 'shared/middle_header' %>
+    <%= render 'shared/bottom_header' %>
 
   </header>
 
@@ -45,6 +42,10 @@
         <div class="col-8">
           <div class="section-title py-3">
             <%= yield %>
+
+            <%= link_to "Back", :back %>
+            <br>
+            <%= link_to "Home", root_path %>
           </div>
         </div>
       </div>

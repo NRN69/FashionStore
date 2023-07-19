@@ -3,7 +3,9 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  mount Avo::Engine, at: Avo.configuration.root_path
+  authenticate :user, ->(user) { user.admin? } do
+    mount Avo::Engine, at: Avo.configuration.root_path
+  end
 
   get 'cart', to: 'cart#show'
   post 'cart/add'

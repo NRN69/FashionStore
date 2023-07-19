@@ -3,7 +3,7 @@ class Cart < ApplicationRecord
   has_many :products, through: :orderables
   belongs_to :user
 
-  # validates :user_id, present: true
+  validates :user_id, presence: true
 
   def total
     orderables.to_a.sum { |orderable| orderable.total }
@@ -12,4 +12,6 @@ class Cart < ApplicationRecord
   def quantity
     orderables.to_a.sum { |orderable| orderable.quantity }
   end
+
+
 end
