@@ -1,7 +1,7 @@
 
 
     <%= turbo_frame_tag 'cart-modal' do %>
-      <% if @cart.orderables.count > 0 %>
+      <% if @cart.orderables.count.positive? %>
         <%= render 'cart/orderables_modal' %>
       <% else %>
         <div class="shopping-item">

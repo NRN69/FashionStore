@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+
   devise_for :users
 
   authenticate :user, ->(user) { user.admin? } do
@@ -14,6 +15,8 @@ Rails.application.routes.draw do
   resources :product, only: [:show]
 
   resources :category, only: [:show]
+
+  resources :orders
 
   root to: 'main#index'
 end

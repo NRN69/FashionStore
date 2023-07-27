@@ -3,6 +3,7 @@
 class ProductController < ApplicationController
   after_action :register_visit, only: [:show]
 
+
   def show
     @product = Product.find(params[:id])
     set_page_options

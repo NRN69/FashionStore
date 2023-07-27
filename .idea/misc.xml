@@ -3,5 +3,8 @@
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
+  <component name="ProjectPlainTextFileTypeManager">
+    <file url="file://$PROJECT_DIR$/db/migrate/20230722153653_add_column_to_orders.rb" />
+  </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="rbenv: 3.1.2" project-jdk-type="RUBY_SDK" />
 </project>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_08_074931) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,6 +27,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_074931) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
+    t.bigint "order_id"
+    t.index ["order_id"], name: "index_carts_on_order_id"
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
@@ -52,8 +54,28 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_074931) do
     t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "card_id"
+    t.bigint "order_id"
     t.index ["cart_id"], name: "index_orderables_on_cart_id"
+    t.index ["order_id"], name: "index_orderables_on_order_id"
     t.index ["product_id"], name: "index_orderables_on_product_id"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.text "address"
+    t.integer "pay_method"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "user_id"
+    t.integer "quantity"
+    t.bigint "cart_id"
+    t.bigint "product_id"
+    t.integer "status", default: 0, null: false
+    t.index ["cart_id"], name: "index_orders_on_cart_id"
+    t.index ["product_id"], name: "index_orders_on_product_id"
+    t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
   create_table "products", force: :cascade do |t|
@@ -71,6 +93,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_074931) do
     t.integer "hit", default: 0
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "order_id"
+    t.index ["order_id"], name: "index_products_on_order_id"
   end
 
   create_table "related_products", id: false, force: :cascade do |t|
@@ -95,12 +119,20 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_08_074931) do
     t.integer "failed_attempts", default: 0, null: false
     t.string "unlock_token"
     t.datetime "locked_at"
+    t.string "name"
+    t.string "phone"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
+  add_foreign_key "carts", "orders"
   add_foreign_key "carts", "users"
   add_foreign_key "orderables", "carts"
+  add_foreign_key "orderables", "orders"
   add_foreign_key "orderables", "products"
+  add_foreign_key "orders", "carts"
+  add_foreign_key "orders", "products"
+  add_foreign_key "orders", "users"
+  add_foreign_key "products", "orders"
 end

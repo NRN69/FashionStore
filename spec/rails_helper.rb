@@ -8,9 +8,9 @@ require 'rspec/rails'
 require 'shoulda-matchers'
 require 'rspec/json_expectations'
 require 'devise'
+require 'database_cleaner'
 require_relative 'support/controller_macros'
 require_relative 'support/chrome'
-
 
 begin
   ActiveRecord::Migration.maintain_test_schema!

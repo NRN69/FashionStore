@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class BrandPolicy < ApplicationPolicy
-
   def index?
     true
   end
@@ -29,5 +28,4 @@ class BrandPolicy < ApplicationPolicy
   def destroy?
     user.admin?
   end
-
 end

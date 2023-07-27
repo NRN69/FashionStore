@@ -19,7 +19,7 @@ SimpleForm.setup do |config|
   config.boolean_label_class = 'form-check-label'
 
   # How the label text should be generated altogether with the required text.
-  config.label_text = ->(label, required, _explicit_label) { "#{label}" }
+  config.label_text = ->(label, _required, _explicit_label) { label.to_s }
 
   # Define the way to render check boxes / radio buttons with labels.
   config.boolean_style = :inline
@@ -84,7 +84,7 @@ SimpleForm.setup do |config|
     b.use :full_error, wrap_with: { class: 'invalid-feedback d-block' }
     b.use :hint, wrap_with: { class: 'form-text' }
   end
-
+  # rubocop:disable Layout/LineLength
   # vertical input for inline radio buttons and check boxes
   config.wrappers :vertical_collection_inline, item_wrapper_class: 'form-check form-check-inline',
                                                item_label_class: 'form-check-label', tag: 'fieldset', class: 'mb-3' do |b|
@@ -97,6 +97,7 @@ SimpleForm.setup do |config|
     b.use :full_error, wrap_with: { class: 'invalid-feedback d-block' }
     b.use :hint, wrap_with: { class: 'form-text' }
   end
+  # rubocop:enable Layout/LineLength
 
   # vertical file input
   config.wrappers :vertical_file, class: 'mb-3' do |b|

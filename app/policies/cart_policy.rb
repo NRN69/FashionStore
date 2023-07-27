@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class CartPolicy < ApplicationPolicy
-
   def index?
     true
   end
@@ -29,5 +28,4 @@ class CartPolicy < ApplicationPolicy
   def destroy?
     user.admin?
   end
-
 end

@@ -1,44 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="Add Cart">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/hero/slider1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/hero/slider2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/hero/slider3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/product-details/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/application_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/brand_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/cart_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/category_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/product_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/policies/user_policy.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/avo/partials/_footer.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/avo/partials/_head.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/avo/partials/_header.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/avo/partials/_logo.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/avo/partials/_sidebar_extra.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/cart/_cart_modal.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/cart/_cart_quantity.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/cart/_cart_show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/cart/_orderables_show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/cart/destroy.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_banner_area.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_theme.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/factories/users.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/turbo_assertions_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/support/chrome.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/support/controller_macros.rb" afterDir="false" />
+    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/avo/orders_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/Authorization.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/decorators/application_decorator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/decorators/user_decorator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/orders/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/orders/_order.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/orders/create.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/orders/destroy.turbo_stream.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230723050447_add_order_to_orderable.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230724064934_add_name_and_phone_to_user.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230724091456_add_user_ref_to_orders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230724095816_add_colums_to_orders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230724111321_add_product_ref_to_orders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230727112742_add_status_to_orders.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/decorators/user_decorator_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/css/LineIcons.3.0.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/css/glightbox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/css/tiny-slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/dashboards/fashion_store_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/dashboards/fashion_store_dashboard.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/avo/resources/cart_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/cart_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" afterDir="false" />
@@ -49,7 +39,6 @@
       <change beforePath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/avo/carts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/carts_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/avo/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/categories_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/galerries_controller.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/avo/orderables_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/orderables_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/avo/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/users_controller.rb" afterDir="false" />
@@ -58,43 +47,52 @@
       <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/product_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/cart_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/cart_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/cart.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/orderable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/orderable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/_cart.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/_orderables.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_orderables_modal.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/category/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/category/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/confirmations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/brand_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/brand_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/cart_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/cart_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/category_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/category_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/product_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/product_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/user_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/user_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cart/_cart_modal.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_cart_modal.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cart/_cart_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_cart_show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cart/_orderables_modal.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_orderables_modal.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cart/_orderables_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_orderables_show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/unlocks/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/devise.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/devise.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/product/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/product/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_carousel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_carousel.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/header/_bottom_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_bottom_header.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/header/_header.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/header/_menu.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_menu.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/header/_middle_header.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/header/_search.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_search.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/header/_top_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/initializers/avo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/avo.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230705082430_create_carts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230705082430_create_carts.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230708063321_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230708063321_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230708063559_add_user_ref_to_carts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230708063559_add_user_ref_to_carts.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230708074931_add_devise_to_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230708074931_add_devise_to_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/controllers/cart_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/cart_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/category_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/category_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/orderable_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/orderable_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/factories/users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/cart_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/cart_helper_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/cart_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/cart_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/orderable_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/orderable_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/requests/cart_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/cart_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/requests/category_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/category_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/main_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/main_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/support/chrome.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/chrome.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/support/controller_macros.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/controller_macros.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/views/cart/show.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/cart/show.html.erb_spec.rb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -153,16 +151,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_development@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fashionstore_development: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
-        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="users: table" type="69fad909:PgImplModel$LocalTable" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -227,21 +215,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/cart" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/orders" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/shared" />
-      <recent name="$PROJECT_DIR$/app/views/shared/header" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/orders" />
+      <recent name="$PROJECT_DIR$/app/controllers/concerns" />
       <recent name="$PROJECT_DIR$/app/views/cart" />
       <recent name="$PROJECT_DIR$/spec/helpers" />
       <recent name="$PROJECT_DIR$/spec/factories" />
-      <recent name="$PROJECT_DIR$/spec" />
-      <recent name="$PROJECT_DIR$/app/assets/images/product-details" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/shared" />
+      <recent name="$PROJECT_DIR$/app/views/shared/header" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -256,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="RSpec.CartController">
+  <component name="RunManager" selected="Ruby.orders_controller">
     <configuration name="CartController GET #show re..." type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="FashionStore" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -325,6 +313,40 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="CartController REMOVE #remove" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="FashionStore" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/controllers/cart_controller_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="CartController REMOVE #remove" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
     <configuration name="CartController" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="FashionStore" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -349,74 +371,6 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="CartController" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Mains" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="FashionStore" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/requests/main_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Mains" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Products" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="FashionStore" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/requests/product_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="'**/*_spec.rb'" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Products" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -524,13 +478,31 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_VERBOSE" VALUE="" />
       <method v="2" />
     </configuration>
+    <configuration name="orders_controller" type="RubyRunConfigurationType" factoryName="Ruby" temporary="true">
+      <module name="FashionStore" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="$MODULE_DIR$/app/controllers" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$MODULE_DIR$/app/controllers/orders_controller.rb" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Ruby.orders_controller" />
+        <item itemvalue="RSpec.CartController REMOVE #remove" />
         <item itemvalue="RSpec.CartController" />
         <item itemvalue="RSpec.CartController REMOVE #destroy" />
         <item itemvalue="RSpec.CartController GET #show re..." />
-        <item itemvalue="RSpec.Products" />
-        <item itemvalue="RSpec.Mains" />
       </list>
     </recent_temporary>
   </component>
@@ -577,7 +549,17 @@
       <workItem from="1689342803295" duration="3797000" />
       <workItem from="1689662894500" duration="679000" />
       <workItem from="1689663806768" duration="23068000" />
-      <workItem from="1689748979680" duration="10893000" />
+      <workItem from="1689748979680" duration="11170000" />
+      <workItem from="1689760323111" duration="6410000" />
+      <workItem from="1690004864777" duration="15644000" />
+      <workItem from="1690021194434" duration="2432000" />
+      <workItem from="1690033713512" duration="242000" />
+      <workItem from="1690034615596" duration="7356000" />
+      <workItem from="1690087652380" duration="1449000" />
+      <workItem from="1690176401119" duration="22788000" />
+      <workItem from="1690268133233" duration="7188000" />
+      <workItem from="1690275351384" duration="13000" />
+      <workItem from="1690437953491" duration="26171000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -642,7 +624,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688569234736</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Repair remove and add orderables to Cart with Turbo&#10;Add Turbo for cart icon quantity orderables">
+      <created>1689760134190</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689760134190</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,12 +661,15 @@
     <MESSAGE value="Add products, category, galleries, related product, recently product" />
     <MESSAGE value="Add category, add search" />
     <MESSAGE value="Add Cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Cart" />
+    <MESSAGE value="Repair remove and add orderables to Cart with Turbo&#10;Add Turbo for cart icon quantity orderables" />
+    <option name="LAST_COMMIT_MESSAGE" value="Repair remove and add orderables to Cart with Turbo&#10;Add Turbo for cart icon quantity orderables" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FashionStore@CartController_REMOVE__remove.rcov" NAME="CartController REMOVE #remove Coverage Results" MODIFIED="1690007075378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />
     <SUITE FILE_PATH="coverage/FashionStore@CartController.rcov" NAME="CartController Coverage Results" MODIFIED="1689337825745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />
     <SUITE FILE_PATH="coverage/FashionStore@CartController_REMOVE__destroy.rcov" NAME="CartController REMOVE #destroy Coverage Results" MODIFIED="1689337786601" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />
     <SUITE FILE_PATH="coverage/FashionStore@Carts.rcov" NAME="Carts Coverage Results" MODIFIED="1689335392387" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />
+    <SUITE FILE_PATH="coverage/FashionStore@orders_controller.rcov" NAME="orders_controller Coverage Results" MODIFIED="1690037166152" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/controllers" MODULE_NAME="FashionStore" />
     <SUITE FILE_PATH="coverage/FashionStore@Products.rcov" NAME="Products Coverage Results" MODIFIED="1689335785150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />
     <SUITE FILE_PATH="coverage/FashionStore@Categories.rcov" NAME="Categories Coverage Results" MODIFIED="1689335461068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />
     <SUITE FILE_PATH="coverage/FashionStore@Carts_GET__show_returns_htt___.rcov" NAME="Carts GET /show returns htt... Coverage Results" MODIFIED="1688800081632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />

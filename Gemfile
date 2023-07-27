@@ -10,10 +10,11 @@ gem 'ancestry'
 gem 'avo'
 gem 'bootsnap', require: false
 gem 'breadcrumbs_on_rails'
-gem "chartkick"
+gem 'chartkick'
 gem 'country_select'
 gem 'cssbundling-rails'
 gem 'devise'
+gem 'draper'
 gem 'foreman', github: 'ddollar/foreman'
 gem 'jbuilder'
 gem 'jsbundling-rails'
@@ -23,7 +24,7 @@ gem 'oj_mimic_json'
 gem 'pg', '~> 1.1'
 gem 'propshaft'
 gem 'puma', '~> 6.3'
-gem "pundit"
+gem 'pundit'
 gem 'rails', '~> 7.0.4'
 gem 'rails-i18n', '~> 7.0.6'
 gem 'simple_form'
@@ -32,11 +33,15 @@ gem 'turbo-rails', '~> 1.0.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
+  gem 'byebug'
   gem 'database_cleaner'
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+
+
   gem 'factory_bot'
   gem 'faker'
   gem 'pry'
+
   gem 'rails-controller-testing'
   gem 'rspec-json_expectations'
   gem 'rspec-rails'

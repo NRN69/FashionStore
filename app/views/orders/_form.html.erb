@@ -1,0 +1,13 @@
+<%= turbo_frame_tag 'order-new' do %>
+  <%= simple_form_for order do |form| %>
+    <%= form.input :name, placeholder: 'Your Name', size: 40, autocompelete: 'on', requaired: true %><br>
+    <%= form.input :email, placeholder: current_user.email, autocompelete: 'on', requaired: true %><br>
+    <%= form.input :address, rows: 4, placeholder: 'State, City, Street, house number, apartment number', autocompelete: 'on', requaired: true %><br>
+    <%= form.input :pay_type, collection: Order.pay_types.keys, requaired: true %>
+    <div class="button">
+      <%= button_tag(type: form.submit, class: 'btn animate') do %>
+        Confirm
+      <% end %>
+    </div>
+  <% end %>
+<% end %>

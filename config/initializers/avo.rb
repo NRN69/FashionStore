@@ -33,7 +33,7 @@ Avo.configure do |config|
     update: 'update?',
     create: 'create?',
     destroy: 'destroy?',
-    search: 'search?',
+    search: 'search?'
   }
   # config.raise_error_on_missing_policy = false
   # config.authorization_client = :pundit
@@ -73,17 +73,17 @@ Avo.configure do |config|
   ## == Branding ==
   config.branding = {
     colors: {
-      background: "#FFFFFF",
-      100 => "#FFFFFF",
-      400 => "#FFFFFF",
-      500 => "#FF69B4",
-      600 => "#081828",
+      background: '#FFFFFF',
+      100 => '#FFFFFF',
+      400 => '#FFFFFF',
+      500 => '#FF69B4',
+      600 => '#081828'
     },
-    chart_colors: ["#888888", "#34C683", "#2AB1EE", "#34C6A8"],
-    logo: "/avo-assets/logo.png",
-    logomark: "/avo-assets/logomark.png",
-    placeholder: "/avo-assets/placeholder.svg",
-    favicon: "/avo-assets/favicon.ico"
+    chart_colors: ['#888888', '#34C683', '#2AB1EE', '#34C6A8'],
+    logo: '/avo-assets/logo.png',
+    logomark: '/avo-assets/logomark.png',
+    placeholder: '/avo-assets/placeholder.svg',
+    favicon: '/avo-assets/favicon.ico'
   }
 
   ## == Breadcrumbs ==
@@ -93,12 +93,12 @@ Avo.configure do |config|
   end
 
   ## == Menus ==
-  config.main_menu = -> {
+  config.main_menu = lambda {
     # section "Dashboards", icon: "dashboards" do
     #   all_dashboards
     # end
 
-    section "Resources", icon: "resources" do
+    section 'Resources', icon: 'resources' do
       all_resources
     end
 

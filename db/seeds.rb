@@ -41,6 +41,7 @@ end
 
 # - - - - -
 #
+# rubocop:disable Lint/UselessAssignment
 # # table categories
 
 women = Category.create(title: 'Women', bytitle: 'women', keywords: 'women', description: 'for women')
@@ -73,7 +74,7 @@ spring3 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring'
 autumn3 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn',
                           parent: kids)
 # # - - - - - - - -
-
+# rubocop:enable Lint/UselessAssignment
 # table products
 product_attributes = [
   {

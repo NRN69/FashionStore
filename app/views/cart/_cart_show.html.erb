@@ -1,5 +1,5 @@
 <%= turbo_frame_tag 'cart-show' do %>
-  <% if @cart.orderables.count > 0 %>
+  <% if @cart.orderables.count.positive? %>
 
     <%= render 'cart/orderables_show' %>
 
@@ -8,7 +8,7 @@
         <div class="bottom">
           <div class="button my-5">
             <h2>Total: <%= @cart.total.round(2) %>$</h2>
-            <a href="checkout.html" class="btn animate">Checkout</a>
+           <%= link_to ' Checkout', new_order_path ,class: 'btn animate' %>
           </div>
         </div>
       </div>

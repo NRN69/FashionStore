@@ -6,6 +6,7 @@ module Avo
   class BrandsController < Avo::ResourcesController
     before_action :authorize!
     after_action :verify_authorized
+
     def authorize!
       authorize(Brand)
     end

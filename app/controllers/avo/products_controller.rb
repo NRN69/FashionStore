@@ -10,6 +10,5 @@ module Avo
     def authorize!
       authorize(Product)
     end
-
   end
 end

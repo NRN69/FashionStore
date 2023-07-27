@@ -14,6 +14,7 @@ SimpleForm.setup do |config|
   # wrapper, change the order or even add your own to the
   # stack. The options given below are used to wrap the
   # whole input.
+  # rubocop:disable Layout/LineLength
   config.wrappers :default, class: :input,
                             hint_class: :field_with_hint, error_class: :field_with_errors, valid_class: :field_without_errors do |b|
     ## Extensions enabled by default
@@ -65,6 +66,7 @@ SimpleForm.setup do |config|
     # b.use :full_error, wrap_with: { tag: :span, class: :error }
   end
 
+  # rubocop:enable Layout/LineLength
   # The default wrapper to be used by the FormBuilder.
   config.default_wrapper = :default
 
@@ -108,7 +110,7 @@ SimpleForm.setup do |config|
   # config.item_wrapper_class = nil
 
   # How the label text should be generated altogether with the required text.
-  config.label_text = lambda { |label, required, explicit_label| " #{label}" }
+  config.label_text = ->(label, _required, _explicit_label) { " #{label}" }
 
   # You can define the class to use on all labels. Default is nil.
   # config.label_class = nil

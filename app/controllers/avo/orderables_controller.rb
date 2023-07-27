@@ -4,6 +4,5 @@
 # More information on https://docs.avohq.io/2.0/controllers.html
 module Avo
   class OrderablesController < Avo::ResourcesController
-
   end
 end

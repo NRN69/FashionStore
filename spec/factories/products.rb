@@ -6,11 +6,11 @@ FactoryBot.define do
 
     brand_id     { rand(1..5) }
     title        { Faker::Lorem.word }
-    bytitle      { Faker::Lorem.word }
+    bytitle      { title.downcase }
     img          { 'products/product-1.jpg' }
     content      { Faker::Lorem.sentence }
-    keywords     { Faker::Lorem.word }
-    description  { Faker::Lorem.sentence }
+    keywords     { title.downcase }
+    description  { content }
     price        { rand(10..100) }
     status       { 1 }
     hit          { 1 }

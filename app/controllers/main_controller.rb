@@ -2,6 +2,7 @@
 
 class MainController < ApplicationController
   before_action :set_page_options
+  attr_accessor :hits
 
   def index
     @brands = Brand.limit(3)

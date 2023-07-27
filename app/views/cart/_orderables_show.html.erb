@@ -1,4 +1,4 @@
-<% @cart.orderables.each do |orderable| %>
+<% @cart.orderables.order(created_at: :desc).each do |orderable| %>
   <% product = orderable.product %>
     <!-- Start Single Product -->
     <div id="<%="cart-show-#{product.id}" %>">
@@ -30,7 +30,7 @@
                 <% end %>
               </span>
             </th>
-            <td><span class="px-5">Total: <%= orderable.total %>$</span></td>
+            <td><span class="px-5">Total: <%= orderable.total.round(2) %>$</span></td>
             <th>
               <span>
                 <%= form_with(url: cart_remove_path) do |form| %>

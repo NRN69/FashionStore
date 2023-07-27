@@ -1,0 +1,42 @@
+<%= turbo_frame_tag 'order' do %>
+  <% cart_ids = [] %>
+  <% current_user.orders.order(created_at: :desc).each do |order| %>
+    <% cart_ids << order.cart_id %>
+  <% end %>
+
+  <% cart_ids.uniq.each do |cart_id|%>
+    <div class="single-product">
+    <h5>Order:
+      <%= Order.where(cart_id: cart_id).first.created_at.strftime("%d-%m-%Y | %H:%M") %>
+      <span class="text-secondary mx-2"><small><%= Order.where(cart_id: cart_id).first.status %></small></span>
+    </h5><br>
+
+      <% Order.where(cart_id: cart_id).uniq.each do |el| %>
+
+      <div id="<%="order-#{cart_id}" %>">
+        <table>
+          <tr>
+            <% Product.where(id: el.product_id).each do |product| %>
+              <td><span><%= link_to image_tag(product.img, size: 100), product %></span></td>
+              <td><span><%= product.title %></span></td>
+              <td><span>Price: <%= product.price %>$</span></td>
+              <td><span>Quantity: <%= el.quantity%></span></td>
+              <td><span>Total: <%= (el.quantity * product.price).round(2) %></span></td>
+            <% end %>
+         </tr>
+       </table><br>
+      </div>
+    <% end %>
+
+    <div class="col-12">
+      <div class="section-title">
+        <div class="bottom">
+          <div class="button">
+            <%= link_to 'Pay', '#' ,class: 'btn animate' if Order.where(cart_id: cart_id).first.pay_type.to_i == 0 %>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  <% end %>
+<% end %>
