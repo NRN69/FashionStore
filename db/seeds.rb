@@ -4,39 +4,41 @@ require 'faker'
 
 # table brands
 
-brand_attributes = [{
+brand_attributes = [
+  {
   title: Faker::Lorem.word,
   bytitle: Faker::Lorem.word,
   img: 'products/product-2.jpg',
   description: Faker::Superhero.name
-},
-                    {
-                      title: Faker::Lorem.word,
-                      bytitle: Faker::Lorem.word,
-                      img: 'products/product-1.jpg',
-                      description: Faker::Superhero.name
-                    },
-                    {
-                      title: Faker::Lorem.word,
-                      bytitle: Faker::Lorem.word,
-                      img: 'products/product-3.jpg',
-                      description: Faker::Superhero.name
-                    },
-                    {
-                      title: Faker::Lorem.word,
-                      bytitle: Faker::Lorem.word,
-                      img: 'products/product-4.jpg',
-                      description: Faker::Superhero.name
-                    },
-                    {
-                      title: Faker::Lorem.word,
-                      bytitle: Faker::Lorem.word,
-                      img: 'products/product-5.jpg',
-                      description: Faker::Superhero.name
-                    }]
+  },
+  {
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    img: 'products/product-1.jpg',
+    description: Faker::Superhero.name
+  },
+  {
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    img: 'products/product-3.jpg',
+    description: Faker::Superhero.name
+  },
+  {
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    img: 'products/product-4.jpg',
+    description: Faker::Superhero.name
+  },
+  {
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    img: 'products/product-5.jpg',
+    description: Faker::Superhero.name
+  }
+]
 
 brand_attributes.each do |attr|
-  Brand.create(attr) unless Brand.where(attr).first
+  Brand.create!(attr) unless Brand.where(attr).first
 end
 
 # - - - - -
@@ -106,6 +108,118 @@ product_attributes = [
     hit: 1
   },
   {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-2.jpg',
+    hit: 1
+  },
+  {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-2.jpg',
+    hit: 1
+  },
+  {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-3.jpg',
+    hit: 1
+  },
+  {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-7.jpg',
+    hit: 1
+  },
+  {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-3.jpg',
+    hit: 1
+  },
+  {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-3.jpg',
+    hit: 1
+  },
+  {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-5.jpg',
+    hit: 1
+  },
+  {
+    category_id: '6',
+    brand_id: '1',
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    status: 1,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence(word_count: 10),
+    img: 'products/product-2.jpg',
+    hit: 1
+  },
+  {
     category_id: '7',
     brand_id: '2',
     title: Faker::Lorem.word,
@@ -130,7 +244,7 @@ product_attributes = [
     status: 1,
     keywords: 'keywords',
     description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-4.jpg',
+    img: 'products/product-2.jpg',
     hit: 1
   },
   {
@@ -144,7 +258,7 @@ product_attributes = [
     status: 1,
     keywords: 'keywords',
     description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-5.jpg',
+    img: 'products/product-3.jpg',
     hit: 1
   },
   {
@@ -158,7 +272,7 @@ product_attributes = [
     status: 1,
     keywords: 'keywords',
     description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-6.jpg',
+    img: 'products/product-1.jpg',
     hit: 1
   },
   {
@@ -343,17 +457,17 @@ product_attributes = [
     img: 'products/product-5.jpg',
     hit: 1
   }
-
 ]
 
 product_attributes.each do |attr|
-  Product.create(attr) unless Product.where(attr).first
+  Product.create!(attr) unless Product.where(attr).first
 end
 
 # - - - - -
 
-# table related products
+# table users
+#
 
-# look into migration related_products
+
 
 # - - - - - - - -

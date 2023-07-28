@@ -3299,6 +3299,11 @@ top: 2px;
     font-size: 17px;
     color: #888888;
 }
+.single-product th {
+    padding-left:45px;
+    font-size: 15px;
+    color: #888888;
+}
 
 .single-product .product-image {
   overflow: hidden;

@@ -2,11 +2,12 @@
 
 class Order < ApplicationRecord
   has_many :orderables, dependent: :destroy
-  has_many :products
   belongs_to :user
 
-  validates :name, :address, :email, presence: true
-
+  validates :name, length: { minimum: 3, maximum: 10 }, presence: true
+  validates :address, length: { minimum: 6, maximum: 50 }, presence: true
+  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }, presence: true
+  validates :phone, length: { minimum: 11, maximum: 12 }, presence: true
 
   enum pay_type: { 'Credit card' => 0, 'Cash' => 1 }
 
@@ -15,5 +16,4 @@ class Order < ApplicationRecord
                  'Shipped' => 2,
                  'Delivered' => 3,
                  'Reserved' => 4 }
-
 end

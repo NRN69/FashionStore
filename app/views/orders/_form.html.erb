@@ -1,9 +1,10 @@
 <%= turbo_frame_tag 'order-new' do %>
   <%= simple_form_for order do |form| %>
-    <%= form.input :name, placeholder: 'Your Name', size: 40, autocompelete: 'on', requaired: true %><br>
-    <%= form.input :email, placeholder: current_user.email, autocompelete: 'on', requaired: true %><br>
-    <%= form.input :address, rows: 4, placeholder: 'State, City, Street, house number, apartment number', autocompelete: 'on', requaired: true %><br>
-    <%= form.input :pay_type, collection: Order.pay_types.keys, requaired: true %>
+    <%= form.input :name,     input_html: { lenght: {minimum: 3, maximum: 10}, placeholder: 'Your Name', size: 40, autocompelete: 'on' }, requaired: true %><br>
+    <%= form.input :email,    input_html: { placeholder: current_user.email, autocompelete: 'on' }, requaired: true %><br>
+    <%= form.input :address,  input_html: { placeholder: 'State, City, Street, house number, apartment number', autocompelete: 'on', lenght: {minimum: 6, maximum: 50} }, rows: 4, requaired: true %><br>
+    <%= form.input :phone,    input_html: { placeholder: '+79101234567', lenght: {minimum: 11, maximum: 12}, autocompelete: 'on'}, rows: 4, requaired: true %><br>
+    <%= form.input :pay_type, collection: Order.pay_types.keys, selected: 0, requaired: true %>
     <div class="button">
       <%= button_tag(type: form.submit, class: 'btn animate') do %>
         Confirm

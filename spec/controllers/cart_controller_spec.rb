@@ -18,7 +18,6 @@ RSpec.describe CartController, type: :controller do
       is_expected.to render_template :show
       expect(response.body).to include(product.title)
     end
-
   end
 
   describe 'REMOVE #remove' do
@@ -33,8 +32,8 @@ RSpec.describe CartController, type: :controller do
         sign_in(user)
         expect { subject }.to change(user.cart.orderables, :count).by(-1)
 
-      it 'render view show after remove'
-      is_expected.to render_template :show
+        it 'render view show after remove'
+        is_expected.to render_template :show
       end
     end
   end

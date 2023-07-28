@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
+ActiveRecord::Schema[7.0].define(version: 2023_07_24_091456) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -27,8 +27,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.bigint "order_id"
-    t.index ["order_id"], name: "index_carts_on_order_id"
     t.index ["user_id"], name: "index_carts_on_user_id"
   end
 
@@ -39,7 +37,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
     t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "ancestry"
+    t.string "ancestry", collation: "C"
     t.index ["ancestry"], name: "index_categories_on_ancestry"
   end
 
@@ -51,10 +49,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
   create_table "orderables", force: :cascade do |t|
     t.bigint "product_id", null: false
     t.bigint "cart_id", null: false
-    t.integer "quantity"
+    t.integer "quantity", default: 1, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "card_id"
     t.bigint "order_id"
     t.index ["cart_id"], name: "index_orderables_on_cart_id"
     t.index ["order_id"], name: "index_orderables_on_order_id"
@@ -65,16 +62,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
     t.string "name"
     t.string "email"
     t.text "address"
-    t.integer "pay_method"
+    t.text "phone"
+    t.integer "pay_type"
+    t.json "product_id_and_quantity"
+    t.integer "status"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
-    t.integer "quantity"
-    t.bigint "cart_id"
-    t.bigint "product_id"
-    t.integer "status", default: 0, null: false
-    t.index ["cart_id"], name: "index_orders_on_cart_id"
-    t.index ["product_id"], name: "index_orders_on_product_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -90,11 +84,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
     t.string "keywords"
     t.string "description"
     t.string "img", default: "no_image.jpg"
-    t.integer "hit", default: 0
+    t.integer "hit", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "order_id"
-    t.index ["order_id"], name: "index_products_on_order_id"
   end
 
   create_table "related_products", id: false, force: :cascade do |t|
@@ -126,13 +118,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_07_27_112742) do
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
   end
 
-  add_foreign_key "carts", "orders"
   add_foreign_key "carts", "users"
   add_foreign_key "orderables", "carts"
   add_foreign_key "orderables", "orders"
   add_foreign_key "orderables", "products"
-  add_foreign_key "orders", "carts"
-  add_foreign_key "orders", "products"
   add_foreign_key "orders", "users"
-  add_foreign_key "products", "orders"
 end

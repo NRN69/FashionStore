@@ -2,98 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/avo/orders_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/concerns/Authorization.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/decorators/application_decorator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/decorators/user_decorator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/_form.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/_order.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/create.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/destroy.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230723050447_add_order_to_orderable.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230724064934_add_name_and_phone_to_user.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230724091456_add_user_ref_to_orders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230724095816_add_colums_to_orders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230724111321_add_product_ref_to_orders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230727112742_add_status_to_orders.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/decorators/user_decorator_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.generators" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.generators" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@esbuild-linux-x64-npm-0.18.17-2d9862a919-8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/bootstrap-npm-5.3.1-9ad45c2765-f8176376aa.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/esbuild-npm-0.18.17-384f2c63dc-c6e1ffa776.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-npm-8.4.27-2a9f5f8f40-1cdd0c2988.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.64.1-d9daafa43e-e908f96f3d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/.ready" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/bin/esbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/.ready" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/install.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/lib/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.rubocop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.rubocop.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/dashboards/fashion_store_dashboard.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/dashboards/fashion_store_dashboard.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/resources/cart_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/cart_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/resources/orderable_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/orderable_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/resources/product_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/product_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/resources/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/user_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/carts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/carts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/categories_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/categories_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/orderables_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/orderables_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/cart_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cart_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/category_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/category_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/orders_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/orders_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/product_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers/cart_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/cart_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/cart.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/orderable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/orderable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/brand_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/brand_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/cart_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/cart_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/category_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/category_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/product_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/product_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/policies/user_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/user_policy.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/_cart_modal.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_cart_modal.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/_cart_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_cart_show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/_orderables_modal.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_orderables_modal.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/cart/_orderables_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_orderables_show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/bundle" beforeDir="false" afterPath="$PROJECT_DIR$/bin/bundle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/orders/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/orders/_order.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_order.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/orders/destroy.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/destroy.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/avo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/avo.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/devise.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/simple_form.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/simple_form_bootstrap.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230705082430_create_carts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230705082430_create_carts.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230708063321_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230708063321_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230708063559_add_user_ref_to_carts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230708063559_add_user_ref_to_carts.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230708074931_add_devise_to_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230708074931_add_devise_to_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230723050447_add_order_to_orderable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230723050447_add_order_to_orderable.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230724064934_add_name_and_phone_to_user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230724064934_add_name_and_phone_to_user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230724091456_add_user_ref_to_orders.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230724091456_add_user_ref_to_orders.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230724095816_add_colums_to_orders.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230724111321_add_product_ref_to_orders.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230727112742_add_status_to_orders.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/controllers/cart_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/cart_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/category_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/category_controller_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/controllers/orderable_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/orderable_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/products.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/factories/users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/factories/users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/helpers/cart_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/cart_helper_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/cart_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/cart_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/orderable_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/orderable_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/rails_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/rails_helper.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/cart_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/cart_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/requests/category_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/category_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/support/chrome.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/chrome.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/support/controller_macros.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/support/controller_macros.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/views/cart/show.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/cart/show.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/decorators/user_decorator_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/decorators/user_decorator_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/order_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,36 +114,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
         <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_test@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_test@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_test@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fashionstore_test: database" type="162271b6:PgImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_test@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fashionstore_test: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="fashionstore_test@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="fashionstore_test: database" type="162271b6:PgImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -559,7 +492,9 @@
       <workItem from="1690176401119" duration="22788000" />
       <workItem from="1690268133233" duration="7188000" />
       <workItem from="1690275351384" duration="13000" />
-      <workItem from="1690437953491" duration="26171000" />
+      <workItem from="1690437953491" duration="26692000" />
+      <workItem from="1690525130764" duration="7292000" />
+      <workItem from="1690533056801" duration="13791000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -631,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689760134190</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add Orders">
+      <created>1690465166012</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1690465166012</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +604,8 @@
     <MESSAGE value="Add category, add search" />
     <MESSAGE value="Add Cart" />
     <MESSAGE value="Repair remove and add orderables to Cart with Turbo&#10;Add Turbo for cart icon quantity orderables" />
-    <option name="LAST_COMMIT_MESSAGE" value="Repair remove and add orderables to Cart with Turbo&#10;Add Turbo for cart icon quantity orderables" />
+    <MESSAGE value="Add Orders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Orders" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FashionStore@CartController_REMOVE__remove.rcov" NAME="CartController REMOVE #remove Coverage Results" MODIFIED="1690007075378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />

@@ -12,5 +12,4 @@ class ApplicationController < ActionController::Base
   def cart
     @cart ||= Cart.find_or_create_by(user: current_user)
   end
-
 end

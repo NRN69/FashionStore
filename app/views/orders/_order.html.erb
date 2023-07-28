@@ -1,42 +1,46 @@
 <%= turbo_frame_tag 'order' do %>
-  <% cart_ids = [] %>
-  <% current_user.orders.order(created_at: :desc).each do |order| %>
-    <% cart_ids << order.cart_id %>
-  <% end %>
-
-  <% cart_ids.uniq.each do |cart_id|%>
     <div class="single-product">
-    <h5>Order:
-      <%= Order.where(cart_id: cart_id).first.created_at.strftime("%d-%m-%Y | %H:%M") %>
-      <span class="text-secondary mx-2"><small><%= Order.where(cart_id: cart_id).first.status %></small></span>
-    </h5><br>
+      <div id="<%="order-#{order.id}" %>">
 
-      <% Order.where(cart_id: cart_id).uniq.each do |el| %>
-
-      <div id="<%="order-#{cart_id}" %>">
+        <h5>Order #<%= order.id %>
+          <span class="text-secondary mx-2"><small><%= order.created_at.strftime("%d-%m-%Y | %H:%M") %></small></span>
+          <span><small><%= order.status %></small></span>
+        </h5><br>
         <table>
           <tr>
-            <% Product.where(id: el.product_id).each do |product| %>
-              <td><span><%= link_to image_tag(product.img, size: 100), product %></span></td>
-              <td><span><%= product.title %></span></td>
-              <td><span>Price: <%= product.price %>$</span></td>
-              <td><span>Quantity: <%= el.quantity%></span></td>
-              <td><span>Total: <%= (el.quantity * product.price).round(2) %></span></td>
-            <% end %>
-         </tr>
-       </table><br>
-      </div>
-    <% end %>
+            <th><span>Name:</span> <%= order.name %></th>
+            <th><span>Email:</span> <%= order.email %></th>
+            <th><span>Address:</span> <%= order.address %></th>
+            <th><span>Phone:</span> <%= order.phone%></th>
+            <th><span>Payment method:</span> <%= order.pay_type %></th>
+          </tr>
+        </table><br>
 
-    <div class="col-12">
-      <div class="section-title">
-        <div class="bottom">
-          <div class="button">
-            <%= link_to 'Pay', '#' ,class: 'btn animate' if Order.where(cart_id: cart_id).first.pay_type.to_i == 0 %>
+          <% order.product_id_and_quantity.each do |product_id, quantity| %>
+
+            <table>
+              <tr>
+                <% Product.where(id: product_id.to_i).each do |product| %>
+                  <td><span><%= link_to image_tag(product.img, size: 100), product %></span></td>
+                  <td><span><%= product.title %></span></td>
+                  <td><span>Price: <%= product.price %>$</span></td>
+                  <td><span>Quantity: <%= quantity%></span></td>
+                  <td><span>Total: <%= (quantity * product.price).round(2) %></span></td>
+                <% end %>
+             </tr>
+           </table><br>
+
+          <% end %>
+
+        <div class="col-12">
+          <div class="section-title">
+            <div class="bottom">
+              <div class="button">
+                <%= link_to 'Pay', '#' ,class: 'btn animate' if order.pay_type.to_i == 0 %>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   <% end %>
-<% end %>

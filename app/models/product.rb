@@ -8,7 +8,6 @@ class Product < ApplicationRecord
   has_many :related, through: :related_products
   has_many :galleries
   belongs_to :category
-  belongs_to :order
 
   has_many :orderables
   has_many :carts, through: :orderables
