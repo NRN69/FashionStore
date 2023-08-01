@@ -1,61 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/@esbuild-linux-x64-npm-0.18.17-2d9862a919-8.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/bootstrap-npm-5.3.1-9ad45c2765-f8176376aa.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/esbuild-npm-0.18.17-384f2c63dc-c6e1ffa776.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-npm-8.4.27-2a9f5f8f40-1cdd0c2988.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.64.1-d9daafa43e-e908f96f3d.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/.ready" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/bin/esbuild" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/.ready" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/bin/esbuild" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/install.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/lib/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" afterDir="false" />
+    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="Fixed Orders bugs">
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.64.2-0ae93546db-43a5c9b9b3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/avo/resources/like_resource.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/avo/likes_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/likes_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/decorators/like_decorator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/helpers/likes_helper.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/like.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/likes/_like_button.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/likes/_likes_quantity.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/likes/index.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/main/_products.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/main/_products_search.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/main/_products_trending.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230731105924_create_likes.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/decorators/like_decorator_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/helpers/likes_helper_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/like_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/requests/likes_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/views/likes/update.html.erb_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.64.1-d9daafa43e-e908f96f3d.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/avo/orders_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/orders_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/product_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/orders/_order.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_order.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/destroy.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/destroy.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_banner_area.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_banner_area.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230723050447_add_order_to_orderable.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230723050447_add_order_to_orderable.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230724064934_add_name_and_phone_to_user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230724064934_add_name_and_phone_to_user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230724091456_add_user_ref_to_orders.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230724091456_add_user_ref_to_orders.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230724095816_add_colums_to_orders.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230724111321_add_product_ref_to_orders.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230727112742_add_status_to_orders.rb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/cart_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/cart_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/orderable_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/orderable_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/decorators/user_decorator_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/decorators/user_decorator_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/models/order_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/order_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/user_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/user_controller_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -148,19 +138,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/orders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/likes" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/likes" />
       <recent name="$PROJECT_DIR$/app/views/orders" />
       <recent name="$PROJECT_DIR$/app/controllers/concerns" />
       <recent name="$PROJECT_DIR$/app/views/cart" />
       <recent name="$PROJECT_DIR$/spec/helpers" />
-      <recent name="$PROJECT_DIR$/spec/factories" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers/product" />
       <recent name="$PROJECT_DIR$/app/views/shared" />
       <recent name="$PROJECT_DIR$/app/views/shared/header" />
     </key>
@@ -494,7 +485,9 @@
       <workItem from="1690275351384" duration="13000" />
       <workItem from="1690437953491" duration="26692000" />
       <workItem from="1690525130764" duration="7292000" />
-      <workItem from="1690533056801" duration="13791000" />
+      <workItem from="1690533056801" duration="14181000" />
+      <workItem from="1690781667376" duration="23864000" />
+      <workItem from="1690874979955" duration="15680000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -573,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690465166012</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Fixed Orders bugs">
+      <created>1690547355667</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1690547355667</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +605,8 @@
     <MESSAGE value="Add Cart" />
     <MESSAGE value="Repair remove and add orderables to Cart with Turbo&#10;Add Turbo for cart icon quantity orderables" />
     <MESSAGE value="Add Orders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Orders" />
+    <MESSAGE value="Fixed Orders bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed Orders bugs" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FashionStore@CartController_REMOVE__remove.rcov" NAME="CartController REMOVE #remove Coverage Results" MODIFIED="1690007075378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />

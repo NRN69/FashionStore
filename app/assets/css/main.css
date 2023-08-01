@@ -3438,6 +3438,11 @@ top: 2px;
   display: inline-block;
 }
 
+.single-product .product-info .price button {
+    margin-left: 250%;
+    color:#FF69B4;
+}
+
 .single-product .product-info .price .discount-price {
   margin: 0;
   color: #aaaaaa;

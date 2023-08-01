@@ -6,10 +6,10 @@ require 'faker'
 
 brand_attributes = [
   {
-  title: Faker::Lorem.word,
-  bytitle: Faker::Lorem.word,
-  img: 'products/product-2.jpg',
-  description: Faker::Superhero.name
+    title: Faker::Lorem.word,
+    bytitle: Faker::Lorem.word,
+    img: 'products/product-2.jpg',
+    description: Faker::Superhero.name
   },
   {
     title: Faker::Lorem.word,
@@ -467,7 +467,5 @@ end
 
 # table users
 #
-
-
 
 # - - - - - - - -

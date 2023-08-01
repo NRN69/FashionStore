@@ -7,6 +7,7 @@ class ProductController < ApplicationController
     @product = Product.find(params[:id])
     set_page_options
   end
+
   helper_method :recent_products
   attr_accessor :product
 

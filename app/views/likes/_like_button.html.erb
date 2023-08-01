@@ -1,0 +1,19 @@
+<%= turbo_frame_tag 'likes-button', product: product do %>
+  <% if user_signed_in? %>
+    <% like = product.likes.find_by(product_id: product) %>
+    <% if like.nil? %>
+      <span>
+        <%= button_to raw("<i class=\"bi bi-heart \"></i>"), likes_url,
+                      method: :post,
+                      params: {like: { product_id: product.id }},
+                      class: 'btn' %>
+      </span>
+    <% else %>
+      <span>
+        <%= button_to raw("<i class=\"bi bi-heart-fill \"></i>"), like_path(like),
+                      method: :delete,
+                      class: 'btn'  %>
+      </span>
+    <% end %>
+  <% end %>
+<% end %>

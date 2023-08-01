@@ -1,0 +1,48 @@
+<%= turbo_frame_tag "products-trending" do %>
+  <div class="row">
+    <% @hits.hit.each do |h| %>
+      <div class="col-lg-3 col-md-4">
+        <!-- Start Single Product -->
+        <div id="<%= dom_id h %>">
+          <div class="single-product">
+            <div class="product-image">
+              <a href="product/<%= h.id %>">
+                <%= image_tag h.img %></a>
+              <div class="button">
+                <%= form_with(url: cart_add_path) do |form| %>
+                  <%= form.hidden_field :id, value: h.id %>
+                  <%= form.hidden_field :quantity, value: 1 %>
+                  <%= button_tag(type: form.submit, class: 'btn') do %>
+                    <i class="bi bi-cart"></i> Add to Cart
+                  <% end %>
+                <% end %>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="category"></span>
+              <h4 class="title">
+                <a href="product/<%= h.id %>">
+                  <%= h.title %></a>
+              </h4>
+              <ul class="review">
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star-fill"></i></li>
+                <li><i class="bi bi-star"></i></li>
+                <li><span>4.0 Review(s)</span></li>
+              </ul>
+              <div class="price">
+                <span>Price:<%= h.price %>$</span>
+
+                <%= render 'likes/like_button', product: h %>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Single Product -->
+      </div>
+    <% end %>
+  </div>
+<% end %>

@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lineicons", "npm:1.0.3"],\
             ["postcss", "npm:8.4.27"],\
             ["postcss-cli", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.1.0"],\
-            ["sass", "npm:1.64.1"]\
+            ["sass", "npm:1.64.2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -457,7 +457,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["lineicons", "npm:1.0.3"],\
             ["postcss", "npm:8.4.27"],\
             ["postcss-cli", "virtual:0460f86c7587ee75dac643681550c044e8047ba46e219a5baac054fc0fea2d0af97a9bd3fe4b22de0884797215e0a1a4368bb60f9ef7087a69c4008789f4e032#npm:10.1.0"],\
-            ["sass", "npm:1.64.1"]\
+            ["sass", "npm:1.64.2"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1878,10 +1878,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sass", [\
-        ["npm:1.64.1", {\
-          "packageLocation": "./.yarn/cache/sass-npm-1.64.1-d9daafa43e-e908f96f3d.zip/node_modules/sass/",\
+        ["npm:1.64.2", {\
+          "packageLocation": "./.yarn/cache/sass-npm-1.64.2-0ae93546db-43a5c9b9b3.zip/node_modules/sass/",\
           "packageDependencies": [\
-            ["sass", "npm:1.64.1"],\
+            ["sass", "npm:1.64.2"],\
             ["chokidar", "npm:3.5.3"],\
             ["immutable", "npm:4.3.0"],\
             ["source-map-js", "npm:1.0.2"]\

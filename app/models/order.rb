@@ -16,4 +16,14 @@ class Order < ApplicationRecord
                  'Shipped' => 2,
                  'Delivered' => 3,
                  'Reserved' => 4 }
+
+  def total(order)
+    total = []
+    order.product_id_and_quantity.each do |product_id, quantity|
+      Product.where(id: product_id.to_i).each do |product|
+        total << product.price * quantity
+      end
+    end
+    total.sum
+  end
 end
