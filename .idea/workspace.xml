@@ -1,53 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="Fixed Orders bugs">
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.64.2-0ae93546db-43a5c9b9b3.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/avo/resources/like_resource.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/avo/likes_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/likes_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/decorators/like_decorator.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/likes_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/like.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/likes/_like_button.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/likes/_likes_quantity.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/likes/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/main/_products.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/main/_products_search.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/main/_products_trending.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230731105924_create_likes.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/decorators/like_decorator_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/helpers/likes_helper_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/models/like_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/requests/likes_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/views/likes/update.html.erb_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.64.1-d9daafa43e-e908f96f3d.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/product_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/product_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/order.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/order.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/_order.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_order.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_banner_area.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_banner_area.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_top_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630143011_add_ancestry_to_categories.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/user_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/user_controller_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -487,7 +441,7 @@
       <workItem from="1690525130764" duration="7292000" />
       <workItem from="1690533056801" duration="14181000" />
       <workItem from="1690781667376" duration="23864000" />
-      <workItem from="1690874979955" duration="15680000" />
+      <workItem from="1690874979955" duration="15799000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -573,7 +527,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690547355667</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add Likes for Products">
+      <created>1690890768123</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1690890768124</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -606,7 +567,8 @@
     <MESSAGE value="Repair remove and add orderables to Cart with Turbo&#10;Add Turbo for cart icon quantity orderables" />
     <MESSAGE value="Add Orders" />
     <MESSAGE value="Fixed Orders bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed Orders bugs" />
+    <MESSAGE value="Add Likes for Products" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Likes for Products" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FashionStore@CartController_REMOVE__remove.rcov" NAME="CartController REMOVE #remove Coverage Results" MODIFIED="1690007075378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />
