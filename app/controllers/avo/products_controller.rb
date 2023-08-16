@@ -10,5 +10,12 @@ module Avo
     def authorize!
       authorize(Product)
     end
+
+    def index
+      return unless current_user
+
+      current_user.notifications.mark_as_read!
+      @notifications = current_user.notifications.reverse
+    end
   end
 end

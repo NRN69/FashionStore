@@ -8,7 +8,7 @@
         <%= @cart.quantity %> Items
       <% end %>
     </span>
-    <%= link_to 'View Cart', cart_path %>
+    <%= link_to 'View Cart', cart_path, data: {turbo_frame: '_top'} %>
 
     <% @cart.orderables.each do |orderable| %>
       <% product = orderable.product %>
@@ -17,24 +17,25 @@
             <li>
               <%= form_with(url: cart_remove_path) do |form| %>
                 <%= form.hidden_field :id, value: orderable.id %>
-                <%#= button_tag(type: form.submit, class: 'btn') do %>
-<!--                  <a href="" class="remove" title="Remove this item">-->
-<!--                    <i class="bi bi-x-lg"></i></a>-->
-                <%# end %>
+                <%= button_tag(type: form.submit, title: 'Remove this product', class: 'remove' ) do %>
+                  <i class="bi bi-x-lg"></i>
+                <% end %>
               <% end %>
               <div class="cart-img-head">
-                <a class="cart-img" href="product/<%= product.id %>">
-                  <%= image_tag product.img, class: 'img', alt: '#' %>
-                </a>
+                <%= link_to  image_tag(product.img, class: 'img', alt: '#'), product, data: {turbo_frame: '_top'}, class: 'cart-img' %>
               </div>
 
               <div class="content">
-                <h4 ><a href="product/<%= product.id %>" class="text-start"><%= product.title.capitalize %></a></h4><br>
+                <%= link_to product.title.capitalize, product, data: {turbo_frame: '_top'}, class: 'text-start' %>
+                <span>Size: <%= orderable.size %></span><br>
+
                 <%= form_with(url: cart_add_path) do |form| %>
                 <div class="quantity">
+
+                  <span>Price: <%=product.price %>$</span>
                   <%= form.hidden_field :id, value: product.id %>
-                  <%= form.number_field :quantity, value: orderable.quantity, min: 0, max: 9 %>
-                  <span> x<%=product.price %>$</span>
+                  <%= form.hidden_field :quantity, value: 1, class: 'quantity-form' %>
+
                 </div>
                 <% end %>
               </div>
@@ -48,7 +49,7 @@
         <span class="total-amount"><%= @cart.total.round(2) %>$</span>
       </div>
     <div class="button">
-      <%= button_to 'Checkout', new_order_path, class: 'btn animate'  %>
+      <%= link_to 'Checkout', new_order_path,  data: {turbo_frame: '_top'}, class: 'btn animate'  %>
     </div>
     </div>
   </div>

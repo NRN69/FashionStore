@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'likes/update'
-  get 'favorites/update'
   devise_for :users
 
   authenticate :user, ->(user) { user.admin? } do
@@ -13,7 +11,13 @@ Rails.application.routes.draw do
   post 'cart/add'
   post 'cart/remove'
 
-  resources :product
+  resources :product, only: [:show] do
+    resources :comments, only: %i[create edit destroy]
+  end
+
+  resources :comments, only: %i[create edit destroy] do
+    resources :answers, only: %i[create edit destroy]
+  end
 
   resources :category, only: [:show]
 

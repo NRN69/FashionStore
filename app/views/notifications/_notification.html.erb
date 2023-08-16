@@ -1,0 +1,7 @@
+<% if unread %>
+  <span>Unread</span>
+<% end %>
+
+<span class="text-dark"><%= user.email %></span>
+commented on
+<span><%= link_to product.title, product, data: {turbo_frame: '_top'} %></span>

@@ -7,31 +7,26 @@ require 'faker'
 brand_attributes = [
   {
     title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
     img: 'products/product-2.jpg',
     description: Faker::Superhero.name
   },
   {
     title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
     img: 'products/product-1.jpg',
     description: Faker::Superhero.name
   },
   {
     title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
     img: 'products/product-3.jpg',
     description: Faker::Superhero.name
   },
   {
     title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
     img: 'products/product-4.jpg',
     description: Faker::Superhero.name
   },
   {
     title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
     img: 'products/product-5.jpg',
     description: Faker::Superhero.name
   }
@@ -82,380 +77,299 @@ product_attributes = [
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-1.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-1.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-2.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-2.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-2.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-3.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-2.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-4.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-3.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-5.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-7.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-6.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-3.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-7.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-3.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-8.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-5.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-9.jpg'
   },
   {
     category_id: '6',
     brand_id: '1',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-2.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-10.jpg'
   },
   {
     category_id: '7',
     brand_id: '2',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-3.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-11.jpg'
   },
   {
     category_id: '7',
     brand_id: '2',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-2.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-12.jpg'
   },
   {
     category_id: '6',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-3.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-13.jpg'
   },
   {
     category_id: '6',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-1.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-14.jpg'
   },
   {
     category_id: '6',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-7.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-15.jpg'
   },
   {
     category_id: '6',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-8.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-16.jpg'
   },
   {
     category_id: '1',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-1.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-17.jpg'
   },
   {
     category_id: '2',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-2.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-18.jpg'
   },
   {
     category_id: '3',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-3.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-19.jpg'
   },
   {
     category_id: '4',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-4.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-20.jpg'
   },
   {
     category_id: '5',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-5.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-1.jpg'
   },
   {
     category_id: '8',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-6.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-2.jpg'
   },
   {
     category_id: '9',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-7.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-3.jpg'
   },
   {
     category_id: '10',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-8.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-4.jpg'
   },
   {
     category_id: '11',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-7.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-5.jpg'
   },
   {
     category_id: '12',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-6.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-6.jpg'
   },
   {
     category_id: '13',
     brand_id: '4',
-    title: Faker::Lorem.word,
-    bytitle: Faker::Lorem.word,
+    title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
-    status: 1,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence(word_count: 10),
-    img: 'products/product-5.jpg',
-    hit: 1
+    description: Faker::Lorem.sentence,
+    img: 'products/product-7.jpg'
   }
 ]
 
@@ -465,7 +379,85 @@ end
 
 # - - - - -
 
-# table users
+# # table users
+# user_attributes = [
+#   {
+#     name: 'Admin',
+#     email: 'admin@admin.com',
+#     password: 'adminadmin',
+#     password_confirmation: 'adminadmin',
+#     phone: Faker::PhoneNumber.cell_phone_in_e164,
+#     address: Faker::Address.street_address,
+#     admin: true
+#   },
+#   {
+#     name: Faker::Name.name,
+#     email: Faker::Internet.email(domain: 'gmail.com'),
+#     password: 'password',
+#     password_confirmation: 'password',
+#     phone: Faker::PhoneNumber.cell_phone_in_e164,
+#     address: Faker::Address.street_address,
+#     admin: false
+#   },
+#   {
+#     name: Faker::Name.name,
+#     email: Faker::Internet.email(domain: 'mail.ru'),
+#     password: 'password',
+#     password_confirmation: 'password',
+#     phone: Faker::PhoneNumber.cell_phone_in_e164,
+#     address: Faker::Address.street_address,
+#     admin: false
+#   },
+#   {
+#     name: Faker::Name.name,
+#     email: Faker::Internet.email(domain: 'yandex.ru'),
+#     password: 'password',
+#     password_confirmation: 'password',
+#     phone: Faker::PhoneNumber.cell_phone_in_e164,
+#     address: Faker::Address.street_address,
+#     admin: false
+#   },
+#   {
+#     name: Faker::Name.name,
+#     email: Faker::Internet.email(domain: 'hotmail.com'),
+#     password: 'password',
+#     password_confirmation: 'password',
+#     phone: Faker::PhoneNumber.cell_phone_in_e164,
+#     address: Faker::Address.street_address,
+#     admin: false
+#   },
+#   {
+#     name: Faker::Name.name,
+#     email: Faker::Internet.email(domain: 'yahoo.com'),
+#     password: 'password',
+#     password_confirmation: 'password',
+#     phone: Faker::PhoneNumber.cell_phone_in_e164,
+#     address: Faker::Address.street_address,
+#     admin: false
+#   },
+#   {
+#     name: Faker::Name.name,
+#     email: Faker::Internet.email(domain: 'youmail.com'),
+#     password: 'password',
+#     password_confirmation: 'password',
+#     phone: Faker::PhoneNumber.cell_phone_in_e164,
+#     address: Faker::Address.street_address,
+#     admin: false
+#   }
+# ]
 #
+# user_attributes.each do |attr|
+#   User.create!(attr) unless User.where(attr).first
+# end
 
 # - - - - - - - -
+
+# # table sizes
+200.times do
+  Size.create!(
+    product_id: Faker::Number.between(from: 1, to: 27),
+    size: Faker::Number.between(from: 27, to: 60)
+  )
+end
+
+# - - - - -

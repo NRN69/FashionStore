@@ -1,16 +1,15 @@
 # frozen_string_literal: true
 
 class Order < ApplicationRecord
-  has_many :orderables, dependent: :destroy
+  validates :name,        length: { minimum: 3, maximum: 10 }, presence: true
+  validates :address,     length: { minimum: 6, maximum: 50 }, presence: true
+  validates :email,       format: { with: URI::MailTo::EMAIL_REGEXP }, presence: true
+  validates :phone,       length: { minimum: 11, maximum: 12 }, presence: true
+
   belongs_to :user
+  has_many   :orderables, dependent: :destroy
 
-  validates :name, length: { minimum: 3, maximum: 10 }, presence: true
-  validates :address, length: { minimum: 6, maximum: 50 }, presence: true
-  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP }, presence: true
-  validates :phone, length: { minimum: 11, maximum: 12 }, presence: true
-
-  enum pay_type: { 'Credit card' => 0, 'Cash' => 1 }
-
+  enum       pay_type: { 'Credit card' => 0, 'Cash' => 1 }
   enum status: { 'No Payment' => 0,
                  'Payment accepted' => 1,
                  'Shipped' => 2,
@@ -19,9 +18,9 @@ class Order < ApplicationRecord
 
   def total(order)
     total = []
-    order.product_id_and_quantity.each do |product_id, quantity|
+    order.product.each do |product_id, hash|
       Product.where(id: product_id.to_i).each do |product|
-        total << product.price * quantity
+        total << product.price * hash.values.join.to_i
       end
     end
     total.sum

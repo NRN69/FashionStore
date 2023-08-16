@@ -1,0 +1,25 @@
+<% if product.sizes.nil? %>
+
+  <div class="my-4 text-secondary">
+    The product is over
+  </div>
+
+<% else %>
+
+  <div class="button my-4">
+    <%= form_with(url: cart_add_path) do |form| %>
+      <%= form.hidden_field :id, value: product.id %>
+      <%= form.hidden_field :quantity, value: 1 %>
+      <h5><span>
+      <% product.sizes.each do |size| %>
+        <%= form.label :size, "#{size.size}" %>
+        <%= form.radio_button :size, '☆' %>
+      <% end %>
+      </span></h5>
+      <%= button_tag(type: form.submit, class: 'btn') do %>
+        <i class="bi bi-cart"></i> Add to Cart
+      <% end %>
+    <% end %>
+  </div>
+
+<% end %>

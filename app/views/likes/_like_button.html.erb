@@ -1,4 +1,4 @@
-<%= turbo_frame_tag 'likes-button', product: product do %>
+<%= turbo_frame_tag 'like-button' do %>
   <% if user_signed_in? %>
     <% like = product.likes.find_by(product_id: product) %>
     <% if like.nil? %>

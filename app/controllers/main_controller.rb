@@ -2,15 +2,19 @@
 
 class MainController < ApplicationController
   before_action :set_page_options
-  attr_accessor :hits
 
   def index
-    @brands = Brand.limit(3)
-    @hits = if params[:query].present?
-              Product.where('title LIKE ?', "%#{params[:query]}%")
-            else
-              Product.all.limit(8)
-            end
+    @brands   = Brand.limit(3)
+    @products = if params[:query].present?
+                  Product.where('title LIKE ?', "%#{params[:query]}%")
+                else
+                  Product.all.limit(8)
+                end
+
+    return unless current_user
+
+    current_user.notifications.mark_as_read!
+    @notifications = current_user.notifications.reverse
   end
 
   private

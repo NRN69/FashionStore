@@ -14,3 +14,4 @@ document.addEventListener("turbo:frame-missing", (event) => {
     event.preventDefault();
     visit(response.url);
 });
+

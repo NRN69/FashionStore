@@ -1,0 +1,24 @@
+<% product.related.each do |related| %>
+  <div class="col-lg-3 col-md-4">
+    <!-- Start Single Product -->
+    <div class="single-product">
+      <div class="product-image">
+        <a href="<%= related.id %>">
+          <%= image_tag related.img %></a>
+      </div>
+      <div class="product-info">
+        <span class="category"><%= product.category.title %></span>
+        <h4 class="title">
+          <a href="<%= related.id %>">
+            <%= related.title %></a>
+        </h4>
+        <div class="price">
+                              <span> Price:
+                                <%= related.price %>$
+                              </span>
+        </div>
+      </div>
+    </div>
+    <!-- End Single Product -->
+  </div>
+<% end %>

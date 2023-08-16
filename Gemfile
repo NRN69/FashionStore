@@ -61,3 +61,5 @@ end
 
 # Use Redis for Action Cable
 gem 'redis', '~> 5.0.6'
+
+gem 'noticed', '~> 1.6'

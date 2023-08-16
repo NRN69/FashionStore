@@ -9,7 +9,16 @@
 html {
   scroll-behavior: smooth;
 }
+input[type=checkbox]
+{
+    margin-left: 0;
+}
+form input[type="checkbox"]:checked + label {
+    color: #8d8e8e;
+}
 
+label {
+padding: 8px}
 body {
   font-family: "Manrope", sans-serif;
   font-weight: 500;
@@ -894,6 +903,7 @@ ol {
   }
 }
 
+
 /* Bread Crumbs */
 .breadcrumbs {
   position: relative;
@@ -1614,7 +1624,6 @@ top: -1px;
   -ms-flex-align: center;
   align-items: center;
   padding: 25px 0;
-  border-bottom: 1px solid #eee;
 }
 
 @media (max-width: 767px) {
@@ -1934,6 +1943,19 @@ top: -1px;
   color: #081828;
 }
 
+.header .navbar-cart .cart-items .shopping-item .shopping-list li .content span {
+    margin-bottom: 5px;
+    line-height: 22px;
+    width:120%;
+    font-size: 14px;
+    font-weight: 600;
+    color: #081828;
+}
+
+header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .quantity-form {
+    margin-left: 22px;
+}
+
 @media (max-width: 767px) {
   .header .navbar-cart .cart-items .shopping-item .shopping-list li .content h4 a {
     font-size: 13px;
@@ -1975,6 +1997,14 @@ top: -1px;
 .header .navbar-cart .cart-items .shopping-item .bottom .button {
   margin-top: 10px;
   width: 100%;
+}
+
+.header .navbar-cart .cart-items .shopping-item .bottom .button a {
+  color: #ffffff
+}
+
+.header .navbar-cart .cart-items .shopping-item .bottom .button a:hover {
+  color: #212529
 }
 
 .header .navbar-cart .cart-items .shopping-item .bottom .button .btn {
@@ -2335,7 +2365,6 @@ top: -1px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-right: 1px solid #eee;
   margin-right: 40px;
   padding-right: 112px;
   cursor: pointer;
@@ -2622,7 +2651,6 @@ top: 2px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   padding: 0;
-  border-bottom: 1px solid #eee;
 }
 
 .navbar-area.sticky {
@@ -3293,9 +3321,14 @@ top: 2px;
   padding: 8px;
   background: #fff;
 }
+.single-product .order {
+    padding-left: 20px;
+    padding-top: 20px;
+}
 
 .single-product td span{
-    width: 250px;
+    padding-top: 20px;
+    width: 225px;
     font-size: 17px;
     color: #888888;
 }
@@ -3381,6 +3414,12 @@ top: 2px;
 .single-product .product-info {
   padding: 20px;
   background-color: #fff;
+}
+
+
+
+.single-product .product-info .activated {
+    color: #FF69B4;
 }
 
 .single-product .product-info .category {

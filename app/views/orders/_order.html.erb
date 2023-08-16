@@ -1,13 +1,13 @@
 <%= turbo_frame_tag 'order' do %>
   <!-- Start Orders Area -->
     <div class="single-product">
-      <div id="<%="order-#{order.id}" %>">
+      <div class="order">
 
         <h5>Order #<%= order.id %>
           <span class="text-secondary mx-2"><small><%= order.created_at.strftime("%d-%m-%Y | %H:%M") %></small></span>
           <span><small><%= order.status %></small></span>
         </h5><br>
-        <table>
+        <table class="user">
           <tr>
             <th><span>Name:</span> <%= order.name %></th>
             <th><span>Email:</span> <%= order.email %></th>
@@ -17,16 +17,17 @@
           </tr>
         </table><br>
 
-          <% order.product_id_and_quantity.each do |product_id, quantity| %>
+          <% order.product.each do |product_id, hash| %>
 
             <table>
               <tr>
                 <% Product.where(id: product_id.to_i).each do |product| %>
-                  <td><span><%= link_to image_tag(product.img, size: 100), product %></span></td>
+                  <td><span><%= link_to image_tag(product.img, size: 100), product, data: {turbo_frame: '_top'} %></span></td>
                   <td><span><%= product.title %></span></td>
+                  <td><span>Size: <%= hash.keys.join %></span></td>
                   <td><span>Price: <%= product.price %>$</span></td>
-                  <td><span>Quantity: <%= quantity%></span></td>
-                  <td><span>Total: <%= (quantity * product.price).round(2) %></span></td>
+                  <td><span>Quantity: <%= hash.values.join %>=</span></td>
+                  <td><span>Total: <%= (hash.values.join.to_i * product.price).round(2) %></span></td>
                 <% end %>
              </tr>
            </table><br>
@@ -36,8 +37,19 @@
         <div class="col-12">
           <div class="section-title">
             <div class="bottom">
+              <div class="button my-5">
+                <h2>
+                  Total: <%= order.total(order).round(2) %>$</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="section-title">
+            <div class="bottom">
               <div class="button">
-                <%= link_to 'Pay', '#' ,class: 'btn animate' if order.pay_type.to_i == 0 %>
+                <%= link_to 'Pay', '#' , data: {turbo_frame: '_top'}, class: 'btn animate' if order.pay_type.to_i == 0 %>
               </div>
             </div>
           </div>

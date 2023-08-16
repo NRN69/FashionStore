@@ -21,16 +21,16 @@ class OrdersController < ApplicationController
 
   def create
     order = current_user.orders.build order_params
-    order.product_id_and_quantity = {}
+    order.product = {}
     @cart.orderables.each do |item|
-      order.product_id_and_quantity[item.product.id] = item.quantity
+      order.product[item.product.id] = { item.size => item.quantity }
     end
 
     respond_to do |format|
       format.html do
         if order.save
           current_user.cart.destroy
-          redirect_to @order
+          redirect_to orders_path
         else
           redirect_to new_order_path
         end
@@ -47,7 +47,7 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.require(:order).permit(:name, :email, :address, :phone, :pay_type, :status, :product_id_and_quantity)
+    params.require(:order).permit(:name, :email, :address, :phone, :pay_type, :status, product: {})
   end
 
   def render_cart

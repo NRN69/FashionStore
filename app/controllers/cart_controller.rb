@@ -11,13 +11,14 @@ class CartController < ApplicationController
   def add
     @product = Product.find_by(id: params[:id])
     quantity = params[:quantity].to_i
+    size = params[:size].to_i
     current_orderable = @cart.orderables.find_by(product_id: @product.id)
     if current_orderable && quantity.positive?
-      current_orderable.update(quantity:)
+      current_orderable.update(size: size)
     elsif quantity <= 0
       current_orderable.destroy
     else
-      @cart.orderables.create(product: @product, quantity:)
+      @cart.orderables.create(product: @product, quantity: quantity, size: size)
     end
     respond_format
   end
@@ -33,35 +34,17 @@ class CartController < ApplicationController
     @page_title = 'Cart'
   end
 
-  # rubocop:disable Metrics/AbcSize
   def respond_format
     respond_to do |format|
       format.turbo_stream do
-        if @page_title == 'Cart'
-          render turbo_stream:
-                   [turbo_stream.replace('cart-show',
-                                         partial: 'cart/cart_show',
-                                         locals: { cart: @cart }),
-                    turbo_stream.replace('cart-quantity',
-                                         partial: 'cart/cart_quantity'),
-                    turbo_stream.replace(cart_path)]
-        else
-          render turbo_stream:
-                   [turbo_stream.append(
-                     request.headers['Turbo-Frame'],
-                     helpers.javascript_tag(
-                       "Turbo.visit('#{cart_url(@cart)}')",
-                       data: { turbo_temporary: true }
-                     )
-                   ),
-                    turbo_stream.replace('cart-modal',
-                                         partial: 'cart/cart_modal',
-                                         locals: { cart: @cart }),
-                    turbo_stream.replace('cart-quantity',
-                                         partial: 'cart/cart_quantity')]
-        end
+        render turbo_stream:
+                 [turbo_stream.replace('cart-show',
+                                       partial: 'cart/cart_show',
+                                       locals: { cart: @cart }),
+                  turbo_stream.replace('cart-quantity',
+                                       partial: 'cart/cart_quantity'),
+                  turbo_stream.replace(cart_path)]
       end
     end
   end
-  # rubocop:enable Metrics/AbcSize
 end

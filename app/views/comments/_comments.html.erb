@@ -1,0 +1,24 @@
+
+  <div class="single-product">
+    <h6 class="my-2">Comments:</h6><hr>
+    <% product.comments.each do |comment| %>
+      <%= render comment %><br>
+      <% if current_user.admin? %>
+        <hr>
+        <%= link_to 'Answer','#', class: 'btn btn-sm btn-primary' %>
+        <%= link_to 'Edit', edit_product_comment_path(product, comment),
+                    class: 'btn btn-sm btn-success' %>
+
+        <%= link_to 'Delete', product_comment_path(product, comment), class: 'btn btn-sm btn-danger',
+                      data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+
+      <% end %>
+      <%= render 'answers/answer', answer: comment.answer unless comment.answer.nil? %>
+      <hr>
+      <div class="single-product">
+        <p>Answer:</p><br>
+        <%= turbo_stream_from "answer_#{product}" %>
+        <%= render 'answers/form', comment: comment, answer: Answer.new %>
+      </div>
+    <% end %>
+  </div>

@@ -1,4 +1,4 @@
-<%= turbo_frame_tag 'order-new' do %>
+
   <%= simple_form_for order do |form| %>
     <%= form.input :name,     input_html: { lenght: {minimum: 3, maximum: 10}, placeholder: 'Your Name', size: 40, autocompelete: 'on' }, requaired: true %><br>
     <%= form.input :email,    input_html: { placeholder: current_user.email, autocompelete: 'on' }, requaired: true %><br>
@@ -11,4 +11,3 @@
       <% end %>
     </div>
   <% end %>
-<% end %>

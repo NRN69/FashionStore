@@ -1,6 +1,9 @@
+<%= turbo_frame_tag 'likes-quantity' do %>
   <div class="wishlist">
-    <%= link_to likes_path do %>
-      <i class="lni lni-heart"></i>
-      <span class="total-items"><%= current_user.likes.count %></span>
-    <% end %>
-  </div>
+      <%= link_to likes_url, data: {turbo_frame: '_top'} do %>
+        <i class="lni lni-heart"></i>
+        <span class="total-items">
+          <%= current_user.likes.count %></span>
+      <% end %>
+    </div>
+<% end %>

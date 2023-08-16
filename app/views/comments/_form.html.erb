@@ -1,0 +1,11 @@
+<%= simple_form_for [ product, comment ] do |form| %>
+  <% if  comment.errors.any? %>
+    <%= render 'shared/flash' %>
+  <% end %>
+    <%= form.input :body, label: false,  input_html: { lenght: {minimum: 3, maximum: 400}, placeholder: 'Your Comment', size: 40, autocompelete: 'on' } %><br>
+    <div class="button">
+      <%= button_tag(type: form.submit, class: 'btn animate') do %>
+        Sent
+      <% end %>
+    </div>
+<% end %>

@@ -22,22 +22,35 @@ class LikesController < ApplicationController
     params.require(:like).permit(:product_id)
   end
 
+  # rubocop:disable Metrics/AbcSize
+
   def respond_to_format
     respond_to do |format|
-      # format.turbo_stream do
-      #   render turbo_stream:
-      #            [turbo_stream.replace('products',
-      #                                  partial: 'main/products',
-      #                                  locals: { hits: @hits }),
-      #             turbo_stream.replace('likes-quantity',
-      #                                  partial: 'likes/likes_quantity'),
-      #             turbo_stream.replace(root_path)]
-      # end
+      format.turbo_stream do
+        # if current_page?(likes_url)
+        #   render turbo_stream:
+        #            [turbo_stream.replace('likes',
+        #                                  partial: 'likes/likes'),
+        #             turbo_stream.replace('likes-quantity',
+        #                                  partial: 'likes/likes_quantity'),
+        #             turbo_stream.replace(likes_path)]
+        # else
+          render turbo_stream:
+                   [turbo_stream.replace('products-trending',
+                                         partial: 'main/products_trending',
+                                         locals: { products: Product.all.limit(8) }),
+                    turbo_stream.replace('likes-quantity',
+                                         partial: 'likes/likes_quantity'),
+                    turbo_stream.replace(root_path)]
+        # end
+      end
       format.html do
         redirect_to root_path status: :see_other
       end
     end
   end
+
+  # rubocop:enable Metrics/AbcSize
 
   def set_page_options
     @page_title = 'Likes'

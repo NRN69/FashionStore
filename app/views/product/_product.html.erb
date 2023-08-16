@@ -1,0 +1,71 @@
+<div class="col-lg-5 col-md-4">
+
+  <%= render 'product/images_carousel', product: product %>
+
+  <%= render 'comments/comments', product: product unless product.comments.empty? || !user_signed_in? %>
+
+</div>
+
+<div class="col-lg-7 col-md-4">
+
+  <!-- Start Single Product -->
+  <div class="single-product">
+    <div class="product-info">
+      <span class="category"><%= product.category.title %></span>
+
+      <h4 class="title"><%= product.title %></h4><br>
+
+      <h5 class="description"><%= product.description %></h5><br>
+
+      <h5 class="color">Color: <%= product.color.upcase %></h5><br>
+
+
+      <% if product.sizes.nil? %>
+        <div class="my-4 text-secondary">The product is over</div>
+
+      <% else %>
+        <%= form_with(url: cart_add_path) do |form| %>
+          <%= form.hidden_field :id, value: product.id %>
+          <%= form.hidden_field :quantity, value: 1 %>
+
+          <h5 class="color">Sizes:
+          <% sizes_uniq(product).each do |size| %>
+              <%= form.radio_button :size, "#{size}", style: 'display:none;'  %>
+              <%= form.label        :size, "#{size}", data: {
+                                                            controller: 'sizes',
+                                                            option: 'false',
+                                                            action: 'click->sizes#changeclass' },
+                                                        id: 'deactivated',
+                                                     value: "#{size}",
+                                                     style:'cursor:pointer',
+                                                     class: ''  %>
+          <% end %>
+          </h5>
+
+        <div class="price"><h5>Price: <span><%= product.price.round(2) %>$</span></h5></div>
+
+        <div class="button my-4">
+          <%= button_tag(type: form.submit, class: 'btn') do %>
+            <i class="bi bi-cart"></i> Add to Cart
+          <% end %>
+        </div>
+        <% end %>
+
+      <% end %>
+
+    </div>
+  </div>
+
+  <% if user_signed_in? && !comment_created?(product, current_user) %>
+    <div class="single-product">
+
+      <p>Comment:</p><br>
+
+      <%= render 'comments/form', product: product, comment: Comment.new %>
+
+    </div>
+  <% end %>
+  <!-- End Single Product -->
+
+</div>
+
