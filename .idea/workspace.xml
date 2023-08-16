@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="Add sizes, comments for Product" />
+    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@esbuild-linux-x64-npm-0.19.2-1d636fb5d8-8.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/@hotwired-stimulus-npm-3.2.2-e1e064f1fe-e0c13469df.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/autoprefixer-npm-10.4.15-f16a1e775d-d490b14fb0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/browserslist-npm-4.21.10-e2170a875b-1e27c0f111.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/caniuse-lite-npm-1.0.30001521-dc986950b0-be2a2b2cd3.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/electron-to-chromium-npm-1.4.492-4f27848854-39ae22dd65.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/esbuild-npm-0.19.2-84addf679d-f9ad8ad4f0.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/node-releases-npm-2.0.13-1f2e177887-17ec8f315d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/postcss-npm-8.4.28-ce7cf45f10-f605c24a36.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.65.1-d6fc30b338-33e325fc80.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/cache/update-browserslist-db-npm-1.0.11-2c8e64258f-b98327518f.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.19.2-1d636fb5d8/node_modules/@esbuild/linux-x64/.ready" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.19.2-1d636fb5d8/node_modules/@esbuild/linux-x64/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.19.2-1d636fb5d8/node_modules/@esbuild/linux-x64/bin/esbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.19.2-1d636fb5d8/node_modules/@esbuild/linux-x64/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/.ready" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/bin/esbuild" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/install.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/lib/main.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/lib/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.19.2-84addf679d/node_modules/esbuild/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/main/_products_sort.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@esbuild-linux-x64-npm-0.18.17-2d9862a919-8.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/@hotwired-stimulus-npm-3.2.1-3f55e71bcc-2617b10fb3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/autoprefixer-npm-10.4.14-1e0b8c34fb-e9f18e664a.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/browserslist-npm-4.21.5-e3b9e9d029-9755986b22.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/caniuse-lite-npm-1.0.30001473-956b0afe61-007ad17463.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/electron-to-chromium-npm-1.4.347-5da2a109d1-87b60c906d.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/esbuild-npm-0.18.17-384f2c63dc-c6e1ffa776.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/node-releases-npm-2.0.10-f8e2d9a776-d784ecde25.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/postcss-npm-8.4.27-2a9f5f8f40-1cdd0c2988.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.64.2-0ae93546db-43a5c9b9b3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/update-browserslist-db-npm-1.0.10-676baf0b9f-12db73b4f6.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/.ready" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/bin/esbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/@esbuild-linux-x64-npm-0.18.17-2d9862a919/node_modules/@esbuild/linux-x64/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/.ready" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/bin/esbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/install.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/lib/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/lib/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/esbuild-npm-0.18.17-384f2c63dc/node_modules/esbuild/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/product_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/product_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/_products_trending.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/_products_trending.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -489,7 +550,7 @@
       <workItem from="1691775479732" duration="14885000" />
       <workItem from="1692081274934" duration="18450000" />
       <workItem from="1692121909211" duration="6785000" />
-      <workItem from="1692165691525" duration="10726000" />
+      <workItem from="1692165691525" duration="25753000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -596,7 +657,21 @@
       <option name="project" value="LOCAL" />
       <updated>1692176126335</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Add sizes, comments for Product">
+      <created>1692176458455</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1692176458455</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Add sizes, comments for Product">
+      <created>1692176498743</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1692176498743</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
