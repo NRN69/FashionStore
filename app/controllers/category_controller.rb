@@ -3,6 +3,7 @@
 class CategoryController < ApplicationController
   def show
     @category = Category.find(params[:id])
+    @products = @category.products.order(params[:sort]).page params[:page]
     set_page_options
   end
   attr_accessor :category

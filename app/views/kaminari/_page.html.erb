@@ -1,0 +1,23 @@
+<%# Link showing page number
+  - available local variables
+    page:          a page object for "this" page
+    url:           url to this page
+    current_page:  a page object for the currently displayed page
+    total_pages:   total number of pages
+    per_page:      number of items to fetch per page
+    remote:        data-remote
+-%>
+<div class="pagination-number <%= 'pagination-active' if page.current? %>">
+  <% if page.current? %>
+    <%= tag.span page, class: 'pagination-number' %>
+  <% else %>
+    <%= link_to page, url,
+                remote: remote,
+                rel: page.rel,
+                class: 'pagination-number'%>
+  <% end %>
+</div>
+<svg class="hide">
+  <symbol id="left" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></symbol>
+  <symbol id="right" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></symbol>
+</svg>

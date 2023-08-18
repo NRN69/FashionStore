@@ -13,7 +13,7 @@
                       data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
 
       <% end %>
-      <%= render 'answers/answer', answer: comment.answer unless comment.answer.nil? %>
+      <%= render 'answers/answer', answer: comment.answer if comment.answer %>
       <hr>
       <div class="single-product">
         <p>Answer:</p><br>

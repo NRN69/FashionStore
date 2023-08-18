@@ -8,7 +8,7 @@ class MainController < ApplicationController
     @products = if params[:query].present?
                   Product.where('title LIKE ?', "%#{params[:query]}%")
                 else
-                  Product.order(params[:sort]).limit(8)
+                  Product.all.limit(8)
                 end
 
     return unless current_user

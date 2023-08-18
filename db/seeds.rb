@@ -75,7 +75,7 @@ autumn3 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn'
 # table products
 product_attributes = [
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -86,7 +86,7 @@ product_attributes = [
     img: 'products/product-1.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -97,7 +97,7 @@ product_attributes = [
     img: 'products/product-2.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -108,7 +108,7 @@ product_attributes = [
     img: 'products/product-3.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -119,7 +119,7 @@ product_attributes = [
     img: 'products/product-4.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -130,7 +130,7 @@ product_attributes = [
     img: 'products/product-5.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -141,7 +141,7 @@ product_attributes = [
     img: 'products/product-6.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -152,7 +152,7 @@ product_attributes = [
     img: 'products/product-7.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -163,7 +163,7 @@ product_attributes = [
     img: 'products/product-8.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -174,7 +174,7 @@ product_attributes = [
     img: 'products/product-9.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '1',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -185,7 +185,7 @@ product_attributes = [
     img: 'products/product-10.jpg'
   },
   {
-    category_id: '7',
+    category_id: '2',
     brand_id: '2',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -196,7 +196,7 @@ product_attributes = [
     img: 'products/product-11.jpg'
   },
   {
-    category_id: '7',
+    category_id: '3',
     brand_id: '2',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -207,7 +207,7 @@ product_attributes = [
     img: 'products/product-12.jpg'
   },
   {
-    category_id: '6',
+    category_id: '4',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -218,7 +218,7 @@ product_attributes = [
     img: 'products/product-13.jpg'
   },
   {
-    category_id: '6',
+    category_id: '5',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -229,7 +229,7 @@ product_attributes = [
     img: 'products/product-14.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -240,7 +240,7 @@ product_attributes = [
     img: 'products/product-15.jpg'
   },
   {
-    category_id: '6',
+    category_id: '1',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -251,7 +251,7 @@ product_attributes = [
     img: 'products/product-16.jpg'
   },
   {
-    category_id: '1',
+    category_id: '6',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -306,7 +306,7 @@ product_attributes = [
     img: 'products/product-1.jpg'
   },
   {
-    category_id: '8',
+    category_id: '1',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -317,7 +317,7 @@ product_attributes = [
     img: 'products/product-2.jpg'
   },
   {
-    category_id: '9',
+    category_id: '1',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -328,7 +328,7 @@ product_attributes = [
     img: 'products/product-3.jpg'
   },
   {
-    category_id: '10',
+    category_id: '1',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -339,7 +339,7 @@ product_attributes = [
     img: 'products/product-4.jpg'
   },
   {
-    category_id: '11',
+    category_id: '1',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -350,7 +350,7 @@ product_attributes = [
     img: 'products/product-5.jpg'
   },
   {
-    category_id: '12',
+    category_id: '11',
     brand_id: '4',
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
@@ -384,64 +384,50 @@ end
 #   {
 #     name: 'Admin',
 #     email: 'admin@admin.com',
-#     password: 'adminadmin',
-#     password_confirmation: 'adminadmin',
+#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
 #     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     address: Faker::Address.street_address,
 #     admin: true
 #   },
 #   {
 #     name: Faker::Name.name,
 #     email: Faker::Internet.email(domain: 'gmail.com'),
-#     password: 'password',
-#     password_confirmation: 'password',
+#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
 #     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     address: Faker::Address.street_address,
 #     admin: false
 #   },
 #   {
 #     name: Faker::Name.name,
 #     email: Faker::Internet.email(domain: 'mail.ru'),
-#     password: 'password',
-#     password_confirmation: 'password',
+#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
 #     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     address: Faker::Address.street_address,
 #     admin: false
 #   },
 #   {
 #     name: Faker::Name.name,
 #     email: Faker::Internet.email(domain: 'yandex.ru'),
-#     password: 'password',
-#     password_confirmation: 'password',
+#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
 #     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     address: Faker::Address.street_address,
 #     admin: false
 #   },
 #   {
 #     name: Faker::Name.name,
 #     email: Faker::Internet.email(domain: 'hotmail.com'),
-#     password: 'password',
-#     password_confirmation: 'password',
+#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
 #     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     address: Faker::Address.street_address,
 #     admin: false
 #   },
 #   {
 #     name: Faker::Name.name,
 #     email: Faker::Internet.email(domain: 'yahoo.com'),
-#     password: 'password',
-#     password_confirmation: 'password',
+#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
 #     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     address: Faker::Address.street_address,
 #     admin: false
 #   },
 #   {
 #     name: Faker::Name.name,
 #     email: Faker::Internet.email(domain: 'youmail.com'),
-#     password: 'password',
-#     password_confirmation: 'password',
+#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
 #     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     address: Faker::Address.street_address,
 #     admin: false
 #   }
 # ]

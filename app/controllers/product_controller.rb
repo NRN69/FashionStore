@@ -24,7 +24,7 @@ class ProductController < ApplicationController
 
   def register_visit
     session[:viewed_products] ||= []
-    session[:viewed_products] = ([@product.id] + session[:viewed_products]).uniq.take(4)
+    session[:viewed_products] = ([product.id] + session[:viewed_products]).uniq.take(4)
   end
 
   def set_page_options

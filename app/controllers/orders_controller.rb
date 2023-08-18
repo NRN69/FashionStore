@@ -47,7 +47,7 @@ class OrdersController < ApplicationController
   end
 
   def order_params
-    params.require(:order).permit(:name, :email, :address, :phone, :pay_type, :status, product: {})
+    params.require(:order).permit(:name, :email, :address, :phone, :pay_type)
   end
 
   def render_cart

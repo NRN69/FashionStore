@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col">
+      <%= paginator.render do -%>
+        <div class="pagination-container text-center">
+          <%= prev_page_tag unless current_page.first? %>
+          <% each_page do |page| -%>
+            <% if page.display_tag? -%>
+              <%= page_tag page %>
+            <% elsif !page.was_truncated? -%>
+              <%= gap_tag %>
+            <% end -%>
+          <% end -%>
+          <% unless current_page.out_of_range? %>
+            <%= next_page_tag unless current_page.last? %>
+          <% end %>
+        </div>
+      <% end -%>
+    </div>
+  </div>
+</div>
