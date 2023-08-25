@@ -3,6 +3,6 @@
 module CommentsHelper
 
   def comment_created?(product, user)
-    Comment.where("#{product.id} = #{params[:product_id]} AND #{user.id} = #{params[:user_id]}").nil?
+    product.comments.find_by(product_id: product.id) && product.comments.find_by(user_id: user.id)
   end
 end

@@ -2,49 +2,92 @@
 
 class AnswersController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_answer!, only: %i[destroy edit update]
+  before_action :set_comment!
+  before_action :set_product!, only: %i[destroy edit update]
+
 
   def create
-    @comment = Comment.find(params[:comment_id])
-    @answer = @comment.answers.create(answer_params)
+    @answer = @comment.answers.build answer_create_params
     @answer.user = current_user
-    @answer.save
-    redirect_to product_path(@product)
+    respond_to do |format|
+      if @answer.save
+
+        format.turbo_stream
+        format.html do
+          redirect_to product_path(@product), status: :see_other
+        end
+      else
+        flash_errors_messages(@answer)
+        format.turbo_stream do
+          render turbo_stream: [turbo_stream.update('flash', partial: 'shared/flash')]
+        end
+      end
+    end
   end
 
   def update
-    if @comment.update comment_params
-      respond_format
-    else
-      render :edit
+    respond_to do |format|
+      if @answer.update answer_update_params
+        format.turbo_stream
+      else
+        flash_errors_messages(@answer)
+        format.turbo_stream do
+          render turbo_stream: [turbo_stream.replace('comments',
+                                                     partial: 'comments/comments',
+                                                     locals: { product: @product }),
+                                turbo_stream.update('flash',
+                                                    partial: 'shared/flash')]
+        end
+      end
+      format.html do
+        redirect_to product_path(@product), status: :see_other
+      end
     end
   end
 
   def destroy
-    @answer.destroy
-    respond_format
-  end
-
-  private
-
-  def respond_format
     respond_to do |format|
-      format.html do
-        redirect_to product_path(@product), status: :see_other
-      end
-
-      format.turbo_stream do
-        render turbo_stream:[turbo_stream.replace('comment',
-                                                  partial: 'comments/comment',
-                                                  locals: { comment: }),
-                 turbo_stream.replace('answer',
-                                       partial: 'answers/answer',
-                                       locals: { answer: @comment.answer }),
-                  turbo_stream.replace(product_path)]
+      if @answer.destroy
+        format.turbo_stream
+      else
+        format.turbo_stream do
+          render turbo_stream: [turbo_stream.replace('comments',
+                                                     partial: 'comments/comments',
+                                                     locals: { product: @product }),
+                                turbo_stream.update('flash',
+                                                    partial: 'shared/flash')]
+        end
+        format.html do
+          redirect_to product_path(@product), status: :see_other
+        end
       end
     end
   end
 
-  def answer_params
+  private
+
+  def answer_create_params
+    params.require(:answer).permit(:body).merge(user: current_user)
+  end
+
+  def answer_update_params
     params.require(:answer).permit(:body)
+  end
+
+  def set_answer!
+    @answer = Answer.find(params[:id])
+  end
+
+  def set_comment!
+    @comment = Comment.find(params[:comment_id])
+  end
+
+  def set_product!
+    @product = @answer.comment.product
+  end
+
+  def flash_errors_messages(object)
+    object.errors.messages.each_value { |msg| flash[:danger] = "#{object.class} #{msg.join(', ')}" }
   end
 end

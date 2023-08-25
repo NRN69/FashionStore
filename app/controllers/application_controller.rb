@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
   def cart
     @cart ||= Cart.find_or_create_by(user: current_user)
   end
+
+  def current_url(url)
+    @current_url = url
+  end
 end

@@ -1,4 +1,4 @@
-<%= turbo_frame_tag "products-trending" do %>
+<%= turbo_frame_tag 'products-trending' do %>
   <div class="row">
 
     <% if products.empty? %>
@@ -22,19 +22,14 @@
                 <%= link_to product.title, product, data: {turbo_frame: '_top'} %>
               </h4>
 
-              <ul class="review">
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star"></i></li>
-                <li><span>4.0 Review(s)</span></li>
-              </ul>
+           <%= render 'product/review' %>
 
               <div class="price">
                 <span>Price:<%= product.price %>$</span>
 
-                <%= render 'likes/like_button', product: product %>
+
+
+                <%= render 'likes/like_button', product: product, target: 'Products-trending' %>
 
               </div>
             </div>

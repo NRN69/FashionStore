@@ -15,6 +15,7 @@ class MainController < ApplicationController
 
     current_user.notifications.mark_as_read!
     @notifications = current_user.notifications.reverse
+    current_url(controller_name)
   end
 
   private
@@ -24,4 +25,6 @@ class MainController < ApplicationController
     @page_description = 'Woman Wears'
     @page_keywords = 'Dresses Shirts and More'
   end
+
+
 end

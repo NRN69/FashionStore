@@ -17,10 +17,13 @@ class CartController < ApplicationController
       current_orderable.update(size: size)
     elsif quantity <= 0
       current_orderable.destroy
+    elsif size.zero? || size.nil?
+      flash[:danger] = 'Size not selected!'
+      redirect_to product_path(@product), status: :see_other
     else
       @cart.orderables.create(product: @product, quantity: quantity, size: size)
+      respond_format
     end
-    respond_format
   end
 
   def remove

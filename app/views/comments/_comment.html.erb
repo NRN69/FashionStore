@@ -1,5 +1,26 @@
 <%= turbo_frame_tag comment do %>
-  <span><%= comment.user.name %></span>
-  <br><br>
-  <%= comment.body %>
+  <div class="single-product">
+    <div class="avatar small">
+      <span class="text-dark"><%= image_tag current_user.user_avatar, size: 40, class: 'me-1' %> <%= comment.user.name %></span></div>
+    <br><br>
+    <div class="comment"><%= sanitize comment.body %></div>
+    <% if current_user.admin? %>
+      <hr>
+      <%= link_to 'Answer', new_comment_answer_path(comment, Answer.new),
+                  class: 'btn btn-sm btn-primary', data: { turbo_frame: dom_id(Answer.new)} if comment.answers.empty? %>
+
+      <%= link_to 'Edit', edit_product_comment_path(product, comment),
+                  class: 'btn btn-sm btn-success' %>
+
+      <%= link_to 'Delete', product_comment_path(product, comment), class: 'btn btn-sm btn-danger',
+                  data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+
+    <% end %>
+    <%= turbo_stream_from "answers_#{dom_id(comment)}" %>
+    <%= turbo_frame_tag 'answers' do %>
+      <%= render 'answers/answers', answers: comment.answers, comment: comment if comment.answers && user_signed_in? %>
+    <% end %>
+
+    <%= turbo_frame_tag Answer.new %>
+  </div>
 <% end %>

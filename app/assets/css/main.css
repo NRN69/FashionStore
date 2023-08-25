@@ -904,6 +904,30 @@ ol {
 }
 
 
+/* Avatar */
+.avatar {
+    padding: 7px 7px;
+}
+.avatar img {
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #FF69B4;
+    border-width: 2px;
+}
+.small img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #FF69B4;
+    border-width: 2px;
+}
+
+.large img {
+    width: 100px;
+    height: 100px;
+}
+
 /* Bread Crumbs */
 .breadcrumbs {
   position: relative;
@@ -1288,10 +1312,9 @@ top: -1px;
 
 .button .btn {
   display: inline-block;
-  text-transform: capitalize;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
-  padding: 13px 30px;
+  padding: 9px 22px;
   background-color: #FF69B4;
   color: #FFF;
   border-color: #FF69B4;
@@ -1304,9 +1327,13 @@ top: -1px;
   overflow: hidden;
 }
 
+.button .btn i {
+    font-size: 20px;
+
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .button .btn {
-    padding: 12px 25px;
+    padding: 9px 22px;
     font-size: 14px;
     font-weight: 500;
   }
@@ -1314,7 +1341,7 @@ top: -1px;
 
 @media (max-width: 767px) {
   .button .btn {
-    padding: 12px 25px;
+    padding: 9px 22px;
     font-size: 14px;
     font-weight: 500;
   }
@@ -1330,8 +1357,9 @@ top: -1px;
 }
 
 .button .btn:hover {
-  color: #081828;
-  background-color: #FF69B4;
+  color: #fff;
+  border-color: #081828;
+  background-color: #081828;
   -webkit-box-shadow: 0px 4px 4px #0000000f;
   box-shadow: 0px 4px 4px #0000000f;
 }
@@ -1343,7 +1371,7 @@ top: -1px;
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .button .btn-alt {
-    padding: 12px 25px;
+    padding: 9px 22px;
     font-size: 14px;
     font-weight: 500;
   }
@@ -1351,7 +1379,7 @@ top: -1px;
 
 @media (max-width: 767px) {
   .button .btn-alt {
-    padding: 12px 25px;
+    padding: 9px 22px;
     font-size: 14px;
     font-weight: 500;
   }
@@ -2004,7 +2032,7 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
 }
 
 .header .navbar-cart .cart-items .shopping-item .bottom .button a:hover {
-  color: #212529
+  color: #ffffff
 }
 
 .header .navbar-cart .cart-items .shopping-item .bottom .button .btn {

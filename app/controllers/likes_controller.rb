@@ -5,7 +5,7 @@ class LikesController < ApplicationController
   attr_accessor :hits
 
   def create
-    @like = current_user.likes.new(like_params)
+    @like = current_user.likes.new(product_id: like_params[:product_id])
     @like.save
     respond_to_format
   end
@@ -16,10 +16,14 @@ class LikesController < ApplicationController
     respond_to_format
   end
 
+  def index
+    current_url(controller_name)
+  end
+
   private
 
   def like_params
-    params.require(:like).permit(:product_id)
+    params.require(:like).permit(:product_id, :target)
   end
 
   # rubocop:disable Metrics/AbcSize
@@ -27,22 +31,21 @@ class LikesController < ApplicationController
   def respond_to_format
     respond_to do |format|
       format.turbo_stream do
-        # if current_page?(likes_url)
-        #   render turbo_stream:
-        #            [turbo_stream.replace('likes',
-        #                                  partial: 'likes/likes'),
-        #             turbo_stream.replace('likes-quantity',
-        #                                  partial: 'likes/likes_quantity'),
-        #             turbo_stream.replace(likes_path)]
-        # else
+        if like_params[:target] == 'Likes'
+          render turbo_stream:
+                   [turbo_stream.replace('likes',
+                                         partial: 'likes/likes'),
+                    turbo_stream.replace('likes-quantity',
+                                         partial: 'likes/likes_quantity')]
+
+        else
           render turbo_stream:
                    [turbo_stream.replace('products-trending',
                                          partial: 'main/products_trending',
                                          locals: { products: Product.all.limit(8) }),
                     turbo_stream.replace('likes-quantity',
-                                         partial: 'likes/likes_quantity'),
-                    turbo_stream.replace(root_path)]
-        # end
+                                         partial: 'likes/likes_quantity')]
+        end
       end
       format.html do
         redirect_to root_path status: :see_other

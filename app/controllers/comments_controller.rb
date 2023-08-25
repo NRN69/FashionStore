@@ -2,47 +2,95 @@
 
 class CommentsController < ApplicationController
   before_action :authenticate_user!
+  before_action :set_comment!, only: %i[destroy edit update]
+  before_action :set_product!
 
   def create
-    @product = Product.find(params[:product_id])
-    @comment = @product.comments.create(comment_params)
+    @comment = @product.comments.build comment_create_params
     @comment.user = current_user
-    @comment.save
-    redirect_to product_path(@product)
-  end
+    respond_to do |format|
 
-  def update
-    if @comment.update comment_params
-      respond_format
-    else
-      render :edit
+      if @comment.save
+
+        format.turbo_stream
+
+        format.html do
+          redirect_to product_path(@product), status: :see_other
+        end
+
+      else
+        flash_errors_messages(@comment)
+        format.turbo_stream do
+          render turbo_stream: [turbo_stream.replace(Comment.new,
+                                                     partial: 'comments/new',
+                                                     locals: { product: @product, comment: Comment.new }),
+                                turbo_stream.update('flash',
+                                                    partial: 'shared/flash')]
+        end
+      end
     end
   end
 
+  def update
+    respond_to do |format|
+      if @comment.update comment_update_params
+        format.turbo_stream
+      else
+        flash_errors_messages(@comment)
+        format.turbo_stream do
+          render turbo_stream: [turbo_stream.replace('comments',
+                                                     partial: 'comments/comments',
+                                                     locals: { product: @product }),
+                                turbo_stream.update('flash',
+                                                    partial: 'shared/flash')]
+        end
+      end
+      format.html do
+        redirect_to product_path(@product), status: :see_other
+      end
+    end
+  end
+
+  def new; end
+
+  def edit; end
+
   def destroy
-    @answer.destroy
-    respond_format
+    respond_to do |format|
+      if @comment.destroy
+        format.turbo_stream
+      else
+        format.turbo_stream do
+          render turbo_stream: turbo_stream.replace('comments',
+                                                    partial: 'comments/comments',
+                                                    locals: { product: @product })
+        end
+        format.html do
+          redirect_to product_path(@product), status: :see_other
+        end
+      end
+    end
   end
 
   private
 
-  def comment_params
+  def comment_create_params
+    params.require(:comment).permit(:body).merge(user: current_user)
+  end
+
+  def comment_update_params
     params.require(:comment).permit(:body)
   end
 
-  def respond_format
-    respond_to do |format|
-      format.html do
-        redirect_to product_path(@product), status: :see_other
-      end
+  def set_comment!
+    @comment = Comment.find(params[:id])
+  end
 
-      format.turbo_stream do
-        render turbo_stream:
-                 [turbo_stream.replace('comment',
-                                       partial: 'comments/comment',
-                                       locals: { comment: }),
-                  turbo_stream.replace(product_path)]
-      end
-    end
+  def set_product!
+    @product = Product.find(params[:product_id])
+  end
+
+  def flash_errors_messages(object)
+    object.errors.messages.each_value { |msg| flash[:danger] = "#{object.class} #{msg.join(', ')}" }
   end
 end

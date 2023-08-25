@@ -3,5 +3,7 @@
 <% end %>
 
 <span class="text-dark"><%= user.email %></span>
-commented on
+replied to
 <span><%= link_to product.title, product, data: {turbo_frame: '_top'} %></span>
+comment
+<span><%= comment.body.truncate(27, separator:'') %></span>

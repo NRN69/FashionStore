@@ -24,11 +24,15 @@ class AnswerNotification < Noticed::Base
   end
 
   def creator
-    comment.user
+    answer.user
   end
 
   def product
-    comment.product
+    answer.comment.product
+  end
+
+  def comment
+    answer.comment
   end
 
   def url

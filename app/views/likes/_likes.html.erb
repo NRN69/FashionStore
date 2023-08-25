@@ -1,4 +1,4 @@
-<%= turbo_frame_tag 'likes' do %>
+<%= turbo_frame_tag 'likes', scr: "#{request.path}", loading: :lazy do %>
   <div class="row">
     <div class="col-12">
       <div class="section-title">
@@ -6,41 +6,37 @@
       </div>
     </div>
   <% current_user.likes.each do |like| %>
-    <% Product.where(id: like.product_id.to_i).each do |product| %>
-      <div class="col-lg-3 col-md-4">
+    <% product = like.product %>
 
-        <!-- Start Single Product -->
+    <div class="col-lg-3 col-md-4">
 
-          <div class="single-product">
-            <div class="product-image">
-              <%= link_to image_tag(product.img), product, data: {turbo_frame: '_top'} %>
-            </div>
-            <div class="product-info">
-              <span class="category"></span>
-              <h4 class="title">
-                <%= link_to product.title, product, data: {turbo_frame: '_top'} %>
-              </h4>
-              <ul class="review">
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star-fill"></i></li>
-                <li><i class="bi bi-star"></i></li>
-                <li><span>4.0 Review(s)</span></li>
-              </ul>
-              <div class="price">
-                <span>Price:<%= product.price %>$</span>
+      <!-- Start Single Product -->
+      <%= turbo_frame_tag like do %>
+        <div class="single-product">
+          <div class="product-image">
+            <%= link_to image_tag(product.img), product, data: {turbo_frame: '_top'} %>
+          </div>
+          <div class="product-info">
+            <span class="category"></span>
+            <h4 class="title">
+              <%= link_to product.title, product, data: {turbo_frame: '_top'} %>
+            </h4>
 
-                <%= render 'likes/like_button', product: product %>
+            <%= render 'product/review' %>
 
-              </div>
+            <div class="price">
+              <span>Price:<%= product.price %>$</span>
+
+
+              <%= render 'likes/like_button', product: product, target: 'Likes' %>
+
             </div>
           </div>
+        </div>
+      <% end %>
+      <!-- End Single Product -->
 
-        <!-- End Single Product -->
-
-      </div>
-    <% end %>
+    </div>
   <% end %>
  </div>
 <% end %>

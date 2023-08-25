@@ -18,6 +18,7 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+
   </head>
 
   <body>
@@ -30,16 +31,10 @@
 
     </header>
 
-    <div id="flash">
-
-      <%= render 'shared/flash' %>
-
-    </div>
-
-
+    <%= render 'shared/notifications' %>
 
     <%= render 'shared/carousel' %>
-
+    <% @current_url = request.path %>
     <%= yield %>
 
     <%= render 'shared/social' %>
@@ -52,4 +47,6 @@
     </a>
 
   </body>
+
+
 </html>

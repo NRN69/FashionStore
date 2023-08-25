@@ -5,40 +5,35 @@
       <h2 class="text-center text-secondary"> No Products</h2>
     <% else %>
 
-      <% products.each do |product| %>
-        <div class="col-lg-3 col-md-4">
+      <% @products.each do |product| %>
 
-          <!-- Start Single Product -->
+          <div class="col-lg-3 col-md-4">
+            <%= turbo_frame_tag product, loading: :lazy do %>
+            <!-- Start Single Product -->
 
-            <div class="single-product">
-              <div class="product-image">
-                <%= link_to image_tag(product.img), product, data: {turbo_frame: '_top'} %>
-              </div>
-              <div class="product-info">
-                <span class="category"></span>
-                <h4 class="title">
-                  <%= link_to product.title, product, data: {turbo_frame: '_top'} %>
-                </h4>
-                <ul class="review">
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star-fill"></i></li>
-                  <li><i class="bi bi-star"></i></li>
-                  <li><span>4.0 Review(s)</span></li>
-                </ul>
-                <div class="price">
-                  <span>Price: <%= product.price %>$</span>
+              <div class="single-product">
+                <div class="product-image">
+                  <%= link_to image_tag(product.img), product, data: {turbo_frame: '_top'} %>
+                </div>
+                <div class="product-info">
+                  <span class="category"></span>
+                  <h4 class="title">
+                    <%= link_to product.title, product, data: {turbo_frame: '_top'} %>
+                  </h4>
 
-                  <%= render 'likes/like_button', product: product %>
+                  <%= render 'product/review' %>
 
+                  <div class="price">
+                    <span>Price: <%= product.price %>$</span>
+
+                  </div>
                 </div>
               </div>
-            </div>
 
-          <!-- End Single Product -->
+            <!-- End Single Product -->
+            <% end %>
+          </div>
 
-        </div>
       <% end %>
 
     <% end %>

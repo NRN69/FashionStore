@@ -4,6 +4,14 @@
   <%= f.error_notification %>
 
   <div class="form-inputs">
+    <div class=" avatar large">
+    <% if resource.avatar.attached? %>
+      <%= image_tag resource.avatar %>
+    <% else %>
+      <%= image_tag 'default_avatar.png' %>
+      <%= f.input :avatar %>
+    <% end %>
+  </div>
     <%= f.input :name, required: false, input_html: { autocomplete: "name"}, autofocus: true %>
 
     <%= f.input :email, required: false, autofocus: true %>
@@ -22,6 +30,7 @@
                 required: false,
                 input_html: { autocomplete: "current-password" } %>
     <%= f.input :phone, input_html: { autocomplete: "+71111111111"}, required: false, autofocus: true %>
+<br>
   </div>
 
   <div class="button">

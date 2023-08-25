@@ -10,8 +10,6 @@
 
         <%= render 'product/product', product: @product %>
 
-
-
       </div>
   </div>
 
@@ -19,7 +17,7 @@
 <!-- End Trending Product Area -->
 
 <!-- Start Recent Products Area -->
-<% if recent_products.any? %>
+<% if recent_products %>
   <section class="banner section">
     <div class="container">
       <div class="row">
@@ -40,7 +38,7 @@
 <!-- End Recent Products Area -->
 
 <!-- Start Related Products Area -->
-<% unless @product.related.nil? %>
+<% if @product.related %>
   <!-- Start Related Products Area -->
   <section class="banner section">
       <div class="container">

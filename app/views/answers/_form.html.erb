@@ -1,12 +1,14 @@
-<%= simple_form_for [comment, answer] do |form| %>
-  <% if  answer.errors.any? %>
-    <%= render 'shared/flash' %>
-  <% end %>
+<%= turbo_frame_tag answer do %>
+  <%= simple_form_for [comment, answer] do |form| %>
+    <% if  answer.errors.any? %>
+      <%= render 'shared/flash' %>
+    <% end %>
 
-    <%= form.input :body, label: false,  input_html: { lenght: {minimum: 3, maximum: 400}, placeholder: 'Your Answer', size: 40, autocompelete: 'on' } %><br>
-    <div class="button">
-      <%= button_tag(type: form.submit, class: 'btn animate') do %>
-        Sent
-      <% end %>
-    </div>
+      <%= form.input :body, label: false,  input_html: { lenght: {minimum: 3, maximum: 400}, placeholder: 'Your Answer', size: 40, autocompelete: 'on' } %><br>
+      <div class="button">
+        <%= button_tag(type: form.submit, class: 'btn animate') do %>
+          Sent
+        <% end %>
+      </div>
+  <% end %>
 <% end %>

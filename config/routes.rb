@@ -1,7 +1,10 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
 
   authenticate :user, ->(user) { user.admin? } do
     mount Avo::Engine, at: Avo.configuration.root_path
@@ -12,11 +15,11 @@ Rails.application.routes.draw do
   post 'cart/remove'
 
   resources :product, only: [:show] do
-    resources :comments, only: %i[create edit destroy]
+    resources :comments, except: %i[index show]
   end
 
-  resources :comments, only: %i[create edit destroy] do
-    resources :answers, only: %i[create edit destroy]
+  resources :comments, except: %i[index show] do
+    resources :answers, except: %i[index show]
   end
 
   resources :category, only: [:show]

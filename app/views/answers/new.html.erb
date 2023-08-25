@@ -1,0 +1,6 @@
+<%= turbo_frame_tag Answer.new do %>
+  <div class="single-product">
+    <p>Answer:</p><br>
+      <%= render 'answers/form', comment: @comment, answer: Answer.new unless @comment.answers && !current_user.admin? %>
+  </div>
+<% end %>

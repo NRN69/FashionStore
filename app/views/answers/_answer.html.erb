@@ -1,5 +1,17 @@
 <%= turbo_frame_tag answer do %>
-  <span><%= answer.user.name %></span>
-  <br><br>
-  <%= answer.body %>
+  <div class="single-product answer mx-2">
+  <div class="avatar small"><%= image_tag current_user.user_avatar, size: 40, class: 'me-1' %><span class="text-dark "><%=  answer.user.name %></span></div>
+      <br><br>
+    <div class="mx-2 mb-3"><%= sanitize answer.body %></div>
+
+  <% if current_user.admin? %>
+    <hr>
+    <%= link_to 'Edit', edit_comment_answer_path(comment, answer),
+                class: 'btn btn-sm btn-success' %>
+
+    <%= link_to 'Delete', comment_answer_path(comment, answer), class: 'btn btn-sm btn-danger',
+                data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+
+  <% end %>
+  </div>
 <% end %>

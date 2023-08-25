@@ -8,6 +8,7 @@
 
           <%= render notification,
               user: notification.to_notification.creator,
+              comment: notification.to_notification.comment,
               product: notification.to_notification.product,
               unread: notification.unread? %>
       //

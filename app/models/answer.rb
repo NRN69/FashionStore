@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Answer < ApplicationRecord
-  # validates   :body, presence: true
+  validates   :body, length: { minimum: 5, maximum: 100 }, presence: true
 
   belongs_to  :comment
   belongs_to  :user
@@ -21,7 +21,7 @@ class Answer < ApplicationRecord
                                   partial: 'notifications/notification',
                                   locals: {
                                     user:,
-                                    product:,
+                                    comment:,
                                     unread: true
                                   }
   end
