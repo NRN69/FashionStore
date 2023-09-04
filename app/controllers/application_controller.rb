@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
-  include Authorization
   before_action :set_render_cart
   before_action :cart
 
@@ -13,7 +12,7 @@ class ApplicationController < ActionController::Base
     @cart ||= Cart.find_or_create_by(user: current_user)
   end
 
-  def current_url(url)
-    @current_url = url
+  def current_user
+    UserDecorator.decorate(super) unless super.nil?
   end
 end

@@ -1,0 +1,3 @@
+<%= turbo_stream.replace 'reviews', partial: 'reviews/reviews', locals: { product: @product } %>
+<%= turbo_stream.replace Review.new, partial: 'reviews/new', locals: { product: @product, review: Review.new } %>
+<%= turbo_stream.replace product_path(@product) %>

@@ -2,42 +2,44 @@
   <div class="row">
 
     <% if products.empty? %>
-      <h2 class="text-center text-secondary"> No Products</h2>
-    <% else %>
+      <div class="shopping-item">
+        <h2 class="text-center text-secondary"> No Products</h2>
+      </div>
+      <% else %>
 
-      <% products.each do |product| %>
-        <div class="col-lg-3 col-md-4">
+        <% products.each do |product| %>
+          <div class="col-lg-3 col-md-4">
 
-          <!-- Start Single Product -->
-          <div class="single-product">
+            <!-- Start Single Product -->
+            <div class="single-product">
 
-            <div class="product-image">
-              <%= link_to image_tag(product.img), product, data: {turbo_frame: '_top'} %>
-            </div>
+              <div class="product-image">
+                <%= link_to image_tag(product.image_first), product, data: {turbo_frame: '_top' } %>
+              </div>
 
-            <div class="product-info">
-              <span class="category"></span>
+              <div class="product-info">
+                <span class="category"></span>
 
-              <h4 class="title">
-                <%= link_to product.title, product, data: {turbo_frame: '_top'} %>
-              </h4>
+                <h4 class="title">
+                  <%= link_to product.title, product, data: {turbo_frame: '_top' } %>
+                </h4>
 
-           <%= render 'product/review' %>
+                <%= render 'products/rating' , product: product %>
 
-              <div class="price">
-                <span>Price:<%= product.price %>$</span>
+                  <div class="price">
+                    <span>Price:<%= product.price %>$</span>
 
 
 
-                <%= render 'likes/like_button', product: product, target: 'Products-trending' %>
+                    <%= render 'favorites/favorite_button' , product: product, target: 'Products-trending' %>
 
+                  </div>
               </div>
             </div>
-          </div>
-          <!-- End Single Product -->
+            <!-- End Single Product -->
 
-        </div>
-      <% end %>
-    <% end %>
+          </div>
+          <% end %>
+            <% end %>
   </div>
-<% end %>
+  <% end %>

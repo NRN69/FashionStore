@@ -9,23 +9,23 @@ class CartPolicy < ApplicationPolicy
     true
   end
 
-  def create?
-    user.admin?
+  def add?
+    user
   end
 
   def new?
-    create?
+    add?
   end
 
   def update?
-    user.admin?
+    user
   end
 
   def edit?
     update?
   end
 
-  def destroy?
-    user.admin?
+  def remove?
+    user
   end
 end

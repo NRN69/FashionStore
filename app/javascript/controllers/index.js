@@ -5,13 +5,19 @@
 import { application } from "./application"
 
 import HelloController from "./hello_controller"
-application.register("hello", HelloController);
+application.register("hello", HelloController)
 
 import LikesController from "./likes_controller"
-application.register("likes", LikesController);
+application.register("likes", LikesController)
+
+import PreviewsController from "./previews_controller"
+application.register("previews", PreviewsController)
 
 import SearchFormController from "./search_form_controller"
-application.register("search-form", SearchFormController);
+application.register("search-form", SearchFormController)
 
 import SizesController from "./sizes_controller"
-application.register("sizes", SizesController);
+application.register("sizes", SizesController)
+
+import StarBarController from "./star_bar_controller"
+application.register("star-bar", StarBarController)

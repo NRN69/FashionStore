@@ -16,6 +16,7 @@ gem 'cssbundling-rails'
 gem 'devise'
 gem 'draper'
 gem 'foreman', github: 'ddollar/foreman'
+gem 'inline_svg'
 gem 'jbuilder'
 gem 'jsbundling-rails'
 gem 'kaminari'
@@ -35,18 +36,23 @@ gem 'turbo-rails', '~> 1.0.0'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
-  gem 'byebug'
-  gem 'database_cleaner'
-  gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem  'byebug'
+  gem  'database_cleaner'
+  gem  'debug', platforms: %i[mri mingw x64_mingw]
 
-  gem 'factory_bot'
-  gem 'faker'
-  gem 'pry'
+  gem  'factory_bot'
+  gem  'faker'
+  gem  'pry'
 
   gem 'rails-controller-testing'
   gem 'rspec-json_expectations'
   gem 'rspec-rails'
-  gem 'rubocop', require: false
+  gem 'rubocop'
+  gem 'rubocop-factory_bot', require: false
+  gem 'rubocop-i18n'
+  gem 'rubocop-rspec', require: false
+  gem 'solargraph'
+  gem 'solargraph-rails'
 end
 
 group :development do

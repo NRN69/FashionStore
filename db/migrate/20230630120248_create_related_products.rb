@@ -2,9 +2,9 @@
 
 class CreateRelatedProducts < ActiveRecord::Migration[7.0]
   def change
-    create_table :related_products, id: false do |t|
-      t.integer :product_id
-      t.integer :related_id
+    create_table  :related_products, id: false do |t|
+      t.integer   :product_id, null: false, foreign_key: true
+      t.integer   :related_id, null: false, foreign_key: true
     end
 
     insert <<~SQL.squish

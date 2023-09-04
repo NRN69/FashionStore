@@ -1,0 +1,29 @@
+<%= turbo_frame_tag review do %>
+  <div class="single-product">
+    <div class="avatar small">
+        <%= image_tag current_user.user_avatar, size: 40 %>
+        <span class="text-dark"><%= review.user.name %></span>
+        <small class="text-end"><%= format_created_at(review) %></small>
+    </div>
+    <br><br>
+    <div class="review"><%= sanitize review.body %></div>
+    <% if current_user.admin? %>
+      <div class="button mx-3 my-3">
+        <%= link_to 'Answer', new_review_answer_path(review, Answer.new),
+                    class: 'btn-small', data: { turbo_frame: "Answer-new-#{dom_id(review)}" } if review.answers.empty? %>
+
+        <%= link_to 'Edit', edit_product_review_path(product, review),
+                    class: 'btn-small' %>
+
+        <%= link_to 'Delete', product_review_path(product, review), class: 'btn-small',
+                    data: {turbo_method: :delete, turbo_confirm: 'Are you sure?'} %>
+      </div>
+    <% end %>
+    <%= turbo_stream_from "answers_#{dom_id(review)}" %>
+    <%= turbo_frame_tag 'answers' do %>
+      <%= render 'answers/answers', answers: review.answers, review: review if review.answers && user_signed_in? %>
+    <% end %>
+
+    <%= turbo_frame_tag "Answer-new-#{dom_id(review)}" %>
+  </div>
+<% end %>

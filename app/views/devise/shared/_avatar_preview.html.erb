@@ -1,0 +1,20 @@
+<div data-controller="previews">
+  <%= form.input :avatar,
+                    direct_upload: true,
+                    data: {
+                       previews_target: 'input',
+                       action: 'change->previews#preview'
+                        } %>
+    <% if resource.avatar.attached? %>
+      <%= image_tag resource.avatar,
+                    data: {
+                        previews_target: 'preview'
+                      } %>
+    <% else %>
+
+    <%= image_tag 'default_avatar.png',
+                    data: {
+                        previews_target: 'preview' 
+                        } %>
+    <% end %>
+</div>

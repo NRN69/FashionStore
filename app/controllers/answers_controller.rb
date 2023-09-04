@@ -3,12 +3,11 @@
 class AnswersController < ApplicationController
   before_action :authenticate_user!
   before_action :set_answer!, only: %i[destroy edit update]
-  before_action :set_comment!
+  before_action :set_review!
   before_action :set_product!, only: %i[destroy edit update]
 
-
   def create
-    @answer = @comment.answers.build answer_create_params
+    @answer = @review.answers.build answer_create_params
     @answer.user = current_user
     respond_to do |format|
       if @answer.save
@@ -26,6 +25,8 @@ class AnswersController < ApplicationController
     end
   end
 
+  def edit; end
+
   def update
     respond_to do |format|
       if @answer.update answer_update_params
@@ -33,8 +34,8 @@ class AnswersController < ApplicationController
       else
         flash_errors_messages(@answer)
         format.turbo_stream do
-          render turbo_stream: [turbo_stream.replace('comments',
-                                                     partial: 'comments/comments',
+          render turbo_stream: [turbo_stream.replace('reviews',
+                                                     partial: 'reviews/reviews',
                                                      locals: { product: @product }),
                                 turbo_stream.update('flash',
                                                     partial: 'shared/flash')]
@@ -52,8 +53,8 @@ class AnswersController < ApplicationController
         format.turbo_stream
       else
         format.turbo_stream do
-          render turbo_stream: [turbo_stream.replace('comments',
-                                                     partial: 'comments/comments',
+          render turbo_stream: [turbo_stream.replace('reviews',
+                                                     partial: 'reviews/reviews',
                                                      locals: { product: @product }),
                                 turbo_stream.update('flash',
                                                     partial: 'shared/flash')]
@@ -79,12 +80,12 @@ class AnswersController < ApplicationController
     @answer = Answer.find(params[:id])
   end
 
-  def set_comment!
-    @comment = Comment.find(params[:comment_id])
+  def set_review!
+    @review = Review.find(params[:review_id])
   end
 
   def set_product!
-    @product = @answer.comment.product
+    @product = @answer.review.product
   end
 
   def flash_errors_messages(object)

@@ -1,0 +1,9 @@
+<%= turbo_frame_tag 'favorites-quantity' do %>
+  <div class="wishlist">
+      <%= link_to favorites_url, data: {turbo_frame: '_top'} do %>
+        <i class="lni lni-heart"></i>
+        <span class="total-items">
+          <%= current_user.favorites.count %></span>
+      <% end %>
+    </div>
+<% end %>

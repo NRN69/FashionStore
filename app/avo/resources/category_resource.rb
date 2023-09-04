@@ -8,7 +8,6 @@ class CategoryResource < Avo::BaseResource
   # end
 
   field :title, as: :text, name: 'name'
-  field :bytitle, as: :text
   field :description, as: :text
   field :created_at, as: :date, name: 'create date', format: 'dd-LL-yyyy', hide_on: %i[new edit]
   field :update_at, as: :date, name: 'update date', format: 'dd-LL-yyyy', hide_on: %i[new edit]

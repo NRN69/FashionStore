@@ -3,8 +3,8 @@
   <section class="banner section">
     <div class="container">
       <div class="row">
-        <% current_user.likes.each do |like| %>
-          <% Product.where(id: like.product_id.to_i).each do |product| %>
+        <% current_user.favorites.each do |favorite| %>
+          <% Product.where(id: favorite.product_id.to_i).each do |product| %>
             <div class="col-lg-6 col-md-6 col-12">
               <div class="single-banner">
                 <div class="content">

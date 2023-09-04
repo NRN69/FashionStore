@@ -1,0 +1,50 @@
+<%= turbo_frame_tag 'favorites' do %>
+
+  <% if current_user.favorites.empty? %>
+
+    <h2 class="text-center text-secondary"> No Favorites Products</h2>
+
+  <% else %>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2>Favorites Products</h2>
+        </div>
+      </div>
+    <% current_user.favorites.each do |favorite| %>
+      <% product = favorite.product %>
+
+      <div class="col-lg-3 col-md-4">
+
+        <!-- Start Single Product -->
+        <%= turbo_frame_tag favorite, loading: :lazy do %>
+          <div class="single-product">
+            <div class="product-image">
+              <%= link_to image_tag(product.image_first), product, data: {turbo_frame: '_top'} %>
+            </div>
+            <div class="product-info">
+              <span class="category"></span>
+              <h4 class="title">
+                <%= link_to product.title, product, data: {turbo_frame: '_top'} %>
+              </h4>
+
+              <%= render 'products/review' %>
+
+              <div class="price">
+                <span>Price:<%= product.price %>$</span>
+
+
+                <%= render 'favorites/favorite_button', product: product, target: 'Favorites' %>
+
+              </div>
+            </div>
+          </div>
+        <% end %>
+        <!-- End Single Product -->
+
+      </div>
+    <% end %>
+    </div>
+  <% end %>
+<% end %>

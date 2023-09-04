@@ -1,6 +1,6 @@
-<%= turbo_frame_tag Answer.new do %>
+<%= turbo_frame_tag "Answer-new-#{dom_id(@review)}" do %>
   <div class="single-product">
     <p>Answer:</p><br>
-      <%= render 'answers/form', comment: @comment, answer: Answer.new unless @comment.answers && !current_user.admin? %>
+      <%= render 'answers/form', review: @review, answer: Answer.new unless @review.answers && !current_user.admin? %>
   </div>
 <% end %>

@@ -1,9 +1,11 @@
-<% if unread %>
-  <span>Unread</span>
-<% end %>
+ <small class="me-2">
+   <% if unread %>
+    <span>Unread</span>
+  <% end %>
+  <span><%= user.name %></span>
+  replied your review for product
+  <span><%= link_to product.title, product, data: {turbo_frame: '_top'} %></span>
 
-<span class="text-dark"><%= user.email %></span>
-replied to
-<span><%= link_to product.title, product, data: {turbo_frame: '_top'} %></span>
-comment
-<span><%= comment.body.truncate(27, separator:'') %></span>
+ </small>
+
+

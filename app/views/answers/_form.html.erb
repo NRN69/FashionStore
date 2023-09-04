@@ -1,5 +1,5 @@
 <%= turbo_frame_tag answer do %>
-  <%= simple_form_for [comment, answer] do |form| %>
+  <%= simple_form_for [review, answer] do |form| %>
     <% if  answer.errors.any? %>
       <%= render 'shared/flash' %>
     <% end %>

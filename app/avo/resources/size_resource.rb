@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class SizeResource < Avo::BaseResource
-  self.title = :id
+  self.title = :size
   self.includes = []
   # self.search_query = -> do
   #   scope.ransack(id_eq: params[:q], m: "or").result(distinct: false)
@@ -9,7 +9,7 @@ class SizeResource < Avo::BaseResource
 
   field :id, as: :id
   # Fields generated from the model
-  field :size, as: :number
+  field :size, as: :text
   field :product, as: :belongs_to
   # add fields here
 end

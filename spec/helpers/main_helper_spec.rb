@@ -12,5 +12,3 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe MainHelper, type: :helper do
-end

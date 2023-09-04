@@ -3,6 +3,6 @@
 require 'rails_helper'
 
 RSpec.describe RelatedProduct, type: :model do
-  it { should belong_to(:product) }
-  it { should belong_to(:related) }
+  it { is_expected.to belong_to(:product) }
+  it { is_expected.to belong_to(:related) }
 end

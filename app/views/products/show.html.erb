@@ -1,0 +1,59 @@
+<!-- Start Trending Product Area -->
+<section class="trending-product section" style="margin-top: 12px;">
+  <div class="container">
+      <div class="row">
+        <ol class="breadcrumb mx-3">
+          <%= render_breadcrumbs tag: :li, separator: '>'%>
+
+        </ol>
+
+        <%= render 'products/product', product: @product %>
+
+      </div>
+  </div>
+
+</section>
+<!-- End Trending Product Area -->
+
+<!-- Start Recent Products Area -->
+<% unless recent_products.empty? %>
+  <section class="banner section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>Recently Products</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <%= render 'products/recent_products', product: @product %>
+
+      </div>
+    </div>
+  </section>
+  <% end %>
+<!-- End Recent Products Area -->
+
+<!-- Start Related Products Area -->
+<% unless @product.related.empty? %>
+  <!-- Start Related Products Area -->
+  <section class="banner section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title">
+              <h2>Related Products</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <%= render 'products/related_products', product: @product %>
+
+        </div>
+      </div>
+  </section>
+  <!-- End Related Products Area -->
+<% end %>

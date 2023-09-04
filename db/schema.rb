@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_27_202740) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -44,20 +44,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
 
   create_table "answers", force: :cascade do |t|
     t.text "body", null: false
-    t.bigint "comment_id", null: false
+    t.bigint "review_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["comment_id"], name: "index_answers_on_comment_id"
+    t.index ["review_id"], name: "index_answers_on_review_id"
     t.index ["user_id"], name: "index_answers_on_user_id"
-  end
-
-  create_table "brands", force: :cascade do |t|
-    t.string "title"
-    t.string "img", default: "no_image.jpg"
-    t.string "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
   end
 
   create_table "carts", force: :cascade do |t|
@@ -69,37 +61,31 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
 
   create_table "categories", force: :cascade do |t|
     t.string "title", null: false
-    t.string "bytitle"
-    t.string "keywords"
-    t.string "description"
+    t.string "keywords", null: false
+    t.string "description", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "ancestry", collation: "C"
     t.index ["ancestry"], name: "index_categories_on_ancestry"
   end
 
-  create_table "comments", force: :cascade do |t|
-    t.text "body", null: false
+  create_table "companies", force: :cascade do |t|
+    t.string "title"
+    t.string "address"
+    t.string "phone"
+    t.string "opening_hours"
+    t.string "opening_days"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "favorites", force: :cascade do |t|
     t.bigint "product_id", null: false
     t.bigint "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["product_id"], name: "index_comments_on_product_id"
-    t.index ["user_id"], name: "index_comments_on_user_id"
-  end
-
-  create_table "galleries", force: :cascade do |t|
-    t.integer "product_id"
-    t.string "img"
-  end
-
-  create_table "likes", force: :cascade do |t|
-    t.bigint "product_id", null: false
-    t.bigint "user_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["product_id"], name: "index_likes_on_product_id"
-    t.index ["user_id"], name: "index_likes_on_user_id"
+    t.index ["product_id"], name: "index_favorites_on_product_id"
+    t.index ["user_id"], name: "index_favorites_on_user_id"
   end
 
   create_table "notifications", force: :cascade do |t|
@@ -118,7 +104,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
     t.bigint "product_id", null: false
     t.bigint "cart_id", null: false
     t.integer "quantity", default: 1, null: false
-    t.integer "size", default: 0, null: false
+    t.string "size", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "order_id"
@@ -134,7 +120,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
     t.text "phone", null: false
     t.integer "pay_type", null: false
     t.json "product", null: false
-    t.integer "status", default: 0
+    t.integer "status", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.bigint "user_id"
@@ -142,26 +128,38 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
   end
 
   create_table "products", force: :cascade do |t|
-    t.integer "category_id"
-    t.integer "brand_id"
-    t.string "title"
+    t.integer "category_id", null: false
+    t.integer "user_id", null: false
+    t.string "brand", null: false
+    t.string "title", null: false
     t.text "content"
-    t.float "price"
-    t.string "color"
-    t.string "keywords"
+    t.float "price", null: false
+    t.string "color", null: false
+    t.string "material", null: false
+    t.string "keywords", null: false
     t.string "description"
-    t.string "img", default: "no_image.jpg"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "related_products", id: false, force: :cascade do |t|
-    t.integer "product_id"
-    t.integer "related_id"
+    t.integer "product_id", null: false
+    t.integer "related_id", null: false
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.text "body", null: false
+    t.integer "rating", default: 0, null: false
+    t.bigint "product_id", null: false
+    t.bigint "user_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["product_id"], name: "index_reviews_on_product_id"
+    t.index ["user_id"], name: "index_reviews_on_user_id"
   end
 
   create_table "sizes", force: :cascade do |t|
-    t.integer "size"
+    t.string "size"
     t.bigint "product_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -170,6 +168,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
 
   create_table "users", force: :cascade do |t|
     t.boolean "admin"
+    t.string "name", null: false
+    t.string "phone"
+    t.string "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "email", default: "", null: false
@@ -185,8 +186,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
     t.integer "failed_attempts", default: 0, null: false
     t.string "unlock_token"
     t.datetime "locked_at"
-    t.string "name"
-    t.string "phone"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["unlock_token"], name: "index_users_on_unlock_token", unique: true
@@ -194,16 +193,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_25_124910) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "answers", "comments"
+  add_foreign_key "answers", "reviews"
   add_foreign_key "answers", "users"
   add_foreign_key "carts", "users"
-  add_foreign_key "comments", "products"
-  add_foreign_key "comments", "users"
-  add_foreign_key "likes", "products"
-  add_foreign_key "likes", "users"
+  add_foreign_key "favorites", "products"
+  add_foreign_key "favorites", "users"
   add_foreign_key "orderables", "carts"
   add_foreign_key "orderables", "orders"
   add_foreign_key "orderables", "products"
   add_foreign_key "orders", "users"
+  add_foreign_key "reviews", "products"
+  add_foreign_key "reviews", "users"
   add_foreign_key "sizes", "products"
 end

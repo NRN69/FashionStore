@@ -5,6 +5,15 @@ __metadata:
   version: 6
   cacheKey: 8
 
+"@babel/runtime@npm:^7.21.0":
+  version: 7.22.11
+  resolution: "@babel/runtime@npm:7.22.11"
+  dependencies:
+    regenerator-runtime: ^0.14.0
+  checksum: a5cd6683a8fcdb8065cb1677f221e22f6c67ec8f15ad1d273b180b93ab3bd86c66da2c48f500d4e72d8d2cfa85ff4872a3f350e5aa3855630036af5da765c001
+  languageName: node
+  linkType: hard
+
 "@esbuild/android-arm64@npm:0.19.2":
   version: 0.19.2
   resolution: "@esbuild/android-arm64@npm:0.19.2"
@@ -197,6 +206,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kurkle/color@npm:^0.3.0":
+  version: 0.3.2
+  resolution: "@kurkle/color@npm:0.3.2"
+  checksum: 79e97b31f8f6efb28c69d373f94b0c7480226fe8ec95221f518ac998e156444a496727ce47de6d728eb5c3369288e794cba82cae34253deb0d472d3bfe080e49
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -354,12 +370,13 @@ __metadata:
     autoprefixer: ^10.4.15
     bootstrap: ^5.3.1
     bootstrap-icons: ^1.10.5
+    chart.js: ^4.4.0
+    chartkick: ^5.0.1
     esbuild: ^0.19.2
-    gsap: ^3.12.2
     lineicons: ^1.0.3
-    postcss: ^8.4.28
+    postcss: ^8.4.29
     postcss-cli: ^10.1.0
-    sass: ^1.65.1
+    sass: ^1.66.1
   languageName: unknown
   linkType: soft
 
@@ -497,6 +514,43 @@ __metadata:
   languageName: node
   linkType: hard
 
+"chart.js@npm:4, chart.js@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "chart.js@npm:4.4.0"
+  dependencies:
+    "@kurkle/color": ^0.3.0
+  checksum: 5ee2d99b78608025525b5790af17178fdaa5adc3294e082deba2718029b0496109ba124f1b08dd1e4c8a04d6e842be7f384f2cfe9a11df8d1c6fe884acece52b
+  languageName: node
+  linkType: hard
+
+"chartjs-adapter-date-fns@npm:>=3":
+  version: 3.0.0
+  resolution: "chartjs-adapter-date-fns@npm:3.0.0"
+  peerDependencies:
+    chart.js: ">=2.8.0"
+    date-fns: ">=2.0.0"
+  checksum: c39bfdf490749faa589fba6e0dc0a2c5a467a5f06aaa52c5180e10fd9c83414807a064f6950538448bffee354c8064c0ce9d957bccbf2048e7ee2257aa95f138
+  languageName: node
+  linkType: hard
+
+"chartkick@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "chartkick@npm:5.0.1"
+  dependencies:
+    chart.js: 4
+    chartjs-adapter-date-fns: ">=3"
+    date-fns: ">=2"
+  dependenciesMeta:
+    chart.js:
+      optional: true
+    chartjs-adapter-date-fns:
+      optional: true
+    date-fns:
+      optional: true
+  checksum: 25cd441230560a91475957ae702d991ec33579cf565557537b6284a0b81be6f77a99f686f2e8f28e2b3fbccf339ca4179218ecd44cae2cc6ab626902a7a0ac02
+  languageName: node
+  linkType: hard
+
 "chokidar@npm:>=3.0.0 <4.0.0, chokidar@npm:^3.3.0":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
@@ -588,6 +642,15 @@ __metadata:
     shebang-command: ^2.0.0
     which: ^2.0.1
   checksum: 671cc7c7288c3a8406f3c69a3ae2fc85555c04169e9d611def9a675635472614f1c0ed0ef80955d5b6d4e724f6ced67f0ad1bb006c2ea643488fcfef994d7f52
+  languageName: node
+  linkType: hard
+
+"date-fns@npm:>=2":
+  version: 2.30.0
+  resolution: "date-fns@npm:2.30.0"
+  dependencies:
+    "@babel/runtime": ^7.21.0
+  checksum: f7be01523282e9bb06c0cd2693d34f245247a29098527d4420628966a2d9aad154bd0e90a6b1cf66d37adcb769cd108cf8a7bd49d76db0fb119af5cdd13644f4
   languageName: node
   linkType: hard
 
@@ -956,13 +1019,6 @@ __metadata:
   version: 4.2.11
   resolution: "graceful-fs@npm:4.2.11"
   checksum: ac85f94da92d8eb6b7f5a8b20ce65e43d66761c55ce85ac96df6865308390da45a8d3f0296dd3a663de65d30ba497bd46c696cc1e248c72b13d6d567138a4fc7
-  languageName: node
-  linkType: hard
-
-"gsap@npm:^3.12.2":
-  version: 3.12.2
-  resolution: "gsap@npm:3.12.2"
-  checksum: e3e9709f9ca60cee0ef7fd91f45a232a48b550f95b6df090dfffe2511fccc651408476de575b69c1c2ce80b6089b6ad0d4854beb58ea427f14e51a30b0640a70
   languageName: node
   linkType: hard
 
@@ -1564,14 +1620,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.4.28":
-  version: 8.4.28
-  resolution: "postcss@npm:8.4.28"
+"postcss@npm:^8.4.29":
+  version: 8.4.29
+  resolution: "postcss@npm:8.4.29"
   dependencies:
     nanoid: ^3.3.6
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
-  checksum: f605c24a36f7e400bad379735fbfc893ccb8d293ad6d419bb824db77cdcb69f43d614ef35f9f7091f32ca588d130ec60dbcf53b366e6bf88a8a64bbeb3c05f6d
+  checksum: dd6daa25e781db9ae5b651d9b7bfde0ec6e60e86a37da69a18eb4773d5ddd51e28fc4ff054fbdc04636a31462e6bf09a1e50986f69ac52b10d46b7457cd36d12
   languageName: node
   linkType: hard
 
@@ -1625,6 +1681,13 @@ __metadata:
   dependencies:
     picomatch: ^2.2.1
   checksum: 1ced032e6e45670b6d7352d71d21ce7edf7b9b928494dcaba6f11fba63180d9da6cd7061ebc34175ffda6ff529f481818c962952004d273178acd70f7059b320
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.14.0":
+  version: 0.14.0
+  resolution: "regenerator-runtime@npm:0.14.0"
+  checksum: 1c977ad82a82a4412e4f639d65d22be376d3ebdd30da2c003eeafdaaacd03fc00c2320f18120007ee700900979284fc78a9f00da7fb593f6e6eeebc673fba9a3
   languageName: node
   linkType: hard
 
@@ -1683,16 +1746,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.65.1":
-  version: 1.66.0
-  resolution: "sass@npm:1.66.0"
+"sass@npm:^1.66.1":
+  version: 1.66.1
+  resolution: "sass@npm:1.66.1"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: ae292e6a41a8812c0206c528885969e2f6f35870397e6d5bc33477927fd09faffda196aefe2cfe49e0c57f1448129b522f845bb134f3b6a131b184e3be86cf92
+  checksum: 74fc11d0fcd5e16c5331b57dd59865705a299c64e89f2b99646869caeb011dc8d0b6144a6c74a90c264e9ef70654207dbf44fc9b7e3393f8bd14809b904c8a52
   languageName: node
   linkType: hard
 

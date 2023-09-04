@@ -5,12 +5,8 @@
 
   <div class="form-inputs">
     <div class=" avatar large">
-    <% if resource.avatar.attached? %>
-      <%= image_tag resource.avatar %>
-    <% else %>
-      <%= image_tag 'default_avatar.png' %>
-      <%= f.input :avatar %>
-    <% end %>
+    <%= render 'devise/shared/avatar_preview', form: f %>
+
   </div>
     <%= f.input :name, required: false, input_html: { autocomplete: "name"}, autofocus: true %>
 

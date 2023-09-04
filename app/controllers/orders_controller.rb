@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
   before_action :set_page_options
 
   def index
-    @orders = Order.all
+    @orders = current_user.orders.order(created_at: :desc).page params[:page]
   end
 
   def show

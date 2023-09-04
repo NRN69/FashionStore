@@ -23,17 +23,17 @@ class AnswerNotification < Noticed::Base
     params[:message]
   end
 
+  def answer?
+    params[:message].nil?
+  end
+
   def creator
     answer.user
   end
 
-  def product
-    answer.comment.product
-  end
+  delegate :review, to: :answer
 
-  def comment
-    answer.comment
-  end
+  delegate :product, to: :review
 
   def url
     product_path(params[:product])

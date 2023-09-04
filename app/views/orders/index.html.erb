@@ -1,27 +1,11 @@
-<!-- Start Trending Product Area -->
+<!-- Start Orders Area -->
 <section class="trending-product section" style="margin-top: 12px;">
   <div class="container">
 
-    <% if current_user.orders.empty? %>
-      <div class="shopping-item">
-        <h2 class="text-center text-secondary"> Your Orders is Empty </h2>
-      </div>
-    <% else %>
+    <%= render 'orders/orders', orders: @orders %>
 
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title">
-            <h2>All Orders</h2>
-          </div>
-        </div>
-
-        <%= render 'orders/orders', orders: @orders %>
-
-    <% end %>
-
-    </div>
   </div>
 </section>
-<!-- End Trending Product Area -->
+<!-- End Orders Area -->
 
 <%#= render 'shared/banner_area' %>

@@ -1,0 +1,33 @@
+<%= turbo_frame_tag review do %>
+  <div class="single-product">
+    <div style="padding: 15px 15px 15px">
+      <%= simple_form_for [ product, review ] do |form| %>
+        <% if  review.errors.any? %>
+          <%= render 'shared/flash' %>
+        <% end %>
+        <h5 class="star-bar">
+
+        <% Review::MAX_RATING.times do |n| %>
+          <%= form.radio_button :rating, n + 1 %>
+          <%= form.label :rating do %>
+            <i data-controller="star-bar"
+              data-option="false"
+              data-action="click->star-bar#changeclass"
+              id="star-deactivated"
+              value="<%= n+1 %>"
+              style="cursor:pointer; color: #fecb00;"
+              class="bi bi-star">
+            </i>
+          <% end %>
+        <% end %>
+        </h5>
+          <%= form.input :body, label: false,  input_html: { lenght: {minimum: 3, maximum: 400}, placeholder: 'Your review', size: 40, autocompelete: 'on' } %><br>
+          <div class="button">
+            <%= button_tag(type: form.submit, class: 'btn animate') do %>
+              Sent
+            <% end %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

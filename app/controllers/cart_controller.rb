@@ -2,29 +2,30 @@
 
 class CartController < ApplicationController
   before_action :set_page_options
-  attr_accessor :product
 
   def show
     @render_cart = false
   end
 
+  # rubocop:disable Metrics/AbcSize
   def add
     @product = Product.find_by(id: params[:id])
     quantity = params[:quantity].to_i
-    size = params[:size].to_i
+    size = params[:size]
     current_orderable = @cart.orderables.find_by(product_id: @product.id)
     if current_orderable && quantity.positive?
-      current_orderable.update(size: size)
+      current_orderable.update(size:)
     elsif quantity <= 0
       current_orderable.destroy
-    elsif size.zero? || size.nil?
+    elsif size.nil?
       flash[:danger] = 'Size not selected!'
       redirect_to product_path(@product), status: :see_other
     else
-      @cart.orderables.create(product: @product, quantity: quantity, size: size)
+      @cart.orderables.create(product: @product, quantity:, size:)
       respond_format
     end
   end
+  # rubocop:enable Metrics/AbcSize
 
   def remove
     Orderable.find(params[:id]).destroy

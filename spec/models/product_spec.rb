@@ -3,12 +3,12 @@
 require 'rails_helper'
 
 RSpec.describe Product, type: :model do
-  it { should validate_presence_of :title }
-  it { should validate_presence_of :price }
+  it { is_expected.to validate_presence_of :title }
+  it { is_expected.to validate_presence_of :price }
 
-  it { should have_many :galleries }
-  it { should belong_to :category }
+  it { is_expected.to have_many :galleries }
+  it { is_expected.to belong_to :category }
 
-  it { should have_many :related_products }
-  it { should have_many :related }
+  it { is_expected.to have_many :related_products }
+  it { is_expected.to have_many :related }
 end

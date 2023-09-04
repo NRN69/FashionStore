@@ -14,11 +14,11 @@ Rails.application.routes.draw do
   post 'cart/add'
   post 'cart/remove'
 
-  resources :product, only: [:show] do
-    resources :comments, except: %i[index show]
+  resources :products, only: [:show] do
+    resources :reviews, except: %i[index show]
   end
 
-  resources :comments, except: %i[index show] do
+  resources :reviews, except: %i[index show] do
     resources :answers, except: %i[index show]
   end
 
@@ -26,7 +26,7 @@ Rails.application.routes.draw do
 
   resources :orders
 
-  resources :likes, only: %i[index create destroy]
+  resources :favorites, only: %i[index create destroy]
 
   root to: 'main#index'
 end

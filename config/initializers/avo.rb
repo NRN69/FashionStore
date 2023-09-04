@@ -98,7 +98,7 @@ Avo.configure do |config|
     #   all_dashboards
     # end
 
-    section 'Resources', icon: 'resources' do
+    section do
       all_resources
     end
 

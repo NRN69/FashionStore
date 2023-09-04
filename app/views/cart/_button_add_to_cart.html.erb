@@ -1,0 +1,35 @@
+<% if product.sizes %>
+  <%= form_with(url: cart_add_path) do |form| %>
+    <%= form.hidden_field :id, value: product.id %>
+    <%= form.hidden_field :quantity, value: 1 %>
+
+    <h5 class="color">Sizes:
+      <% sizes_sort(product).each do |size| %>
+        <%= form.radio_button :size, "#{size}", style: 'display:none;'  %>
+        <%= form.label        :size, "#{size}", data: {
+            controller: 'sizes',
+            option: 'false',
+            action: 'click->sizes#changeclass' },
+                              id: 'deactivated',
+                              value: "#{size}",
+                              style:'cursor:pointer',
+                              class: ''  %>
+      <% end %>
+    </h5>
+
+    <div class="price"><h5>Price: <span><%= product.price.round(2) %>$</span></h5></div>
+
+    <div class="button mt-5">
+      <%= button_tag(type: form.submit, class: 'btn') do %>
+        <i class="bi bi-cart"></i> Add to cart
+      <% end %>
+    </div>
+  <% end %>
+
+<% else %>
+
+  <div class="my-4 text-secondary">
+    The product is over
+  </div>
+
+<% end %>

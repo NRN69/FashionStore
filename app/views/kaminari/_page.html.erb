@@ -1,20 +1,11 @@
-<%# Link showing page number
-  - available local variables
-    page:          a page object for "this" page
-    url:           url to this page
-    current_page:  a page object for the currently displayed page
-    total_pages:   total number of pages
-    per_page:      number of items to fetch per page
-    remote:        data-remote
--%>
 <div class="pagination-number <%= 'pagination-active' if page.current? %>">
   <% if page.current? %>
     <%= tag.span page, class: 'pagination-number' %>
   <% else %>
     <%= link_to page, url,
-                remote: remote,
-                rel: page.rel,
-                class: 'pagination-number'%>
+                       remote: remote,
+                       rel: page.rel,
+                       class: 'pagination-number'%>
   <% end %>
 </div>
 <svg class="hide">

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 class Answer < ApplicationRecord
-  validates   :body, length: { minimum: 5, maximum: 100 }, presence: true
+  validates   :body, length: { minimum: 5, maximum: 200 }, presence: true
 
-  belongs_to  :comment
+  belongs_to  :review
   belongs_to  :user
 
   has_noticed_notifications
@@ -11,18 +11,21 @@ class Answer < ApplicationRecord
 
   private
 
+  # rubocop:disable Metrics/AbcSize
   def broadcast_notifications
-    return if user == comment.user
+    return if user == review.user
 
-    AnswerNotification.with(message: self).deliver_later(comment.user)
+    AnswerNotification.with(message: self).deliver_later(review.user)
 
-    broadcast_prepend_to          "notifications_#{comment.user.id}",
-                                  target: "notifications_#{comment.user.id}",
+    broadcast_prepend_to          "notifications_#{review.user.id}",
+                                  target: "notifications_#{review.user.id}",
                                   partial: 'notifications/notification',
                                   locals: {
                                     user:,
-                                    comment:,
+                                    review:,
+                                    product: review.product,
                                     unread: true
                                   }
   end
+  # rubocop:enable Metrics/AbcSize
 end

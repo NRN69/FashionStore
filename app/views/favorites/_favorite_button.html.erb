@@ -1,0 +1,19 @@
+<%= turbo_frame_tag 'favorite-button' do %>
+  <% if user_signed_in? %>
+    <% favorite =  current_user.favorites.find_by(product_id: product)%>
+    <% if favorite %>
+      <span>
+          <%= button_to raw("<i class=\"bi bi-heart-fill \"></i>"), favorite_path(favorite),
+                        method: :delete, params: {favorite: { target: target }},
+                        class: 'btn'  %>
+      </span>
+    <% else %>
+      <span>
+             <%= button_to raw("<i class=\"bi bi-heart \"></i>"), favorites_url,
+                           method: :post,
+                           params: {favorite: { product_id: product, target: target }},
+                           class: 'btn' %>
+      </span>
+    <% end %>
+  <% end %>
+<% end %>

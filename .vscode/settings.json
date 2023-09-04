@@ -1,0 +1,10 @@
+{
+    "files.autoSave": "onFocusChange",
+    "workbench.colorCustomizations": {},
+    "[ruby]": {
+        "editor.formatOnSave": true,
+    },
+    "ruby.codeCompletion": false,
+    "ruby.format": "rubocop",
+    "editor.fontLigatures": false
+}

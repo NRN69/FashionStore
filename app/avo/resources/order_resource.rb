@@ -12,5 +12,12 @@ class OrderResource < Avo::BaseResource
   field :name, as: :text
   field :email, as: :text
   field :address, as: :textarea
-  # add fields here
+  field :product_ids, as: :text, name: 'product id\'s' do |order|
+    order.product.keys.to_s.gsub('"', '').gsub('[', '').gsub(']', '')
+  end
+  field :size_and_quantity, as: :text, name: 'size and quantity' do |order|
+    order.product.values.to_s.gsub('"', '').gsub('[', '').gsub(']', '').gsub('{', '').gsub('}', '')
+  end
+  field :created_at, as: :date, name: 'create date', format: 'dd-LL-yyyy', hide_on: %i[new edit]
+  field :updated_at, as: :date, name: 'update date', format: 'dd-LL-yyyy', hide_on: %i[new edit]
 end

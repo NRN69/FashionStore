@@ -4,9 +4,7 @@ require_relative 'boot'
 
 require 'rails/all'
 
-if defined?(Rails::Server) && Rails.env.development?
-  require "debug/open_nonstop"
-end
+require 'debug/open_nonstop' if defined?(Rails::Server) && Rails.env.development?
 
 Bundler.require(*Rails.groups)
 
@@ -14,7 +12,7 @@ module FashionStore
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
-    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    config.assets.paths << Rails.root.join('app/assets/fonts')
 
     # Configuration for the application, engines, and railties goes here.
     #

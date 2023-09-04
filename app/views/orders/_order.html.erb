@@ -1,10 +1,10 @@
-<%= turbo_frame_tag 'order' do %>
+<%= turbo_frame_tag 'order', loading: :lazy do %>
   <!-- Start Orders Area -->
     <div class="single-product">
       <div class="order">
 
-        <h5>Order #<%= order.id %>
-          <span class="text-secondary mx-2"><small><%= order.created_at.strftime("%d-%m-%Y | %H:%M") %></small></span>
+        <h5>Order #<%= @orders.size %>
+          <span class="text-secondary mx-2"><small><%= order.created_at.strftime("%d-%m-%Y, %H:%M") %></small></span>
           <span><small><%= order.status %></small></span>
         </h5><br>
         <table class="user">
@@ -22,12 +22,12 @@
             <table>
               <tr>
                 <% Product.where(id: product_id.to_i).each do |product| %>
-                  <td><span><%= link_to image_tag(product.img, size: 100), product, data: {turbo_frame: '_top'} %></span></td>
+                  <td><span><%= link_to image_tag(product.image_first, size: 100), product, data: {turbo_frame: '_top'} %></span></td>
                   <td><span><%= product.title %></span></td>
+                  <td><span>Color: <%= product.color.capitalize %></span></td>
                   <td><span>Size: <%= hash.keys.join %></span></td>
                   <td><span>Price: <%= product.price %>$</span></td>
-                  <td><span>Quantity: <%= hash.values.join %>=</span></td>
-                  <td><span>Total: <%= (hash.values.join.to_i * product.price).round(2) %></span></td>
+                  <td><span>Quantity: <%= hash.values.join %></span></td>
                 <% end %>
              </tr>
            </table><br>

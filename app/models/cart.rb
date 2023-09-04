@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Cart < ApplicationRecord
-  validates   :user_id, presence: true
+  validates   :user_id, numericality: true, presence: true
 
   belongs_to  :user
   has_many    :orderables,  dependent: :destroy

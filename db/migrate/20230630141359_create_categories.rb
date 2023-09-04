@@ -2,11 +2,10 @@
 
 class CreateCategories < ActiveRecord::Migration[7.0]
   def change
-    create_table :categories do |t|
-      t.string :title, null: false
-      t.string :bytitle
-      t.string :keywords
-      t.string :description
+    create_table  :categories do |t|
+      t.string    :title,       null: false, foreign_key: true
+      t.string    :keywords,    null: false, foreign_key: true
+      t.string    :description, null: false, foreign_key: true
 
       t.timestamps
     end

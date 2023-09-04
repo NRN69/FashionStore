@@ -1,238 +1,203 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="Add pagination">
-      <change afterPath="$PROJECT_DIR$/.yarn/cache/gsap-npm-3.12.2-0e0850bbe0-e3e9709f9c.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/assets/images/default_avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/users/passwords_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/answers/_answers.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/answers/create.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/answers/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/_new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/comments/create.turbo_stream.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/product/_button_add_to_cart.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/product/_review.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/shared/_notifications.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/db/migrate/20230825124910_create_active_storage_tables.active_storage.rb" afterDir="false" />
+    <list default="true" id="db65f977-d0ef-4406-87c8-18382d51e1e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/extensions.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/images/default_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/avo/resources/company_resource.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/avo/companies_controller.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/decorators/product_decorator.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/javascript/controllers/previews_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/models/company.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/policies/order_policy.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/devise/shared/_avatar_preview.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/devise/shared/_flash.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/favorites/_favorite_button.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db/migrate/20230827202740_create_companies.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/decorators/product_decorator_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spec/models/company_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FashionStore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FashionStore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/nrn.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/nrn.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.pnp.cjs" beforeDir="false" afterPath="$PROJECT_DIR$/.pnp.cjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/@gar-promisify-npm-1.1.3-ac1a325862-4059f790e2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/@npmcli-fs-npm-2.1.2-08d434e77b-405074965e.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/@npmcli-move-file-npm-2.0.1-b593d8f741-52dc02259d.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/@rails-actioncable-npm-7.0.4-dc155e2932-b31cae4051.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/agentkeepalive-npm-4.3.0-ac3d8e6807-982453aa44.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/cacache-npm-16.1.3-4e2088ed0d-d91409e6e5.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/depd-npm-2.0.0-b6c51a4b43-abbe19c768.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/electron-to-chromium-npm-1.4.492-4f27848854-39ae22dd65.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/fast-glob-npm-3.2.12-162763bbae-0b1990f6ce.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/glob-npm-8.1.0-65f64af8b1-92fbea3221.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/globby-npm-13.1.3-3b0bb18d0b-93f06e0200.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/immutable-npm-4.3.0-6120b6947c-bbd7ea99e2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/infer-owner-npm-1.0.4-685ac3d2af-181e732764.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/make-fetch-happen-npm-10.2.1-f1cc7cd2df-2332eb9a8e.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/minimatch-npm-5.1.6-1e71429f4c-7564208ef8.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/minipass-fetch-npm-2.1.2-9b21a5c930-3f216be791.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/minipass-npm-4.2.5-25860eb433-4f9c19af23.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/node-gyp-npm-9.3.1-43540bab9c-b860e9976f.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/promise-inflight-npm-1.0.1-5bb925afac-2274948309.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/sass-npm-1.65.1-d6fc30b338-33e325fc80.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/semver-npm-7.3.8-25a996cb4f-ba9c7cbbf2.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/slash-npm-5.0.0-ae16ec7b63-1fa799ee16.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/ssri-npm-9.0.1-33ce27f4f8-fb58f5e46b.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/tar-npm-6.1.13-3234e72781-8a278bed12.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/unique-filename-npm-2.0.1-183c6c7c2b-807acf3381.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/unique-slug-npm-3.0.0-0b82e51577-49f8d915ba.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/yaml-npm-2.2.1-b7f7f5e84d-84f68cbe46.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/cache/yargs-npm-17.7.1-0758ec0e50-3d8a43c336.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/gsap-npm-3.12.2-0e0850bbe0-e3e9709f9c.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.yarn/cache/postcss-npm-8.4.28-ce7cf45f10-f605c24a36.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/.yarn/install-state.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/workflows/release-please.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/workflows/tests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.github/workflows/visual-studio.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/.ready" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/addon.gypi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/bin/node-gyp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Error-pre-versions-of-node-cannot-be-installed.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Force-npm-to-use-global-node-gyp.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Home.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Linking-to-OpenSSL.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/Updating-npm-bundled-node-gyp.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/docs/binding.gyp-files-in-the-wild.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.flake8" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/Python_tests.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/node-gyp.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/nodejs-windows.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/.github/workflows/release-please.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/AUTHORS" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/data/win/large-pdb-shim.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/gyp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/gyp.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/gyp_main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSNew.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSProject.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSSettings_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSToolFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSUserFile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSUtil.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/MSVSVersion.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/common.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/common_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/easy_xml.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/easy_xml_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/flock_tool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/analyzer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/android.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/cmake.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/compile_commands_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/dump_dependency_json.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/eclipse.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/gypd.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/gypsh.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/make.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/msvs_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/ninja_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/xcode.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/generator/xcode_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/input.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/input_test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/mac_tool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/msvs_emulation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/ninja_syntax.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/simple_copy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/win_tool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xcode_emulation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xcode_ninja.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xcodeproj_file.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pylib/gyp/xml_fix.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/pyproject.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/test_gyp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/Xcode/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.pbfilespec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/Xcode/Specifications/gyp.xclangspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/README" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/gyp-tests.el" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/gyp.el" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/run-unit-tests.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/testdata/media.gyp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/emacs/testdata/media.gyp.fontified" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/graphviz.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/pretty_gyp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/pretty_sln.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/gyp/tools/pretty_vcproj.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/Find-VisualStudio.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/build.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/clean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/configure.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/create-config-gypi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/find-node-directory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/find-python.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/find-visualstudio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/install.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/list.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/node-gyp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/process-release.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/rebuild.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/remove.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/lib/util.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/macOS_Catalina.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/macOS_Catalina_acid_test.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/src/win_delay_load_hook.cc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_BuildTools_minimal.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_Community_workload.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_Express.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2017_Unusable.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2019_BuildTools_minimal.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2019_Community_workload.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/VS_2019_Preview.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/certs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/nodedir/include/node/config.gypi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/fixtures/test-charmap.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/process-exec-sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/simple-proxy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-addon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-configure-python.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-create-config-gypi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-download.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-accessible-sync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-node-directory.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-python.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-find-visualstudio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-install.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-options.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/test/test-process-release.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.yarn/unplugged/node-gyp-npm-9.3.1-43540bab9c/node_modules/node-gyp/update-gyp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/banner/banner-1-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/banner/banner-2-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/default_avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/default_avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/favicon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/header/cart-items/item1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/header/cart-items/item2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/hero/hero-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/hero/hero-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/hero/slider1.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/carousel/slider1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/hero/slider2.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/carousel/slider2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/hero/slider3.png" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/carousel/slider3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/logo/white-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/01.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/second_image/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/02.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/third_image/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/03.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/second_image/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/04.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/third_image/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/05.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/second_image/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/06.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/third_image/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/07.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/second_image/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/08.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/third_image/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/09.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/second_image/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/third_image/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/second_image/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/product-details/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/third_image/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/images/products/product-9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/images/products/main-image/product-9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/dashboards/fashion_store_dashboard.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/answer_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/answer_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/brand_resource.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/category_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/comment_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/comment_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/like_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/favorite_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/notification_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/notification_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/order_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/product_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/product_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/size_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/size_resource.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/avo/resources/user_resource.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/avo/resources/user_resource.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/answers_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/answers_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/brands_controller.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/likes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/favorites_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/avo/products_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/cart_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/cart_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/category_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/category_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/comments_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/comments_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/likes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/likes_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/concerns/Authorization.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/likes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/favorites_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/main_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/main_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/decorators/user_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/user_decorator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/orders_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/orders_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/product_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/confirmations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/omniauth_callbacks_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/passwords_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/passwords_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/users/unlocks_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/decorators/answer_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/answer_decorator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/decorators/comment_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/comment_decorator.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/decorators/like_decorator.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/decorators/favorite_decorator.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/category_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/category_helper.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers/comments_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/comments_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/likes_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/favorites_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers/product_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers/product_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/javascript/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/search_form_controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/search_form_controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/answer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/answer.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/brand.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/cart.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/cart.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/category.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/category.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/comment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/comment.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/gallery.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/like.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/favorite.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/product.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/product.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/size.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/size.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/notifications/answer_notification.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/notifications/answer_notification.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/brand_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/company_policy.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/policies/cart_policy.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/policies/cart_policy.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/_answer.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/answers/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/answers/destroy.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/destroy.turbo_stream.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/answers/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/answers/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/answers/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/avo/partials/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/avo/partials/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cart/_orderables_modal.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_orderables_modal.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/cart/_orderables_show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_orderables_show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/category/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/category/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_comment.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/comments/_comments.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_comments.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/comments/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/comments/destroy.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/destroy.turbo_stream.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/comments/_new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/_new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/comments/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/comments/update.turbo_stream.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/comments/update.turbo_stream.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/likes/_like_button.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/likes/_like_button.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/likes/_likes.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/likes/_likes.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/kaminari/_gap.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/kaminari/_gap.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/kaminari/_next_page.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/kaminari/_page.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/kaminari/_page.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/kaminari/_prev_page.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/devise.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/devise.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/likes/_like_button.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/likes/_likes.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/favorites/_favorites.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/likes/_likes_quantity.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/favorites/_favorites_quantity.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/likes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/favorites/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/main/_products_search.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/_products_search.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/main/_products_trending.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/_products_trending.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/main/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/main/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/notifications/_notification.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notifications/_notification.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/notifications/_notifications.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notifications/_notifications.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/orders/_order.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_order.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/_orders.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/orders/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/orders/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/product/_button_add.html.erb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/product/_product.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/product/_product.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/product/_recent_products.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/product/_recent_products.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/product/_related_products.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/product/_related_products.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/product/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/product/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/_button_add_to_cart.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/cart/_button_add_to_cart.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/_images_carousel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/_images_carousel.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/_product.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/_product.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/_recent_products.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/_recent_products.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/_related_products.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/_related_products.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/_review.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/_review.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/product/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/products/show.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_banner_area.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_banner_area.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_carousel.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_carousel.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_flash.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_footer.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_middle_header.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/initializers/avo.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/initializers/avo.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230424101401_create_brands.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230424101421_create_products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630120248_create_related_products.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630120248_create_related_products.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630133443_create_galleries.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230630141359_create_categories.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230630141359_create_categories.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230705082643_create_orderables.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230708063321_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230708063321_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230722064824_create_orders.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230724064934_add_name_and_phone_to_user.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230731105924_create_likes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230731105924_create_favorites.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230807092514_create_comments.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230807092514_create_comments.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230807092758_create_notifications.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230807092758_create_notifications.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230811075506_create_answers.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230811075506_create_answers.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230811090826_create_sizes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230811090826_create_sizes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20230825124910_create_active_storage_tables.active_storage.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230825124910_create_active_storage_tables.active_storage.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dump.rdb" beforeDir="false" afterPath="$PROJECT_DIR$/dump.rdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/product_controller_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/controllers/products_controller_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/decorators/like_decorator_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/decorators/favorite_decorator_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/helpers/likes_helper_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/helpers/favorites_helper_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/brand_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/gallery_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/models/like_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/models/favorite_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/requests/likes_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/requests/favorites_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/views/likes/update.html.erb_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/views/favorites/update.html.erb_spec.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -334,6 +299,9 @@
     </expand>
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="FashionStore" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -343,6 +311,17 @@
         <option value="$PROJECT_DIR$/.idea" />
       </set>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -364,23 +343,40 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/views/comments" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.yarn" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.jscs" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.jscs" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.jscs" value="" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="MTCustomThemeConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/comments" />
-      <recent name="$PROJECT_DIR$/app/views/answers" />
-      <recent name="$PROJECT_DIR$/app/javascript/controllers" />
-      <recent name="$PROJECT_DIR$/app/assets/css" />
-      <recent name="$PROJECT_DIR$/app/views/kaminari" />
+      <recent name="$PROJECT_DIR$/.yarn" />
+      <recent name="$PROJECT_DIR$/.yarn/cache" />
+      <recent name="$PROJECT_DIR$/app/policies" />
+      <recent name="$PROJECT_DIR$/app/assets/images" />
+      <recent name="$PROJECT_DIR$/app/views/devise/shared" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/views/category" />
-      <recent name="$PROJECT_DIR$/app/controllers/product" />
-      <recent name="$PROJECT_DIR$/app/views/shared" />
-      <recent name="$PROJECT_DIR$/app/views/shared/header" />
+      <recent name="$PROJECT_DIR$/app/assets/images/carousel" />
+      <recent name="$PROJECT_DIR$/app/assets/images/products/third_image" />
+      <recent name="$PROJECT_DIR$/app/assets/images/products/second_image" />
+      <recent name="$PROJECT_DIR$/app/assets/images/products/main_image" />
+      <recent name="$PROJECT_DIR$/app/assets/images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -637,8 +633,12 @@
     </option>
   </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_MODE" value="false" />
+    <option name="ACTIVE_ACTIONS" value=",YAML_SHOW_RESOLVED_ALIAS_VALUES" />
+  </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$USER_HOME$/.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -705,7 +705,34 @@
       <workItem from="1692647520846" duration="5965000" />
       <workItem from="1692952570594" duration="928000" />
       <workItem from="1692953736812" duration="2583000" />
-      <workItem from="1692956970332" duration="19682000" />
+      <workItem from="1692956970332" duration="20012000" />
+      <workItem from="1693030668549" duration="10324000" />
+      <workItem from="1693065513747" duration="1053000" />
+      <workItem from="1693069541367" duration="13678000" />
+      <workItem from="1693118244678" duration="9720000" />
+      <workItem from="1693157775692" duration="12666000" />
+      <workItem from="1693209279511" duration="5800000" />
+      <workItem from="1693226803410" duration="8645000" />
+      <workItem from="1693245072981" duration="13520000" />
+      <workItem from="1693298972429" duration="12813000" />
+      <workItem from="1693318321831" duration="3180000" />
+      <workItem from="1693330790188" duration="8542000" />
+      <workItem from="1693378171508" duration="10568000" />
+      <workItem from="1693401332231" duration="146000" />
+      <workItem from="1693401504850" duration="1307000" />
+      <workItem from="1693402882995" duration="656000" />
+      <workItem from="1693403563570" duration="1014000" />
+      <workItem from="1693404605037" duration="70000" />
+      <workItem from="1693404703790" duration="4609000" />
+      <workItem from="1693409338392" duration="3688000" />
+      <workItem from="1693414012996" duration="1859000" />
+      <workItem from="1693418788071" duration="437000" />
+      <workItem from="1693419250379" duration="671000" />
+      <workItem from="1693419945341" duration="1113000" />
+      <workItem from="1693421082192" duration="2495000" />
+      <workItem from="1693468033603" duration="728000" />
+      <workItem from="1693470634249" duration="40000" />
+      <workItem from="1693470697770" duration="411000" />
     </task>
     <task id="LOCAL-00001" summary="Init">
       <created>1680242341699</created>
@@ -840,11 +867,28 @@
       <option name="project" value="LOCAL" />
       <updated>1692349109073</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add Avatar for users&#10;Fixed render turbo_stream for likes">
+      <created>1692976905684</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1692976905684</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -877,7 +921,8 @@
     <MESSAGE value="Add sizes, comments for Product" />
     <MESSAGE value="Add sorting for Products" />
     <MESSAGE value="Add pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add pagination" />
+    <MESSAGE value="Add Avatar for users&#10;Fixed render turbo_stream for likes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Avatar for users&#10;Fixed render turbo_stream for likes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FashionStore@CartController_REMOVE__remove.rcov" NAME="CartController REMOVE #remove Coverage Results" MODIFIED="1690007075378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="FashionStore" />

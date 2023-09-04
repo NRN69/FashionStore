@@ -1,0 +1,5 @@
+<ul class="rating">
+  <% Review::MAX_RATING.times do |n| %>
+    <li><i class="bi bi-star<%=star_rating_class(product,n) %>"></i></li>
+  <% end %>
+</ul>

@@ -5,9 +5,9 @@ require 'rails_helper'
 RSpec.describe CartController, type: :controller do
   render_views
 
-  let(:user) { create :user }
-  let(:product) { create :product }
-  let(:cart) { create :cart, user: }
+  let(:user)       { create :user }
+  let(:product)    { create :product }
+  let(:cart)       { create :cart, user: }
   let(:orderables) { create :orderable, cart:, product: }
 
   describe 'GET #show' do
@@ -15,13 +15,14 @@ RSpec.describe CartController, type: :controller do
 
     it 'render show view' do
       sign_in(user)
-      is_expected.to render_template :show
+      expect(subject).to render_template :show
       expect(response.body).to include(product.title)
     end
   end
 
   describe 'REMOVE #remove' do
     subject { post :remove }
+
     context 'remove from cart' do
       it 'remove product from cart' do
         sign_in(user)
@@ -33,7 +34,7 @@ RSpec.describe CartController, type: :controller do
         expect { subject }.to change(user.cart.orderables, :count).by(-1)
 
         it 'render view show after remove'
-        is_expected.to render_template :show
+        expect(subject).to render_template :show
       end
     end
   end

@@ -2,448 +2,315 @@
 
 require 'faker'
 
-# table brands
+# table users
 
-brand_attributes = [
-  {
-    title: Faker::Lorem.word,
-    img: 'products/product-2.jpg',
-    description: Faker::Superhero.name
-  },
-  {
-    title: Faker::Lorem.word,
-    img: 'products/product-1.jpg',
-    description: Faker::Superhero.name
-  },
-  {
-    title: Faker::Lorem.word,
-    img: 'products/product-3.jpg',
-    description: Faker::Superhero.name
-  },
-  {
-    title: Faker::Lorem.word,
-    img: 'products/product-4.jpg',
-    description: Faker::Superhero.name
-  },
-  {
-    title: Faker::Lorem.word,
-    img: 'products/product-5.jpg',
-    description: Faker::Superhero.name
-  }
-]
+user = User.new
+user.phone = '+79001234567'
+user.name = 'Administrator'
+user.email = 'admin@admin.com'
+user.password = 'password'
+user.address = Faker::Address.full_address
+user.admin = true
+user.save!
 
-brand_attributes.each do |attr|
-  Brand.create!(attr) unless Brand.where(attr).first
-end
+user = User.new
+user.phone = '+79061234547'
+user.name = Faker::Internet.username.capitalize!
+user.email = 'user@user.com'
+user.password = 'password'
+user.address = Faker::Address.full_address
+user.admin = false
+user.save!
 
-# - - - - -
-#
+user = User.new
+user.phone = '+79061245547'
+user.name = Faker::Internet.username.capitalize!
+user.email = 'user1@user1.com'
+user.password = 'password'
+user.address = Faker::Address.full_address
+user.admin = false
+user.save!
+
+# - - - - - - - -
+
+# table company
+company = Company.create!(title: 'CompanyName',
+                          address: 'Tver, Sovetskaya st, 15',
+                          phone: '+79008001010',
+                          opening_hours: '9.00 am - 8.00 pm',
+                          opening_days: 'Monday-Friday')
+company.images.attach([
+                        { io: File.open(Rails.root.join('app/assets/images/carousel/slider1.png')),
+                          filename: '1-slider.png',
+                          content_type: 'image/png' },
+                        { io: File.open(Rails.root.join('app/assets/images/carousel/slider2.png')),
+                          filename: '2-slider.png',
+                          content_type: 'image/png' },
+                        { io: File.open(Rails.root.join('app/assets/images/carousel/slider3.png')),
+                          filename: '3-slider.png',
+                          content_type: 'image/png' }
+                      ])
+
+# - - - - - - - -
+
 # rubocop:disable Lint/UselessAssignment
 # # table categories
 
-women = Category.create(title: 'Women', bytitle: 'women', keywords: 'women', description: 'for women')
-summer2 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer',
+women   = Category.create(title: 'Women', keywords: 'women', description: 'for women')
+summer1 = Category.create(title: 'Summer', keywords: 'summer', description: 'for summer',
                           parent: women)
-winter2 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter',
+winter1 = Category.create(title: 'Winter', keywords: 'winter', description: 'for winter',
                           parent: women)
-spring2 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring',
+spring1 = Category.create(title: 'Spring', keywords: 'spring', description: 'for spring',
                           parent: women)
-autumn2 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn',
+autumn1 = Category.create(title: 'Autumn', keywords: 'autumn', description: 'for autumn',
                           parent: women)
 
-men = Category.create(title: 'Men', bytitle: 'men', keywords: 'men', description: 'for men')
-summer1 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer',
+men     = Category.create(title: 'Men', keywords: 'men', description: 'for men')
+summer2 = Category.create(title: 'Summer', keywords: 'summer', description: 'for summer',
                           parent: men)
-winter1 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter',
+winter2 = Category.create(title: 'Winter', keywords: 'winter', description: 'for winter',
                           parent: men)
-spring1 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring',
+spring2 = Category.create(title: 'Spring', keywords: 'spring', description: 'for spring',
                           parent: men)
-autumn1 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn',
+autumn2 = Category.create(title: 'Autumn', keywords: 'autumn', description: 'for autumn',
                           parent: men)
 
-kids = Category.create(title: 'Kids', bytitle: 'kids', keywords: 'kids', description: 'for kids')
-summer3 = Category.create(title: 'Summer', bytitle: 'summer', keywords: 'summer', description: 'for summer',
+kids    = Category.create(title: 'Kids', keywords: 'kids', description: 'for kids')
+summer3 = Category.create(title: 'Summer', keywords: 'summer', description: 'for summer',
                           parent: kids)
-winter3 = Category.create(title: 'Winter', bytitle: 'winter', keywords: 'winter', description: 'for winter',
+winter3 = Category.create(title: 'Winter', keywords: 'winter', description: 'for winter',
                           parent: kids)
-spring3 = Category.create(title: 'Spring', bytitle: 'spring', keywords: 'spring', description: 'for spring',
+spring3 = Category.create(title: 'Spring', keywords: 'spring', description: 'for spring',
                           parent: kids)
-autumn3 = Category.create(title: 'Autumn', bytitle: 'autumn', keywords: 'autumn', description: 'for autumn',
+autumn3 = Category.create(title: 'Autumn', keywords: 'autumn', description: 'for autumn',
                           parent: kids)
 # # - - - - - - - -
 # rubocop:enable Lint/UselessAssignment
 # table products
 product_attributes = [
   {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-1.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-2.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-3.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-4.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-5.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-6.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-7.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-8.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-9.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '1',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-10.jpg'
-  },
-  {
     category_id: '2',
-    brand_id: '2',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-11.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '3',
-    brand_id: '2',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-12.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '4',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-13.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '5',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-14.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '4',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-15.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '4',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-16.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '6',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-17.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '2',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-18.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '3',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-19.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '4',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-20.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '5',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-1.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '4',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-2.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '4',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-3.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '4',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-4.jpg'
-  },
-  {
-    category_id: '1',
-    brand_id: '4',
-    title: Faker::Name.female_first_name,
-    content: Faker::Lorem.sentence(word_count: 20),
-    price: Faker::Commerce.price,
-    color: Faker::Color.color_name,
-    keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-5.jpg'
+    description: Faker::Lorem.sentence
   },
   {
     category_id: '11',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-6.jpg'
+    description: Faker::Lorem.sentence(word_count: 20)
   },
   {
     category_id: '13',
-    brand_id: '4',
+    user_id: '1',
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
     title: Faker::Name.female_first_name,
     content: Faker::Lorem.sentence(word_count: 20),
     price: Faker::Commerce.price,
     color: Faker::Color.color_name,
     keywords: 'keywords',
-    description: Faker::Lorem.sentence,
-    img: 'products/product-7.jpg'
+    description: Faker::Lorem.sentence
   }
 ]
 
+n = 1
+10.times do
+  product = Product.create!(
+    category_id: 1,
+    user_id: 1,
+    brand: Faker::Commerce.brand,
+    material: Faker::Commerce.material,
+    title: Faker::Name.female_first_name,
+    content: Faker::Lorem.sentence(word_count: 20),
+    price: Faker::Commerce.price,
+    color: Faker::Color.color_name,
+    keywords: 'keywords',
+    description: Faker::Lorem.sentence
+  )
+  image = rand(1..6)
+  product.images.attach([
+                          { io: File.open(Rails.root.join('app', 'assets', 'images', 'products', 'main-image',
+                                                          "product-#{n}.jpg")),
+                            filename: "1-#{product.id}.jpg",
+                            content_type: 'image/jpg' },
+                          { io: File.open(Rails.root.join('app', 'assets', 'images', 'products', 'second_image',
+                                                          "#{image}.jpg")),
+                            filename: "2-#{product.id}.jpg",
+                            content_type: 'image/jpg' },
+                          { io: File.open(Rails.root.join('app', 'assets', 'images', 'products', 'third_image',
+                                                          "#{image}.jpg")),
+                            filename: "3-#{product.id}.jpg",
+                            content_type: 'image/jpg' }
+                        ])
+  if n <= 20
+    n += 1
+  else
+    n = 1
+  end
+end
+
+n = 1
 product_attributes.each do |attr|
-  Product.create!(attr) unless Product.where(attr).first
+  next if Product.where(attr).first
+
+  product = Product.create!(attr)
+  image = rand(1..6)
+  product.images.attach([
+                          { io: File.open(Rails.root.join('app', 'assets', 'images', 'products', 'main-image',
+                                                          "product-#{n}.jpg")),
+                            filename: "1-#{product.id}.jpg",
+                            content_type: 'image/jpg' },
+                          { io: File.open(Rails.root.join('app', 'assets', 'images', 'products', 'second_image',
+                                                          "#{image}.jpg")),
+                            filename: "2-#{product.id}.jpg",
+                            content_type: 'image/jpg' },
+                          { io: File.open(Rails.root.join('app', 'assets', 'images', 'products', 'third_image',
+                                                          "#{image}.jpg")),
+                            filename: "3-#{product.id}.jpg",
+                            content_type: 'image/jpg' }
+                        ])
+  if n <= 20
+    n += 1
+  else
+    n = 1
+  end
 end
 
 # - - - - -
 
-# # table users
-# user_attributes = [
-#   {
-#     name: 'Admin',
-#     email: 'admin@admin.com',
-#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
-#     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     admin: true
-#   },
-#   {
-#     name: Faker::Name.name,
-#     email: Faker::Internet.email(domain: 'gmail.com'),
-#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
-#     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     admin: false
-#   },
-#   {
-#     name: Faker::Name.name,
-#     email: Faker::Internet.email(domain: 'mail.ru'),
-#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
-#     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     admin: false
-#   },
-#   {
-#     name: Faker::Name.name,
-#     email: Faker::Internet.email(domain: 'yandex.ru'),
-#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
-#     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     admin: false
-#   },
-#   {
-#     name: Faker::Name.name,
-#     email: Faker::Internet.email(domain: 'hotmail.com'),
-#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
-#     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     admin: false
-#   },
-#   {
-#     name: Faker::Name.name,
-#     email: Faker::Internet.email(domain: 'yahoo.com'),
-#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
-#     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     admin: false
-#   },
-#   {
-#     name: Faker::Name.name,
-#     email: Faker::Internet.email(domain: 'youmail.com'),
-#     encrypted_password: Devise::Encryptor.digest(User, 'password'),
-#     phone: Faker::PhoneNumber.cell_phone_in_e164,
-#     admin: false
-#   }
-# ]
-#
-# user_attributes.each do |attr|
-#   User.create!(attr) unless User.where(attr).first
-# end
+# table reviews
+20.times do |i|
+  Review.create!(product_id: i + 1, user_id: 2, rating: rand(1..5), body: Faker::Lorem.sentence(word_count: 20))
+end
+
+# - - - - - - - -
+
+# table answers
+10.times do |i|
+  Answer.create!(review_id: i + 1, user_id: 1, body: Faker::Lorem.sentence(word_count: 20))
+end
 
 # - - - - - - - -
 
 # # table sizes
 200.times do
   Size.create!(
-    product_id: Faker::Number.between(from: 1, to: 27),
-    size: Faker::Number.between(from: 27, to: 60)
+    product_id: rand(1..21),
+    size: %w[XS S M L XL XXL].sample
   )
 end
 
 # - - - - -
+puts ''
+puts '--------------------- Done! -------------------------'
+puts ''
