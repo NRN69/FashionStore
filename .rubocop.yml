@@ -1,5 +1,4 @@
 require:
- - rubocop-i18n
  - rubocop-factory_bot
  - rubocop-rspec
 AllCops:

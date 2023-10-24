@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Cart, type: :model do
+RSpec.describe Cart do
   it { is_expected.to have_many(:orderables) }
   # it { should have_many(:products) }
   it { is_expected.to belong_to(:user) }

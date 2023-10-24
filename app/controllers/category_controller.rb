@@ -2,9 +2,10 @@
 
 class CategoryController < ApplicationController
   before_action :set_product!
+
   def show
     @category = Category.find(params[:id])
-    @products = @category.products.joins(:reviews).order(params[:sort]).page params[:page]
+    @products = @category.products.order(params[:sort]).page params[:page]
 
     set_page_options
   end

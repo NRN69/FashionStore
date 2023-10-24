@@ -291,6 +291,7 @@ end
 # table reviews
 20.times do |i|
   Review.create!(product_id: i + 1, user_id: 2, rating: rand(1..5), body: Faker::Lorem.sentence(word_count: 20))
+  Review.create!(product_id: 1, user_id: 2, rating: rand(1..5), body: Faker::Lorem.sentence(word_count: 20))
 end
 
 # - - - - - - - -

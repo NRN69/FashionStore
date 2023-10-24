@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-
-RSpec.describe Review, type: :model do
-  
+RSpec.describe Review do
 end

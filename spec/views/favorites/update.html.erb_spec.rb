@@ -2,6 +2,5 @@
 
 require 'rails_helper'
 
-RSpec.describe 'favorites/update.html.erb', type: :view do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe 'favorites/update.html.erb' do
 end

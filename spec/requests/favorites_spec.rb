@@ -2,10 +2,10 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Favorites', type: :request do
-  describe 'GET /update' do
+RSpec.describe 'Favorites' do
+  describe 'GET #index' do
     it 'returns http success' do
-      get '/favorites/update'
+      get '/favorites'
       expect(response).to have_http_status(:success)
     end
   end

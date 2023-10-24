@@ -20,7 +20,7 @@ class NotificationResource < Avo::BaseResource
   end
 
   field :review, as: :text do |message|
-    review.find_by(id: message.params.values[0].review_id).body
+    Review.find_by(id: message.params.values[0].review_id).body
   end
   field :user, as: :date, name: 'create date', format: 'dd-LL-yyyy', hide_on: %i[new edit] do |message|
     message.params.values[0].created_at

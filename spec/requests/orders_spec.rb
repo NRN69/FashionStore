@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Orders', type: :request do
+RSpec.describe 'Orders' do
   describe 'GET /index' do
     it 'returns http success' do
       get '/orders/index'

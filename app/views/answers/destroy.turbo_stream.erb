@@ -1,2 +1,2 @@
 <%= turbo_stream.remove @answer %>
-<%= turbo_stream.replace 'reviews', partial: 'reviews/reviews', locals: { product: @product } %>
+<%= turbo_stream.replace 'reviews', partial: 'reviews/reviews', locals: { product: @product, reviews: @reviews  } %>

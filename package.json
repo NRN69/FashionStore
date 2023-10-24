@@ -5,16 +5,16 @@
     "@hotwired/turbo-rails": "^7.3.0",
     "@popperjs/core": "^2.11.8",
     "animate.css": "^4.1.1",
-    "autoprefixer": "^10.4.15",
-    "bootstrap": "^5.3.1",
-    "bootstrap-icons": "^1.10.5",
+    "autoprefixer": "^10.4.16",
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.1",
     "chart.js": "^4.4.0",
     "chartkick": "^5.0.1",
-    "esbuild": "^0.19.2",
+    "esbuild": "^0.19.3",
     "lineicons": "^1.0.3",
-    "postcss": "^8.4.29",
+    "postcss": "^8.4.30",
     "postcss-cli": "^10.1.0",
-    "sass": "^1.66.1"
+    "sass": "^1.68.0"
   },
   "version": "0.1.0",
   "browserslist": [

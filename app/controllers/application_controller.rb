@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
+  before_action :store_user_location!, if: :storable_location?
   before_action :set_render_cart
   before_action :cart
 
@@ -14,5 +15,15 @@ class ApplicationController < ActionController::Base
 
   def current_user
     UserDecorator.decorate(super) unless super.nil?
+  end
+
+  private
+
+  def storable_location?
+    request.get? && is_navigational_format? && !devise_controller? && !request.xhr?
+  end
+
+  def store_user_location!
+    store_location_for(:user, request.fullpath)
   end
 end

@@ -2,18 +2,16 @@
 
 FactoryBot.define do
   factory :product do
-    association :category, factory: :category
+    category factory: %i[category]
 
-    brand_id     { rand(1..5) }
-    title        { Faker::Lorem.word }
-    bytitle      { title.downcase }
-    img          { 'products/product-1.jpg' }
-    content      { Faker::Lorem.sentence }
-    keywords     { title.downcase }
-    description  { content }
-    price        { rand(10..100) }
-    status       { 1 }
-    hit          { 1 }
+    brand { Faker::Commerce.brand }
+    material { Faker::Commerce.material }
+    title { Faker::Name.female_first_name }
+    content { Faker::Lorem.sentence(word_count: 20) }
+    price { Faker::Commerce.price }
+    color { Faker::Color.color_name }
+    keywords { 'keywords' }
+    description { Faker::Lorem.sentence }
     # association :user, factory: :user
   end
 end

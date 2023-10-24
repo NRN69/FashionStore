@@ -2,10 +2,9 @@
 
 require 'rails_helper'
 
-RSpec.describe MainController, type: :controller do
+RSpec.describe MainController do
   describe 'GET #index' do
-    let(:brands) { create_list :brand, 3 }
-    let(:hits)   { create_list :product, 8 }
+    let(:products) { create_list(:product, 8) }
 
     before { get :index }
 
@@ -14,12 +13,8 @@ RSpec.describe MainController, type: :controller do
         expect(subject).to render_template :index
       end
 
-      it 'instance var posts include only brands' do
-        expect(assigns(:brands)).to match_array(brands)
-      end
-
       it 'instance var works include only works' do
-        expect(assigns(:hits)).to match_array(hits)
+        expect(assigns(:products)).to match_array(products)
       end
     end
   end

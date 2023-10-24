@@ -8,4 +8,12 @@ module ApplicationHelper
   def attached_filename(object)
     object.blob.filename.to_s.split('.')[0]
   end
+
+  def user_avatar
+    return current_user.avatar if current_user.avatar.attached?
+
+    return current_user.avatar_url if !current_user.avatar.attached? && !current_user.avatar_url.nil?
+
+    'default_avatar.png'
+  end
 end

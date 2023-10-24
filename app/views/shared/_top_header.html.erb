@@ -25,6 +25,7 @@
           <ul class="user-login">
             <% if user_signed_in? %>
               <li class="dropdown">
+                <%= image_tag user_avatar, size: 25, class: 'mx-2', style: 'border-radius: 50%;' %>
                 <%= link_to '#', data: {"bs-toggle": 'dropdown'} do %>
                   <%= current_user.name_or_email  %>
                 <% end %>

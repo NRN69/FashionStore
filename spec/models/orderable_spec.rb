@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Orderable, type: :model do
+RSpec.describe Orderable do
   it { is_expected.to belong_to(:product) }
   it { is_expected.to belong_to(:cart) }
   it { is_expected.to validate_presence_of(:cart_id) }

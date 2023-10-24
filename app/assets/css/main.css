@@ -926,13 +926,14 @@ ol {
 /* Avatar */
 .avatar {
   padding: 7px;
+  border-radius: 50%;
 }
 
 .avatar img {
-  border-radius: 50%;
   border-style: solid;
   border-color: #FF69B4;
   border-width: 2px;
+  border-radius: 50%;
 }
 
 .avatar span {
@@ -3533,22 +3534,9 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
   color: #FF69B4;
 }
 
-.single-product .star-bar {
-  padding: 0px 20px 20px;
-  z-index: 0;
-}
-
-.single-product .star-bar label{
-  position: relative;
-  box-sizing: border-box;
-  margin-left: -27px;
-  z-index: 0;
-}
-
-.single-product .star-bar input[type=radio]{
-  margin-left: 10px;
-  position: relative;
-  z-index: 1;
+.single-product .star-bar label {
+  padding: 0px;
+  margin-left: -10px;
 }
 
 .single-product .product-info .category {

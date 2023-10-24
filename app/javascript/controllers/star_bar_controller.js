@@ -12,7 +12,7 @@ export default class extends Controller {
     this.element.setAttribute('id','star-activated');
     this.element.setAttribute('class', 'bi bi-star-fill');
     elValues.forEach(function(el) {
-      if (el.getAttribute('value') < document.getElementById('star-activated').getAttribute('value')) {
+      if (el.getAttribute('data-value') < document.getElementById('star-activated').getAttribute('data-value')) {
         elClasses.push(el);
         }
       }

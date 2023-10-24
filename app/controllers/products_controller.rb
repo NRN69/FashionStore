@@ -1,10 +1,11 @@
 # frozen_string_literal: true
 
 class ProductsController < ApplicationController
-  after_action :register_visit, only: [:show]
+  after_action :register_visit, only: :show
 
   def show
     @product = Product.find(params[:id])
+    @reviews = Kaminari.paginate_array(@product.reviews).page(params[:page]).per(5)
     set_page_options
   end
 

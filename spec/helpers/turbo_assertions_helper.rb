@@ -13,7 +13,7 @@ module TurboAssertionsHelper
 
   def assert_turbo_visited(options = {}, message = nil)
     assert_response(:ok, message)
-    assert_equal('text/javascript', response.try(:media_type) || response.content_type)
+    expect(response.try(:media_type) || response.content_type).to eq('text/javascript')
 
     visit_location, = turbo_visit_location_and_action
 

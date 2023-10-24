@@ -2,18 +2,18 @@
 
 require 'rails_helper'
 
-RSpec.describe CartController, type: :controller do
+RSpec.describe CartController do
   render_views
 
-  let(:user)       { create :user }
-  let(:product)    { create :product }
-  let(:cart)       { create :cart, user: }
-  let(:orderables) { create :orderable, cart:, product: }
+  let(:user)       { create(:user) }
+  let(:product)    { create(:product) }
+  let(:cart)       { create(:cart, user:) }
+  let(:orderables) { create(:orderable, cart:, product:) }
 
   describe 'GET #show' do
     subject { get :show }
 
-    it 'render show view' do
+    it 'when rendered show view' do
       sign_in(user)
       expect(subject).to render_template :show
       expect(response.body).to include(product.title)
@@ -23,13 +23,13 @@ RSpec.describe CartController, type: :controller do
   describe 'REMOVE #remove' do
     subject { post :remove }
 
-    context 'remove from cart' do
+    context 'when removed from cart' do
       it 'remove product from cart' do
         sign_in(user)
         expect { subject }.to change { user.reload.cart.present? }.to(false)
       end
 
-      it 'remove product from orderables' do
+      it 'when removed product from orderables' do
         sign_in(user)
         expect { subject }.to change(user.cart.orderables, :count).by(-1)
 

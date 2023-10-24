@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe 'Mains', type: :request do
+RSpec.describe 'Mains' do
   describe 'GET /index' do
     it 'returns http success' do
       get '/'

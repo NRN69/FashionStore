@@ -4,6 +4,7 @@ class ReviewsController < ApplicationController
   before_action :authenticate_user!
   before_action :set_review!, only: %i[destroy edit update]
   before_action :set_product!
+  before_action :set_reviews!
 
   # rubocop:disable Metrics/AbcSize
 
@@ -45,7 +46,7 @@ class ReviewsController < ApplicationController
         format.turbo_stream do
           render turbo_stream: [turbo_stream.replace('reviews',
                                                      partial: 'reviews/reviews',
-                                                     locals: { product: @product }),
+                                                     locals: { product: @product, reviews: @reviews }),
                                 turbo_stream.update('flash',
                                                     partial: 'shared/flash')]
         end
@@ -64,7 +65,7 @@ class ReviewsController < ApplicationController
         format.turbo_stream do
           render turbo_stream: turbo_stream.replace('reviews',
                                                     partial: 'reviews/reviews',
-                                                    locals: { product: @product })
+                                                    locals: { product: @product, reviews: @reviews })
         end
         format.html do
           redirect_to product_path(@product), status: :see_other
@@ -81,6 +82,10 @@ class ReviewsController < ApplicationController
 
   def review_update_params
     params.require(:review).permit(:body)
+  end
+
+  def set_reviews!
+    @reviews = Kaminari.paginate_array(@product.reviews).page(params[:page]).per(5)
   end
 
   def set_review!

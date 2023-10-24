@@ -16,23 +16,25 @@ gem 'cssbundling-rails'
 gem 'devise'
 gem 'draper'
 gem 'foreman', github: 'ddollar/foreman'
-gem 'inline_svg'
 gem 'jbuilder'
 gem 'jsbundling-rails'
 gem 'kaminari'
 gem 'meta-tags', require: 'meta_tags'
 gem 'oj'
 gem 'oj_mimic_json'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-mail_ru'
+gem 'omniauth-rails_csrf_protection', '~> 1.0'
+gem 'omniauth-vkontakte'
 gem 'pg', '~> 1.1'
 gem 'propshaft'
 gem 'puma', '~> 6.3'
 gem 'pundit'
 gem 'rails', '~> 7.0.4'
-gem 'rails-i18n', '~> 7.0.6'
-gem 'ransack'
 gem 'simple_form'
 gem 'stimulus-rails'
-gem 'turbo-rails', '~> 1.0.0'
+gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
@@ -64,7 +66,7 @@ group :test do
   gem 'db-query-matchers'
   gem 'json_spec'
   gem 'shoulda-matchers'
-  gem 'webdrivers'
+  gem 'webdrivers', '~> 5.0', require: false
 end
 
 # Use Redis for Action Cable

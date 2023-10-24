@@ -5,7 +5,7 @@ class AnswersController < ApplicationController
   before_action :set_answer!, only: %i[destroy edit update]
   before_action :set_review!
   before_action :set_product!, only: %i[destroy edit update]
-
+  before_action :set_reviews!, only: %i[destroy edit update]
   def create
     @answer = @review.answers.build answer_create_params
     @answer.user = current_user
@@ -36,7 +36,7 @@ class AnswersController < ApplicationController
         format.turbo_stream do
           render turbo_stream: [turbo_stream.replace('reviews',
                                                      partial: 'reviews/reviews',
-                                                     locals: { product: @product }),
+                                                     locals: { product: @product, reviews: @reviews }),
                                 turbo_stream.update('flash',
                                                     partial: 'shared/flash')]
         end
@@ -55,7 +55,7 @@ class AnswersController < ApplicationController
         format.turbo_stream do
           render turbo_stream: [turbo_stream.replace('reviews',
                                                      partial: 'reviews/reviews',
-                                                     locals: { product: @product }),
+                                                     locals: { product: @product, reviews: @reviews }),
                                 turbo_stream.update('flash',
                                                     partial: 'shared/flash')]
         end
@@ -82,6 +82,10 @@ class AnswersController < ApplicationController
 
   def set_review!
     @review = Review.find(params[:review_id])
+  end
+
+  def set_reviews!
+    @reviews = Kaminari.paginate_array(@product.reviews).page(params[:page]).per(5)
   end
 
   def set_product!

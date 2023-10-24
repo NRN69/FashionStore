@@ -4,23 +4,43 @@
   <%= form.error_notification %>
 
   <div class="form-inputs">
-    <%= render "devise/shared/avatar_preview", form: form %>
-    <%= form.input :name, required: false, input_html: { autocomplete: "name"}, autofocus: true %>
+    <div class=" avatar large">
+      
+      <%= image_tag user_avatar %>
 
-    <%= form.input :email,
-                required: true,
-                autofocus: true,
-                input_html: { autocomplete: "email" }%>
-    <%= form.input :password,
-                required: true,
-                hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
-                input_html: { autocomplete: "new-password" } %>
-    <%= form.input :password_confirmation,
-                required: true,
-                input_html: { autocomplete: "new-password" } %>
+      <%= form.input :avatar, as: :file %>
+    </div>
 
-    <%= form.input :phone, required: false,input_html: { autocomplete: "+79001236543"}, lenght: 12, autofocus: true %>
-    <br>
+      <%= form.input :name, 
+                      required: false, 
+                      input_html: { autocomplete: "name"}, 
+                      autofocus: true %>
+
+      <%= form.input :email,
+                      required: true,
+                      autofocus: true,
+                      input_html: { autocomplete: "email" } %>
+
+      <%= form.input :password,
+                      required: true,
+                      hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                      input_html: { autocomplete: "new-password" } %>
+
+      <%= form.input :password_confirmation,
+                      required: true,
+                      input_html: { autocomplete: "new-password" } %>
+
+      <%= form.input :phone, 
+                      required: false, 
+                      input_html: { autocomplete: "+79001236543"}, 
+                      lenght: 12, 
+                      autofocus: true %>
+
+      <%= form.input :address, 
+                      required: false, 
+                      input_html: { autocomplete: "Address"}, 
+                      autofocus: true %>
+      <br>
   </div>
 
   <div class="button">

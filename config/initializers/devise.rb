@@ -275,6 +275,17 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
+  config.omniauth :mail_ru,
+                  Rails.application.credentials.development.mail_ru[:client_id],
+                  Rails.application.credentials.development.mail_ru[:client_secret]
+  config.omniauth :google_oauth2,
+                  Rails.application.credentials.development.google_oauth2[:client_id],
+                  Rails.application.credentials.development.google_oauth2[:client_secret]
+  config.omniauth :vkontakte,
+                  Rails.application.credentials.development.vkontakte[:client_id],
+                  Rails.application.credentials.development.vkontakte[:client_secret],
+                  scope: [:email]
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.

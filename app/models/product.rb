@@ -27,12 +27,14 @@ class Product < ApplicationRecord
   end
   scope :order_by_filename, -> { joins(file_attachment: :blob).order('active_storage_blobs.filename ASC') }
 
+  # rubocop:disable Metrics/AbcSize
   def capitalize_attr
     self.title    =    title.split.map(&:capitalize).join(' ')
     self.brand    =    brand.split.map(&:capitalize).join(' ')
     self.color    =    color.split.map(&:capitalize).join(' ')
     self.material = material.split.map(&:capitalize).join(' ')
   end
+  # rubocop:enable Metrics/AbcSize
 
   def image_first
     images.min

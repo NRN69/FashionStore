@@ -4,7 +4,6 @@ module Users
   class RegistrationsController < Devise::RegistrationsController
     before_action :configure_sign_up_params, only: [:create]
     before_action :configure_account_update_params, only: [:update]
-
     # GET /resource/sign_up
     # def new
     #   super
@@ -25,6 +24,16 @@ module Users
     #   super
     # end
 
+    def update_resource(resource, params)
+      if resource.provider == 'google_oauth2' || resource.provider == 'mail_ru' || resource.provider == 'vkontakte'
+        params.delete('current_password')
+        resource.password = params['password']
+
+        resource.update_without_password(params)
+      else
+        resource.update_with_password(params)
+      end
+    end
     # DELETE /resource
     # def destroy
     #   super
@@ -39,7 +48,7 @@ module Users
     #   super
     # end
 
-    # protected
+    protected
 
     # If you have extra params to permit, append them to the sanitizer.
     def configure_sign_up_params
@@ -52,9 +61,9 @@ module Users
     end
 
     # The path used after sign up.
-    # def after_sign_up_path_for(resource)
-    #   super(resource)
-    # end
+    def after_sign_up_path_for(resource_or_scope)
+      stored_location_for(resource_or_scope) || super
+    end
 
     # The path used after sign up for inactive accounts.
     # def after_inactive_sign_up_path_for(resource)
