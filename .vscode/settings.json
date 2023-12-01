@@ -2,18 +2,24 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    }
   },
-
+  "cSpell.language": "en,ru",
   "files.autoSave": "onFocusChange",
   "stylelint.validate": ["css", "scss"],
-  "stylelint.useLocal": true,
-  "stylelint.autoFixOnSave": true,
   "workbench.colorCustomizations": {},
   "[ruby]": {
     "editor.formatOnSave": true
   },
   "ruby.codeCompletion": false,
   "ruby.format": "rubocop",
-  "editor.fontLigatures": false
+  "editor.fontLigatures": false,
+  "cSpell.words": [
+    "Пресет",
+    "changeclass",
+    "hotwired"
+  ]
 }

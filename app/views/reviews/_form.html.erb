@@ -6,19 +6,19 @@
           <%= render 'shared/flash' %>
         <% end %>
         <h5 class="star-bar">
-
-        <% Review::MAX_RATING.times do |n| %>
-          <%= form.radio_button :rating, n + 1, style: 'display:none' %>
-          <%= form.label :rating," #{ n+1 }",
-            data: { controller: "star-bar",
-              option: "false",
-              action: "click->star-bar#changeclass", value: n + 1 },
-              id: "star-deactivated",
-              style: "cursor:pointer; color: #fecb00; padding: 8px;",
-              class: "bi bi-star" %>
+        <% Review::MAX_RATING.times do |n| %> 
+          <i  class="bi bi-star" 
+              data-controller="star-bar" 
+              data-option="false" 
+              data-action="click->star-bar#changeclass" 
+              id= "star-deactivated" 
+              value="<%= n + 1 %>" 
+              style="cursor:pointer; color: #fecb00; padding: 8px;">
+          </i>
         <% end %>
+        <%= form.hidden_field :rating, id: "rating" %>
         </h5>
-          <%= form.input :body, label: false,  input_html: { lenght: {minimum: 3, maximum: 400}, placeholder: 'Your review', size: 40, autocompelete: 'on' } %><br>
+          <%= form.input :body, label: false,  input_html: { length: { minimum: 3, maximum: 400 }, placeholder: 'Your review', size: 40, autocompelete: 'on' } %><br>
           <div class="button">
             <%= button_tag(type: form.submit, class: 'btn animate') do %>
               Sent
