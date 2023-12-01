@@ -20,6 +20,7 @@ module UserOauth
         user.address    = 'No Address'
         user.phone      = '+00000000000'
         user.admin      = false
+        user.skip_confirmation!
       end
     end
 

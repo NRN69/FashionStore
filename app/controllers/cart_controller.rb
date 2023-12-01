@@ -13,9 +13,10 @@ class CartController < ApplicationController
     quantity = params[:quantity].to_i
     size = params[:size]
     current_orderable = @cart.orderables.find_by(product_id: @product.id)
-    if current_orderable && quantity.positive?
-      current_orderable.update(size:)
-    elsif quantity <= 0
+    # if current_orderable && quantity.positive?
+    #   current_orderable.update(size:)
+    #   respond_format
+    if quantity <= 0
       current_orderable.destroy
     elsif size.nil?
       flash[:danger] = 'Size not selected!'

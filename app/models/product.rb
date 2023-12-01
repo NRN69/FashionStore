@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 class Product < ApplicationRecord
+  extend FriendlyId
+
   validates   :category_id, numericality: true,                  presence: true
   validates   :user_id,     numericality: true,                  presence: true
   validates   :price,       numericality: true,                  presence: true
-  validates   :title,       length: { minimum: 2, maximum: 20 }, presence: true
+  validates   :title,       length: { minimum: 2, maximum: 20 }, presence: true, uniqueness: true
   validates   :brand,       length: { minimum: 2, maximum: 20 }, presence: true
   validates   :color,       length: { minimum: 2, maximum: 20 }, presence: true
   validates   :material,    length: { minimum: 2, maximum: 20 }, presence: true
@@ -22,9 +24,12 @@ class Product < ApplicationRecord
 
   before_create :capitalize_attr
 
-  has_many_attached :images do |attachable|
+  friendly_id :title_and_brand, use: %i[slugged history finders]
+
+  has_many_attached :images, dependent: :destroy do |attachable|
     attachable.variant :thumb, resize_to_limit: [408, 408]
   end
+
   scope :order_by_filename, -> { joins(file_attachment: :blob).order('active_storage_blobs.filename ASC') }
 
   # rubocop:disable Metrics/AbcSize
@@ -36,15 +41,11 @@ class Product < ApplicationRecord
   end
   # rubocop:enable Metrics/AbcSize
 
-  def image_first
-    images.min
+  def should_generate_new_friendly_id?
+    title_changed? || slug.blank?
   end
 
-  def image_second
-    images.second
-  end
-
-  def image_third
-    images.third
+  def title_and_brand
+    "#{title} #{brand}"
   end
 end

@@ -1,13 +1,25 @@
 
-  <%= simple_form_for order do |form| %>
-    <%= form.input :name,     input_html: { lenght: {minimum: 3, maximum: 10}, placeholder: 'Your Name', size: 40, autocompelete: 'on' }, requaired: true %><br>
-    <%= form.input :email,    input_html: { placeholder: current_user.email, autocompelete: 'on' }, requaired: true %><br>
-    <%= form.input :address,  input_html: { placeholder: 'State, City, Street, house number, apartment number', autocompelete: 'on', lenght: {minimum: 6, maximum: 50} }, rows: 4, requaired: true %><br>
-    <%= form.input :phone,    input_html: { placeholder: '+79101234567', lenght: {minimum: 11, maximum: 12}, autocompelete: 'on'}, rows: 4, requaired: true %><br>
-    <%= form.input :pay_type, collection: Order.pay_types.keys, selected: 0, requaired: true %>
-    <div class="button">
-      <%= button_tag(type: form.submit, class: 'btn animate') do %>
-        Confirm
+<%= simple_form_for order do |form| %>
+  <% Order.column_names.each do |attr| %>
+    <% current_user.attributes.each do |attr_name, attr_value| %>
+      <% if attr == attr_name && attr != 'created_at' && attr != 'updated_at' && attr != 'id'%>
+        <% if !attr_value.nil? %>
+          <%= "#{attr_name.capitalize}" %>
+          <h5 class="text-dark mt-1"><%=  attr_value.to_s %></h5> 
+          <%= form.hidden_field attr_name, value: attr_value, requaired: true %><br>
+        <% else %>
+          None
+        <% end %>
       <% end %>
-    </div>
+    <% end %>
   <% end %>
+
+  <%= form.input :pay_type, collection: Order.pay_types.keys, selected: 0, requaired: true %>
+  <div class="button">
+    <%= form.button :submit, 'Confirm', class: 'btn animate' %>
+
+    <%= link_to edit_user_registration_path(current_user), data: {turbo_frame: '_top'}, class: 'btn animate' do %>
+      Edit Info
+    <% end %>
+  </div>
+<% end %>

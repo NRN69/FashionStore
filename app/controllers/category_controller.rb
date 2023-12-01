@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 class CategoryController < ApplicationController
-  before_action :set_product!
-
   def show
     @category = Category.find(params[:id])
-    @products = @category.products.order(params[:sort]).page params[:page]
+    @products = @category.products.includes(%i[images_attachments reviews]).order(params[:sort]).page params[:page]
+
+    return redirect_to @category, status: :moved_permanently if request.path != category_path(@category)
 
     set_page_options
   end
@@ -18,9 +18,5 @@ class CategoryController < ApplicationController
     add_breadcrumb 'Home', :root_path, title: 'Home'
     add_breadcrumb category.parent.title, category_path(category.parent) if category.parent
     add_breadcrumb category.title
-  end
-
-  def set_product!
-    @product = Product.find(params[:id])
   end
 end

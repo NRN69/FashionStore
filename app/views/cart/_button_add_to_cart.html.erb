@@ -1,4 +1,4 @@
-<% if product.sizes %>
+<% if !product.sizes.nil? %>
   <%= form_with(url: cart_add_path) do |form| %>
     <%= form.hidden_field :id, value: product.id %>
     <%= form.hidden_field :quantity, value: 1 %>
@@ -13,7 +13,7 @@
                               id: 'deactivated',
                               value: "#{size}",
                               style:'cursor:pointer',
-                              class: ''  %>
+                              class: '', required: true  %>
       <% end %>
     </h5>
 

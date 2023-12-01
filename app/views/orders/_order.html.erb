@@ -3,7 +3,7 @@
     <div class="single-product">
       <div class="order">
 
-        <h5>Order #<%= @orders.size %>
+        <h5>Order #<%= order.created_at.strftime('%Y%m%d-%H%M%S') %>
           <span class="text-secondary mx-2"><small><%= order.created_at.strftime("%d-%m-%Y, %H:%M") %></small></span>
           <span><small><%= order.status %></small></span>
         </h5><br>
@@ -22,7 +22,7 @@
             <table>
               <tr>
                 <% Product.where(id: product_id.to_i).each do |product| %>
-                  <td><span><%= link_to image_tag(product.image_first, size: 100), product, data: {turbo_frame: '_top'} %></span></td>
+                  <td><span><%= link_to image_tag(product.images.first, size: 100), product, data: {turbo_frame: '_top'} %></span></td>
                   <td><span><%= product.title %></span></td>
                   <td><span>Color: <%= product.color.capitalize %></span></td>
                   <td><span>Size: <%= hash.keys.join %></span></td>

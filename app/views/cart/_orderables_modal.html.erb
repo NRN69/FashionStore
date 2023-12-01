@@ -22,7 +22,7 @@
                 <% end %>
               <% end %>
               <div class="cart-img-head">
-                <%= link_to  image_tag(product.image_first, class: 'img', alt: '#'), product, data: {turbo_frame: '_top'}, class: 'cart-img' %>
+                <%= link_to  image_tag(product.images.first, class: 'img', alt: '#'), product, data: {turbo_frame: '_top'}, class: 'cart-img' %>
               </div>
 
               <div class="content">

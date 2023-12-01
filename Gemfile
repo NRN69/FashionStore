@@ -16,9 +16,11 @@ gem 'cssbundling-rails'
 gem 'devise'
 gem 'draper'
 gem 'foreman', github: 'ddollar/foreman'
+gem 'friendly_id'
 gem 'jbuilder'
 gem 'jsbundling-rails'
 gem 'kaminari'
+gem 'mailcatcher'
 gem 'meta-tags', require: 'meta_tags'
 gem 'oj'
 gem 'oj_mimic_json'
@@ -26,7 +28,6 @@ gem 'omniauth'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-mail_ru'
 gem 'omniauth-rails_csrf_protection', '~> 1.0'
-gem 'omniauth-vkontakte'
 gem 'pg', '~> 1.1'
 gem 'propshaft'
 gem 'puma', '~> 6.3'
@@ -58,6 +59,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'bullet'
   gem 'web-console'
 end
 

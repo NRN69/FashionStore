@@ -14,10 +14,6 @@ module Users
       auth_provider('Google')
     end
 
-    def vkontakte
-      auth_provider('Vkontakte')
-    end
-
     protected
 
     def after_omniauth_failure_path_for(_scope)

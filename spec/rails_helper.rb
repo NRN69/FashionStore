@@ -19,6 +19,16 @@ rescue ActiveRecord::PendingMigrationError => e
 end
 
 RSpec.configure do |config|
+  if Bullet.enable?
+    config.before do
+      Bullet.start_request
+    end
+
+    config.after do
+      Bullet.perform_out_of_channel_notifications if Bullet.notification?
+      Bullet.end_request
+    end
+  end
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
   config.fixture_path = Rails.root.join('spec/fixtures').to_s
   config.include Devise::Test::ControllerHelpers, type: :controller
@@ -33,6 +43,7 @@ RSpec.configure do |config|
   config.use_transactional_fixtures = true
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
+  config.include Capybara::DSL
 end
 
 Shoulda::Matchers.configure do |config|

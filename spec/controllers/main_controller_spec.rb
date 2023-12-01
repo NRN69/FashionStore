@@ -5,6 +5,7 @@ require 'rails_helper'
 RSpec.describe MainController do
   describe 'GET #index' do
     let(:products) { create_list(:product, 8) }
+    let(:company)  { create(:company) }
 
     before { get :index }
 

@@ -6,7 +6,7 @@
         <table>
           <tr>
             <td>
-              <%= link_to image_tag(product.image_first, size: 100), product, data: {turbo_frame: '_top'} %>
+              <%= link_to image_tag(product.images.first, size: 100), product, data: {turbo_frame: '_top'} %>
             </td>
             <td>
               <span class="px-5"><%= orderable.product.brand %></span>

@@ -7,7 +7,7 @@
       </div>
       <% else %>
 
-        <% @products.each do |product| %>
+        <% @products.includes(images_attachments: :blob).each do |product| %>
 
           <div class="col-lg-3 col-md-4">
             <%= turbo_frame_tag product, loading: :lazy do %>
@@ -15,7 +15,7 @@
 
               <div class="single-product">
                 <div class="product-image">
-                  <%= link_to image_tag(product.image_first), product, data: {turbo_frame: '_top' } %>
+                  <%= link_to image_tag(product.images.first), product, data: {turbo_frame: '_top' } %>
                 </div>
                 <div class="product-info">
                   <span class="category"></span>

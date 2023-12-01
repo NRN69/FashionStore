@@ -2,13 +2,14 @@
 <section class="trending-product section" style="margin-top: 12px;">
   <div class="container">
     <div class="row">
+      <%= render 'shared/flash' %>
+
       <div class="col-12">
         <div class="section-title">
-          <h2>Your Order</h2>
+          <h2>Сheck your order details</h2>
         </div>
       </div>
     </div>
-<%= render 'shared/flash' %>
     <div class="row">
       <div class="section-title">
         <%= render 'orders/form', order: @order %>

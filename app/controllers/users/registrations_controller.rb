@@ -25,7 +25,7 @@ module Users
     # end
 
     def update_resource(resource, params)
-      if resource.provider == 'google_oauth2' || resource.provider == 'mail_ru' || resource.provider == 'vkontakte'
+      if resource.provider == 'google_oauth2' || resource.provider == 'mail_ru'
         params.delete('current_password')
         resource.password = params['password']
 
@@ -65,6 +65,10 @@ module Users
       stored_location_for(resource_or_scope) || super
     end
 
+    # The path used after update.
+    def after_update_path_for(resource_or_scope)
+      stored_location_for(resource_or_scope) || super
+    end
     # The path used after sign up for inactive accounts.
     # def after_inactive_sign_up_path_for(resource)
     #   super(resource)

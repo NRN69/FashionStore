@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class Order < ApplicationRecord
-  validates :name,        length: { minimum: 3, maximum: 10 }, presence: true
+  validates :name,        length: { minimum: 3, maximum: 30 }, presence: true
   validates :address,     length: { minimum: 6, maximum: 50 }, presence: true
   validates :email,       format: { with: URI::MailTo::EMAIL_REGEXP }, presence: true
   validates :phone,       length: { minimum: 11, maximum: 12 }, presence: true

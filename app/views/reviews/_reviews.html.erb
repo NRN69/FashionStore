@@ -3,11 +3,9 @@
 
     <h6 class="reviews mt-5 text-secondary">Reviews<small> (<%= product.reviews.size %>)</small><small style="position: absolute; left: 39%; margin-top: 1px; ">Rating: <%= product.reviews.average(:rating).round %> <i class="bi bi-star-fill" style="color: #fecb00;"></i></small>
 
-      <% @reviews.each do |review| %>
+      <% product.reviews.includes(%i[user answers]).each do |review| %>
         <%= render review, product: product %><br>
       <% end %>
-
-      <%= paginate @reviews %>
-
+      
   <% end %>
 <% end %>

@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'active_support/core_ext/integer/time'
+require 'active_record'
+require 'bullet'
 
 # The test environment is used exclusively to run your application's
 # test suite. You never need to work with it otherwise. Remember that
@@ -8,6 +10,12 @@ require 'active_support/core_ext/integer/time'
 # and recreated between test runs. Don't rely on the data there!
 
 Rails.application.configure do
+  config.after_initialize do
+    Bullet.enable        = true
+    Bullet.bullet_logger = true
+    Bullet.raise         = true # raise an error if n+1 query occurs
+  end
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Turn false under Spring and add config.action_view.cache_template_loading = true.
@@ -36,6 +44,14 @@ Rails.application.configure do
   config.action_controller.allow_forgery_protection = false
 
   # Store uploaded files on the local file system in a temporary directory.
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.action_mailer.delivery_method = :smtp
+  # SMTP settings for mailcatcher gem.
+  config.action_mailer.smtp_settings = {
+    address: '127.0.0.1',
+    port: 1025
+  }
   config.active_storage.service = :test
 
   config.action_mailer.perform_caching = false
@@ -59,4 +75,13 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
+  OmniAuth.config.test_mode = true
+  OmniAuth.config.mock_auth[:mail_ru] = {
+    'provider' => 'mail_ru',
+    'uid' => 'test@mail.ru',
+    'info' =>
+    { 'email' => 'test@mail.ru',
+      'first_name' => 'Dave',
+      'last_name' => 'Wallace' }
+  }
 end

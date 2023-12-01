@@ -9,7 +9,7 @@
 
         <% Review::MAX_RATING.times do |n| %>
           <%= form.radio_button :rating, n + 1, style: 'display:none' %>
-          <%= form.label :rating, '',
+          <%= form.label :rating," #{ n+1 }",
             data: { controller: "star-bar",
               option: "false",
               action: "click->star-bar#changeclass", value: n + 1 },

@@ -1456,7 +1456,6 @@ input:-webkit-autofill:active {
 
 .button .btn-alt:hover {
   background-color: #FF69B4;
-  !important;
   color: #fff !important;
 }
 
@@ -1581,7 +1580,6 @@ input:-webkit-autofill:active {
   font-weight: 500;
   font-size: 14px;
   background-color: #FF69B4;
-  !important;
 }
 
 .header .topbar .top-left .menu-top-link .select-position select:focus {
@@ -2240,13 +2238,10 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
 
   .header .navbar .navbar-nav .nav-item a:hover {
     color: #FF69B4;
-    !important;
-
   }
 
   .header .navbar .navbar-nav .nav-item .active {
     color: #FF69B4;
-    !important;
   }
 
   .header .navbar-nav .nav-item {
@@ -2285,7 +2280,6 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
 
   .header .navbar-nav .nav-item .sub-menu .nav-item a:hover {
     color: #FF69B4;
-    !important;
   }
 
   .header .navbar-nav .nav-item a {
@@ -2308,8 +2302,7 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
   .header .navbar-nav .nav-item .sub-menu .active {
 
     background: #fff !important;
-    color: #FF69B4;
-    !important;
+    color: #FF69B4 !important;
   }
 
   .header .navbar-nav .nav-item .sub-menu .nav-item {
@@ -2324,7 +2317,6 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
   .header .navbar-nav .nav-item .sub-menu li:hover {
     background: #fff !important;
     color: #FF69B4;
-    !important;
   }
 
   .header .navbar-nav .nav-item a {
@@ -2368,12 +2360,10 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
 
   .header .navbar .navbar-nav .nav-item a:hover {
     color: #FF69B4;
-    !important;
   }
 
   .header .navbar .navbar-nav .nav-item .active {
     color: #FF69B4;
-    !important;
   }
 
   .header .navbar-nav .nav-item {
@@ -2411,7 +2401,6 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
 
   .header .navbar-nav .nav-item .sub-menu .nav-item a:hover {
     color: #FF69B4;
-    !important;
   }
 
   .header .navbar-nav .nav-item a {
@@ -2433,8 +2422,6 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
   .header .navbar-nav .nav-item .sub-menu li.active {
     background: #fff !important;
     color: #FF69B4;
-    !important;
-
   }
 
   .header .navbar-nav .nav-item .sub-menu .nav-item {
@@ -2448,7 +2435,6 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
   .header .navbar-nav .nav-item .sub-menu li:hover {
     background: #fff !important;
     color: #FF69B4;
-    !important;
   }
 
   .header .navbar-nav .nav-item a {
@@ -3534,10 +3520,9 @@ header .navbar-cart .cart-items .shopping-item .shopping-list li .content span .
   color: #FF69B4;
 }
 
-.single-product .star-bar label {
-  padding: 0px;
-  margin-left: -10px;
-}
+
+
+
 
 .single-product .product-info .category {
   color: #888;

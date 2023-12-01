@@ -5,9 +5,9 @@ class MainController < ApplicationController
 
   def index
     @products = if params[:query].present?
-                  Product.where('title LIKE ?', "%#{params[:query]}%")
+                  Product.includes(%i[images_attachments reviews]).where('title LIKE ?', "%#{params[:query]}%")
                 else
-                  Product.all.limit(8)
+                  Product.includes(%i[images_attachments reviews]).limit(8)
                 end
 
     return unless current_user

@@ -4,8 +4,9 @@ class ProductsController < ApplicationController
   after_action :register_visit, only: :show
 
   def show
-    @product = Product.find(params[:id])
-    @reviews = Kaminari.paginate_array(@product.reviews).page(params[:page]).per(5)
+    @product = Product.includes(images_attachments: :blob).find(params[:id])
+    return redirect_to @product, status: :moved_permanently if request.path != product_path(@product)
+
     set_page_options
   end
 

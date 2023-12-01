@@ -5,40 +5,41 @@ require 'faker'
 # table users
 
 user = User.new
-user.phone = '+79001234567'
-user.name = 'Administrator'
-user.email = 'admin@admin.com'
+user.phone    = '+79001234567'
+user.name     = 'Administrator'
+user.email    = 'admin@admin.com'
 user.password = 'password'
-user.address = Faker::Address.full_address
-user.admin = true
+user.address  = Faker::Address.full_address
+user.admin    = true
 user.save!
 
 user = User.new
-user.phone = '+79061234547'
-user.name = Faker::Internet.username.capitalize!
-user.email = 'user@user.com'
+user.phone    = '+79061234547'
+user.name     = Faker::Internet.username.capitalize!
+user.email    = 'user@user.com'
 user.password = 'password'
-user.address = Faker::Address.full_address
-user.admin = false
+user.address  = Faker::Address.full_address
+user.admin    = false
 user.save!
 
 user = User.new
-user.phone = '+79061245547'
-user.name = Faker::Internet.username.capitalize!
-user.email = 'user1@user1.com'
+user.phone    = '+79061245547'
+user.name     = Faker::Internet.username.capitalize!
+user.email    = 'user1@user1.com'
 user.password = 'password'
-user.address = Faker::Address.full_address
-user.admin = false
+user.address  = Faker::Address.full_address
+user.admin    = false
 user.save!
 
 # - - - - - - - -
 
 # table company
-company = Company.create!(title: 'CompanyName',
-                          address: 'Tver, Sovetskaya st, 15',
-                          phone: '+79008001010',
+company = Company.create!(name: Faker::Coffee.blend_name,
+                          address: "#{Faker::Address.city}, #{Faker::Address.street_name}, #{rand(1..100)}",
+                          phone: "+7#{Faker::Company.russian_tax_number}",
                           opening_hours: '9.00 am - 8.00 pm',
-                          opening_days: 'Monday-Friday')
+                          opening_days: 'Monday-Friday',
+                          email: Faker::Internet.email)
 company.images.attach([
                         { io: File.open(Rails.root.join('app/assets/images/carousel/slider1.png')),
                           filename: '1-slider.png',
@@ -56,7 +57,7 @@ company.images.attach([
 # rubocop:disable Lint/UselessAssignment
 # # table categories
 
-women   = Category.create(title: 'Women', keywords: 'women', description: 'for women')
+women   = Category.create(title: 'Women',  keywords: 'women',  description: 'for women')
 summer1 = Category.create(title: 'Summer', keywords: 'summer', description: 'for summer',
                           parent: women)
 winter1 = Category.create(title: 'Winter', keywords: 'winter', description: 'for winter',
@@ -66,7 +67,7 @@ spring1 = Category.create(title: 'Spring', keywords: 'spring', description: 'for
 autumn1 = Category.create(title: 'Autumn', keywords: 'autumn', description: 'for autumn',
                           parent: women)
 
-men     = Category.create(title: 'Men', keywords: 'men', description: 'for men')
+men     = Category.create(title: 'Men',    keywords: 'men',    description: 'for men')
 summer2 = Category.create(title: 'Summer', keywords: 'summer', description: 'for summer',
                           parent: men)
 winter2 = Category.create(title: 'Winter', keywords: 'winter', description: 'for winter',
@@ -76,7 +77,7 @@ spring2 = Category.create(title: 'Spring', keywords: 'spring', description: 'for
 autumn2 = Category.create(title: 'Autumn', keywords: 'autumn', description: 'for autumn',
                           parent: men)
 
-kids    = Category.create(title: 'Kids', keywords: 'kids', description: 'for kids')
+kids    = Category.create(title: 'Kids',   keywords: 'kids', description: 'for kids')
 summer3 = Category.create(title: 'Summer', keywords: 'summer', description: 'for summer',
                           parent: kids)
 winter3 = Category.create(title: 'Winter', keywords: 'winter', description: 'for winter',

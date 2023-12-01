@@ -10,17 +10,17 @@
       </div>
       <div class="carousel-inner">
         <% if product.images.attached? %>
-
+         
           <div class="carousel-item active">
-            <%= image_tag product.image_first, alt: "product-#{attached_filename(product.image_first)}" ,
+            <%= image_tag product.images.min, alt: "product-#{attached_filename(product.images.min)}" ,
               class: 'd-block w-100' %>
           </div>
           <div class="carousel-item">
-            <%= image_tag product.image_second, alt: "product-#{attached_filename(product.image_second)}" ,
+            <%= image_tag product.images.second, alt: "product-#{attached_filename(product.images.second)}" ,
               class: 'd-block w-100' %>
           </div>
           <div class="carousel-item ">
-            <%= image_tag product.image_third, alt: "product-#{attached_filename(product.image_third)}" ,
+            <%= image_tag product.images.third, alt: "product-#{attached_filename(product.images.third)}" ,
               class: 'd-block w-100' %>
 
           </div>

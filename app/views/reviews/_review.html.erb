@@ -1,4 +1,4 @@
-<%= turbo_frame_tag review do %>
+<%= turbo_frame_tag review, loading: :lazy do %>
   <div class="single-product">
     <div class="avatar small">
         <%= image_tag current_user.user_avatar, size: 40 %>

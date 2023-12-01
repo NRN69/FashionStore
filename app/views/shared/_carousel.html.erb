@@ -5,17 +5,17 @@
       <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <%= link_to image_tag Company.first.images.sort.first, size: '300', style: 'width: 90%', alt: 'slider1', class: 'd-block w-100' %>
+            <%= link_to image_tag Company.includes(images_attachments: :blob).first.images.sort.first, size: '300', style: 'width: 90%', alt: 'slider1', class: 'd-block w-100' %>
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
           <div class="carousel-item">
-            <%= image_tag Company.first.images.sort.second, size: '300', alt: 'slider2', class: 'd-block w-100' %>
+            <%= image_tag Company.includes(images_attachments: :blob).first.images.sort.second, size: '300', alt: 'slider2', class: 'd-block w-100' %>
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>
           <div class="carousel-item">
-            <%= image_tag Company.first.images.sort.third, size: '300', alt: 'slider3', class: 'd-block w-100' %>
+            <%= image_tag Company.includes(images_attachments: :blob).first.images.sort.third, size: '300', alt: 'slider3', class: 'd-block w-100' %>
             <div class="carousel-caption d-none d-md-block">
             </div>
           </div>

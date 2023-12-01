@@ -1,10 +1,19 @@
 {
-    "files.autoSave": "onFocusChange",
-    "workbench.colorCustomizations": {},
-    "[ruby]": {
-        "editor.formatOnSave": true,
-    },
-    "ruby.codeCompletion": false,
-    "ruby.format": "rubocop",
-    "editor.fontLigatures": false
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "files.autoSave": "onFocusChange",
+  "stylelint.validate": ["css", "scss"],
+  "stylelint.useLocal": true,
+  "stylelint.autoFixOnSave": true,
+  "workbench.colorCustomizations": {},
+  "[ruby]": {
+    "editor.formatOnSave": true
+  },
+  "ruby.codeCompletion": false,
+  "ruby.format": "rubocop",
+  "editor.fontLigatures": false
 }

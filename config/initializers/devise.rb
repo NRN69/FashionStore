@@ -18,6 +18,8 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '98cf8f9f7c28c674c1737698c026893fa758716c43f0b10b304057e2421103bfee5edb65a7693795044f999c8c184eba6fbd8446f39b8c4fb62bffc92fb7821f'
 
+  config.navigational_formats = ['*/*', :html, :turbo_stream]
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -134,7 +136,7 @@ Devise.setup do |config|
   # config.send_email_changed_notification = false
 
   # Send a notification email when the user's password is changed.
-  # config.send_password_change_notification = false
+  config.send_password_change_notification = true
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -281,10 +283,6 @@ Devise.setup do |config|
   config.omniauth :google_oauth2,
                   Rails.application.credentials.development.google_oauth2[:client_id],
                   Rails.application.credentials.development.google_oauth2[:client_secret]
-  config.omniauth :vkontakte,
-                  Rails.application.credentials.development.vkontakte[:client_id],
-                  Rails.application.credentials.development.vkontakte[:client_secret],
-                  scope: [:email]
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

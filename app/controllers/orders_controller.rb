@@ -32,6 +32,7 @@ class OrdersController < ApplicationController
           current_user.cart.destroy
           redirect_to orders_path
         else
+          flash_errors_messages(order)
           redirect_to new_order_path
         end
       end
@@ -51,6 +52,10 @@ class OrdersController < ApplicationController
   end
 
   def render_cart
-    @render_cart = false
+    @render_cart = true
+  end
+
+  def flash_errors_messages(object)
+    object.errors.messages.each_value { |msg| flash[:danger] = "#{object.class} #{msg.join(', ')}" }
   end
 end
