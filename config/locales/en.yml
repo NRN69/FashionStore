@@ -32,17 +32,17 @@
 en:
   views:
     pagination:
-      first: "&laquo; First"
-      last: "Last &raquo;"
-      previous: "<svg width=\"18\" height=\"18\"><use xlink:href=\"#left\" /></svg>"
-      next: "<svg width=\"18\" height=\"18\"><use xlink:href=\"#right\" /></svg>"
-      truncate: "&hellip;"
+      first: '&laquo; First'
+      last: 'Last &raquo;'
+      previous: '<svg width="18" height="18"><use xlink:href="#left" /></svg>'
+      next: '<svg width="18" height="18"><use xlink:href="#right" /></svg>'
+      truncate: '&hellip;'
     helpers:
       page_entries_info:
         one_page:
           display_entries:
-            zero: "No %{entry_name} found"
-            one: "Displaying <b>1</b> %{entry_name}"
-            other: "Displaying <b>all %{count}</b> %{entry_name}"
+            zero: 'No %{entry_name} found'
+            one: 'Displaying <b>1</b> %{entry_name}'
+            other: 'Displaying <b>all %{count}</b> %{entry_name}'
         more_pages:
-          display_entries: "Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> in total"
+          display_entries: 'Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b> in total'

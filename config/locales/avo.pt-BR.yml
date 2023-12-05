@@ -10,8 +10,8 @@ pt-BR:
     attach: Anexar
     attach_and_attach_another: Anexar & anexar outro
     attach_item: Anexar %{item}
-    attachment_class_attached: "%{attachment_class} anexado."
-    attachment_class_detached: "%{attachment_class} separado."
+    attachment_class_attached: '%{attachment_class} anexado.'
+    attachment_class_detached: '%{attachment_class} separado.'
     attachment_destroyed: Anexo destruído
     cancel: Cancelar
     choose_a_country: Escolha um país
@@ -69,7 +69,7 @@ pt-BR:
     not_authorized: Você não está autorizado à executar essa ação.
     number_of_items:
       one: um %{item}
-      other: "%{count} %{item}"
+      other: '%{count} %{item}'
       zero: sem %{item}
     oops_nothing_found: Oops! Nada encontrado...
     order:
@@ -113,7 +113,7 @@ pt-BR:
     was_successfully_updated: foi atualizado com sucesso
     x_items_more:
       one: mais um item
-      other: "%{count} mais items"
+      other: '%{count} mais items'
       zero: mais nenhum item
     x_records_selected_from_a_total_of_x_html: <span class="font-bold text-gray-700">%{selected}</span> registros selecionados nesta página de um total de <span class="font-bold text-gray-700">%{count}</span>
     x_records_selected_from_all_pages_html: <span class="font-bold text-gray-700">%{count}</span> registros selecionados de todas as páginas

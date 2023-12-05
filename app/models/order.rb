@@ -1,10 +1,12 @@
 # frozen_string_literal: true
 
 class Order < ApplicationRecord
-  validates :name,        length: { minimum: 3, maximum: 30 }, presence: true
-  validates :address,     length: { minimum: 6, maximum: 50 }, presence: true
-  validates :email,       format: { with: URI::MailTo::EMAIL_REGEXP }, presence: true
-  validates :phone,       length: { minimum: 11, maximum: 12 }, presence: true
+  validates :name,        length: { minimum: 3, maximum: 30 },          presence: true
+  validates :address,     length: { minimum: 6, maximum: 50 },          presence: true
+  validates :email,       format: { with: URI::MailTo::EMAIL_REGEXP },  presence: true
+  validates :phone,       length: { minimum: 11, maximum: 12 },         presence: true
+
+  before_save :capitalize_name
 
   belongs_to :user
   has_many   :orderables, dependent: :destroy
@@ -29,5 +31,9 @@ class Order < ApplicationRecord
       end
     end
     total.sum
+  end
+
+  def capitalize_name
+    self.name = name.split.map(&:capitalize).join(' ')
   end
 end

@@ -21,6 +21,8 @@ Rails.application.configure do
     address: '127.0.0.1',
     port: 1025
   }
+
+  config.action_mailer.perform_deliveries = false
   # In the development environment your application's code is reloaded any time
   # it changes. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.

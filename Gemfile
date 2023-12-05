@@ -7,7 +7,7 @@ ruby '3.1.2'
 
 gem 'active_storage_validations'
 gem 'ancestry'
-gem 'avo'
+gem 'avo', '~> 2'
 gem 'bootsnap', require: false
 gem 'breadcrumbs_on_rails'
 gem 'chartkick'
@@ -40,6 +40,7 @@ gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development, :test do
   gem  'byebug'
+  gem  'capybara'
   gem  'database_cleaner'
   gem  'debug', platforms: %i[mri mingw x64_mingw]
 
@@ -54,6 +55,7 @@ group :development, :test do
   gem 'rubocop-factory_bot', require: false
   gem 'rubocop-i18n'
   gem 'rubocop-rspec', require: false
+  gem 'selenium-webdriver'
   gem 'solargraph'
   gem 'solargraph-rails'
 end
@@ -64,7 +66,6 @@ group :development do
 end
 
 group :test do
-  gem 'capybara'
   gem 'db-query-matchers'
   gem 'json_spec'
   gem 'shoulda-matchers'

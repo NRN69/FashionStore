@@ -10,9 +10,9 @@ module ApplicationHelper
   end
 
   def user_avatar
-    return current_user.avatar if current_user.avatar.attached?
+    return current_user.avatar if current_user&.avatar&.attached?
 
-    return current_user.avatar_url if !current_user.avatar.attached? && !current_user.avatar_url.nil?
+    return current_user.avatar_url if current_user && !current_user.avatar.attached? && !current_user.avatar_url.nil?
 
     'default_avatar.png'
   end

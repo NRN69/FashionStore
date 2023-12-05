@@ -10,8 +10,8 @@ nn:
     attach: Legg til
     attach_and_attach_another: Legg til & Legg til ny
     attach_item: Legg til %{item}
-    attachment_class_attached: "%{attachment_class} lagt til."
-    attachment_class_detached: "%{attachment_class} fjerna."
+    attachment_class_attached: '%{attachment_class} lagt til.'
+    attachment_class_detached: '%{attachment_class} fjerna.'
     attachment_destroyed: Vedlegg sletta
     cancel: Avbryt
     choose_a_country: Vel eit land
@@ -69,7 +69,7 @@ nn:
     not_authorized: Du er ikkje autorisert til å gjere denne handlinga.
     number_of_items:
       one: en %{item}
-      other: "%{count} %{item}"
+      other: '%{count} %{item}'
       zero: ingen %{item}
     oops_nothing_found: Oops! Fann ikkje noko...
     order:
@@ -113,7 +113,7 @@ nn:
     was_successfully_updated: vart oppdatert
     x_items_more:
       one: eitt element til
-      other: "%{count} fleire element"
+      other: '%{count} fleire element'
       zero: ingen fleire element
     x_records_selected_from_a_total_of_x_html: <span class="font-bold text-gray-700">%{selected}</span> valde postar på denne sida av totalt <span class="font-bold text-gray-700">%{count}</span>
     x_records_selected_from_all_pages_html: <span class="font-bold text-gray-700">%{count}</span> valde postar frå alle sider

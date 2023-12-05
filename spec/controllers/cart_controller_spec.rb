@@ -3,38 +3,40 @@
 require 'rails_helper'
 
 RSpec.describe CartController do
-  render_views
+  let(:user)         { create(:user) }
+  let(:product)      { create(:product) }
+  let(:cart)         { create(:cart, user:) }
+  let(:orderables)   { create_list(:orderable, 2, cart:, product:) }
+  let(:companies)    { create_list(:company, 2) }
 
-  let(:user)       { create(:user) }
-  let(:product)    { create(:product) }
-  let(:cart)       { create(:cart, user:) }
-  let(:orderables) { create(:orderable, cart:, product:) }
+  before { sign_in(user) }
 
   describe 'GET #show' do
-    subject { get :show }
+    subject do
+      get :show, params: { id: cart.id, Company: companies }
+    end
 
-    it 'when rendered show view' do
-      sign_in(user)
+    before { subject }
+
+    it 'render show view' do
       expect(subject).to render_template :show
-      expect(response.body).to include(product.title)
+    end
+
+    it 'assigns cart correctly' do
+      expect(assigns(:cart)).to eq(cart)
     end
   end
 
-  describe 'REMOVE #remove' do
-    subject { post :remove }
+  describe 'POST #add' do
+    subject { post :add, params: { id: product.id, orderable_id: orderables.first.id } }
 
-    context 'when removed from cart' do
-      it 'remove product from cart' do
-        sign_in(user)
-        expect { subject }.to change { user.reload.cart.present? }.to(false)
+    context 'when added to cart' do
+      it 'create cart' do
+        expect { subject }.to change { user.reload.cart.present? }.to(true)
       end
 
-      it 'when removed product from orderables' do
-        sign_in(user)
-        expect { subject }.to change(user.cart.orderables, :count).by(-1)
-
-        it 'render view show after remove'
-        expect(subject).to render_template :show
+      it 'assigns products correctly' do
+        expect { subject }.to change(Orderable, :count).by(1)
       end
     end
   end

@@ -1,5 +1,10 @@
 <%= turbo_frame_tag review, loading: :lazy do %>
   <div class="single-product">
+    <small class="rating-small">
+      <ul class="rating">
+      <% Review::MAX_RATING.times do |n| %>
+        <li><i class="bi bi-star<%=user_rating_product(review,n) %>"></i></li>
+      <% end %></small></ul>
     <div class="avatar small">
         <%= image_tag current_user.user_avatar, size: 40 %>
         <span class="text-dark"><%= review.user.name %></span>

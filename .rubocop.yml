@@ -1,6 +1,6 @@
 require:
- - rubocop-factory_bot
- - rubocop-rspec
+  - rubocop-factory_bot
+  - rubocop-rspec
 AllCops:
   NewCops: enable
 Style/Documentation:

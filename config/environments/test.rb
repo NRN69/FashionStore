@@ -11,7 +11,7 @@ require 'bullet'
 
 Rails.application.configure do
   config.after_initialize do
-    Bullet.enable        = true
+    Bullet.enable        = false
     Bullet.bullet_logger = true
     Bullet.raise         = true # raise an error if n+1 query occurs
   end
@@ -44,15 +44,13 @@ Rails.application.configure do
   config.action_controller.allow_forgery_protection = false
 
   # Store uploaded files on the local file system in a temporary directory.
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # config.action_mailer.default_url_options = :test
 
-  config.action_mailer.delivery_method = :smtp
-  # SMTP settings for mailcatcher gem.
-  config.action_mailer.smtp_settings = {
-    address: '127.0.0.1',
-    port: 1025
-  }
   config.active_storage.service = :test
+
+  config.active_storage.silence_invalid_content_types_warning = true
+
+  config.action_mailer.perform_deliveries = false
 
   config.action_mailer.perform_caching = false
 

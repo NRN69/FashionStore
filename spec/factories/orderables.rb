@@ -2,9 +2,10 @@
 
 FactoryBot.define do
   factory :orderable do
-    association :product
     association :cart
+    association :product
 
     quantity { 1 }
+    size     { 'S' }
   end
 end

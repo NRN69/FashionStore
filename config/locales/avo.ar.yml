@@ -69,7 +69,7 @@ ar:
     not_authorized: ليس لديك الصلاحية للقيام بهذا الإجراء.
     number_of_items:
       one: سجل %{item} واحد
-      other: "%{count} سجل %{item}"
+      other: '%{count} سجل %{item}'
       zero: لا يوجد %{item}
     oops_nothing_found: عذراً! لم يتم العثور على شيء...
     order:
@@ -117,10 +117,8 @@ ar:
     was_successfully_updated: تم تحديثه بنجاح
     x_items_more:
       one: عنصر واحد إضافي
-      other: "%{count} عناصر إضافية"
+      other: '%{count} عناصر إضافية'
       zero: لا توجد عناصر إضافية
     x_records_selected_from_a_total_of_x_html: <span class="font-bold text-gray-700">%{selected}</span> السجلات المحددة في هذه الصفحة من إجمالي<span class="font-bold text-gray-700">%{count}</span>
     x_records_selected_from_all_pages_html: <span class="font-bold text-gray-700">%{count}</span> السجلات المحددة من كل الصفحات
     you_missed_something_check_form: ربما نسيت شيئًا، يرجى التحقق من البيانات.
-
-

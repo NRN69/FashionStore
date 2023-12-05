@@ -11,7 +11,7 @@
               <h3><%= Company.first.name %></h3>
               <ul>
                 <li><%= Company.first.address %></li>
-                <li class="mail">Tel: <%= phone_to Company.first.phone_number, Company.first.phone, country_code: '7' %>
+                <li class="mail">Tel: <%= phone_to Company.first.phone[2..-1], Company.first.phone, country_code: '7' %>
                 </li>
                 <% if !Company.first.email.nil? %>
                   <li class="mail"><%= mail_to "#{Company.first.email}" %></li>

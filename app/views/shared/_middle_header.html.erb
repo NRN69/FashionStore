@@ -19,7 +19,7 @@
             <i class="bi bi-telephone"></i>
             <h3>Telephone:
               <span>
-                    <%= phone_to Company.first.phone_number, Company.first.phone, country_code: "7", class: 'text-decoration-none text-reset' %>
+                    <%= phone_to Company.first.phone[2..-1], Company.first.phone, country_code: "7", class: 'text-decoration-none text-reset' %>
                   </span>
             </h3>
           </div>

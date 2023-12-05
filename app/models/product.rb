@@ -10,7 +10,7 @@ class Product < ApplicationRecord
   validates   :brand,       length: { minimum: 2, maximum: 20 }, presence: true
   validates   :color,       length: { minimum: 2, maximum: 20 }, presence: true
   validates   :material,    length: { minimum: 2, maximum: 20 }, presence: true
-  validates   :keywords,    length: { minimum: 2, maximum: 20 }, presence: true
+  validates   :keywords,    length: { minimum: 2, maximum: 30 }, presence: true
 
   belongs_to  :category
   belongs_to  :user
@@ -29,6 +29,8 @@ class Product < ApplicationRecord
   has_many_attached :images, dependent: :destroy do |attachable|
     attachable.variant :thumb, resize_to_limit: [408, 408]
   end
+
+  validates :images, content_type: %w[image/jpeg image/gif image/png image/jpg]
 
   scope :order_by_filename, -> { joins(file_attachment: :blob).order('active_storage_blobs.filename ASC') }
 

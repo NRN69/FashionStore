@@ -1,7 +1,12 @@
 <%= turbo_frame_tag 'reviews' do %>
   <% if !product.reviews.empty? && user_signed_in? %>
 
-    <h6 class="reviews mt-5 text-secondary">Reviews<small> (<%= product.reviews.size %>)</small><small style="position: absolute; left: 39%; margin-top: 1px; ">Rating: <%= product.reviews.average(:rating).round %> <i class="bi bi-star-fill" style="color: #fecb00;"></i></small>
+    <h6 class="reviews mt-5 text-secondary">
+      Reviews<small> (<%= product.reviews.size %>)</small>
+      <small style="position: absolute; left: 39%; margin-top: 1px; ">
+      Rating: <%= rating_average(product).round(2) %> 
+      <i class="bi bi-star-fill" style="color: #fecb00;"></i>
+    </small>
 
       <% product.reviews.includes(%i[user answers]).each do |review| %>
         <%= render review, product: product %><br>

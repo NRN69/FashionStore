@@ -11,7 +11,7 @@ class ReviewResource < Avo::BaseResource
   # Fields generated from the model
   field :body, as: :text, name: 'review'
   field :product, as: :belongs_to
-  field :raiting, as: :text
+  field :rating, as: :text
   field :user, as: :belongs_to
   field :answers, as: :has_many
   field :created_at, as: :date, name: 'create date', format: 'dd-LL-yyyy', hide_on: %i[new edit]

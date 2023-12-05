@@ -10,8 +10,8 @@ en:
     attach: Attach
     attach_and_attach_another: Attach & Attach another
     attach_item: Attach %{item}
-    attachment_class_attached: "%{attachment_class} attached."
-    attachment_class_detached: "%{attachment_class} detached."
+    attachment_class_attached: '%{attachment_class} attached.'
+    attachment_class_detached: '%{attachment_class} detached.'
     attachment_destroyed: Attachment destroyed
     cancel: Cancel
     choose_a_country: Choose a country
@@ -69,7 +69,7 @@ en:
     not_authorized: You are not authorized to perform this action.
     number_of_items:
       one: one %{item}
-      other: "%{count} %{item}"
+      other: '%{count} %{item}'
       zero: no %{item}
     oops_nothing_found: Oops! Nothing found...
     order:
@@ -117,7 +117,7 @@ en:
     was_successfully_updated: was successfully updated
     x_items_more:
       one: one more item
-      other: "%{count} more items"
+      other: '%{count} more items'
       zero: no more items
     x_records_selected_from_a_total_of_x_html: <span class="font-bold text-gray-700">%{selected}</span> records selected on this page from a total of <span class="font-bold text-gray-700">%{count}</span>
     x_records_selected_from_all_pages_html: <span class="font-bold text-gray-700">%{count}</span> records selected from all pages

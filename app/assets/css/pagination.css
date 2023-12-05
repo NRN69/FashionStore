@@ -1,56 +1,55 @@
-
 .hide {
-    display: none;
-    visibility: hidden;
-    height: 0;
+  display: none;
+  visibility: hidden;
+  height: 0;
 }
 
 .pagination-container {
-    margin: 1%;
-    color:#888;
-    display: flex;
-    font-size: 17px;
+  margin: 1%;
+  color: #888;
+  display: flex;
+  font-size: 17px;
 }
 
 .pagination-container .arrow-text {
-    color:#888;
-    display: block;
-    font-size: 13px;
+  color: #888;
+  display: block;
+  font-size: 13px;
 }
 
 .pagination-container .arrow {
-    color:#888;
-    display: block;
-    font-size: 13px;
+  color: #888;
+  display: block;
+  font-size: 13px;
 }
 
 .pagination-container .arrow span a {
-    color: #888;
+  color: #888;
 }
 
 .pagination-container span a {
-    color:#888;
+  color: #888;
 }
 
 .pagination-container .pagination-number {
-    --size: 32px;
-    max-width: auto;
-    min-width: var(--size);
-    height: var(--size);
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 0 5px;
+  --size: 32px;
+  max-width: auto;
+  min-width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
 }
 
 .pagination-container .pagination-number a {
-    color:#888;
+  color: #888;
 }
 
 .pagination-container .pagination-number a:hover {
-    color: #282828;
+  color: #282828;
 }
 
 .pagination-container .pagination-active span {
-    color: #FF69B4;
+  color: #ff69b4;
 }

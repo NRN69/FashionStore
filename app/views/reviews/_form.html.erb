@@ -10,10 +10,9 @@
           <i  class="bi bi-star" 
               data-controller="star-bar" 
               data-option="false" 
-              data-action="click->star-bar#changeclass" 
+              data-action="click->star-bar#changeClass" 
               id= "star-deactivated" 
-              value="<%= n + 1 %>" 
-              style="cursor:pointer; color: #fecb00; padding: 8px;">
+              value="<%= n + 1 %>">
           </i>
         <% end %>
         <%= form.hidden_field :rating, id: "rating" %>

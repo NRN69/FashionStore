@@ -17,9 +17,5 @@
   "ruby.codeCompletion": false,
   "ruby.format": "rubocop",
   "editor.fontLigatures": false,
-  "cSpell.words": [
-    "Пресет",
-    "changeclass",
-    "hotwired"
-  ]
+  "cSpell.words": ["Пресет", "changeclass", "hotwired", "stylelint"]
 }

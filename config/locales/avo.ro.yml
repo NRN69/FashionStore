@@ -10,8 +10,8 @@ ro:
     attach: Atașează
     attach_and_attach_another: Atașează și atașează inca unul
     attach_item: Atașează %{item}
-    attachment_class_attached: "%{attachment_class} anexat."
-    attachment_class_detached: "%{attachment_class} separat."
+    attachment_class_attached: '%{attachment_class} anexat.'
+    attachment_class_detached: '%{attachment_class} separat.'
     attachment_destroyed: Atașamentul a fost distrus
     cancel: Anulează
     choose_a_country: Alege o țară
@@ -69,7 +69,7 @@ ro:
     not_authorized: Nu sunteți autorizat să efectuați această acțiune.
     number_of_items:
       one: un %{item}
-      other: "%{count} %{item}"
+      other: '%{count} %{item}'
       zero: 0 %{item}
     oops_nothing_found: Oups! Nu am găsit rezultate...
     order:
@@ -113,7 +113,7 @@ ro:
     was_successfully_updated: a fost actualizat
     x_items_more:
       one: încă un articol
-      other: "%{count} mai multe articole"
+      other: '%{count} mai multe articole'
       zero: zero articole
     x_records_selected_from_a_total_of_x_html: <span class="font-bold text-gray-700">%{selected}</span> selectate dintr-un total de <span class="font-bold text-gray-700">%{count}</span>
     x_records_selected_from_all_pages_html: <span class="font-bold text-gray-700">%{count}</span> selectate din toate paginile

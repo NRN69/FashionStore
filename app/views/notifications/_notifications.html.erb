@@ -1,4 +1,4 @@
-<% if current_user %>
+<% if current_user && @notifications.any? %>
 
 <div class= "container my-3">
   <%= turbo_stream_from "notifications_#{user.id}" %>
