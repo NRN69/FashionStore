@@ -9,7 +9,7 @@ user.phone        = '+79001234567'
 user.name         = 'Administrator'
 user.email        = 'admin@admin.com'
 user.password     = 'password'
-user.address      = Faker::Address.full_address
+user.address      = Faker::Address.street_address
 user.confirmed_at = Time.now
 user.admin        = true
 user.save!
@@ -19,7 +19,7 @@ user.phone        = '+79061234547'
 user.name         = Faker::Internet.username.capitalize!
 user.email        = 'user@user.com'
 user.password     = 'password'
-user.address      = Faker::Address.full_address
+user.address      = Faker::Address.street_address
 user.confirmed_at = Time.now
 user.admin        = false
 user.save!
@@ -29,7 +29,7 @@ user.phone        = '+79061245547'
 user.name         = Faker::Internet.username.capitalize!
 user.email        = 'user1@user1.com'
 user.password     = 'password'
-user.address      = Faker::Address.full_address
+user.address      = Faker::Address.street_address
 user.confirmed_at = Time.now
 user.admin        = false
 user.save!

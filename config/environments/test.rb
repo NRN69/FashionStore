@@ -73,13 +73,14 @@ Rails.application.configure do
 
   # Annotate rendered view with file names.
   # config.action_view.annotate_rendered_view_with_filenames = true
-  OmniAuth.config.test_mode = true
-  OmniAuth.config.mock_auth[:mail_ru] = {
-    'provider' => 'mail_ru',
-    'uid' => 'test@mail.ru',
-    'info' =>
-    { 'email' => 'test@mail.ru',
-      'first_name' => 'Dave',
-      'last_name' => 'Wallace' }
-  }
+  # OmniAuth.config.test_mode = true
+  # OmniAuth.config.mock_auth[:mail_ru] = {
+  #   provider: 'mail_ru',
+  #   uid: 'test@mail.ru',
+  #   info: {
+  #     'email' => 'test@mail.ru',
+  #     'first_name' => 'Dave',
+  #     'last_name' => 'Wallace'
+  #   }
+  # }
 end

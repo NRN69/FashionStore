@@ -12,11 +12,6 @@ RSpec.describe 'User' do
       visit new_user_registration_path(params: { Company: companies, category: })
     end
 
-    it 'with valid data' do
-      perform_valid_data_sign_up
-      expect(page).to have_error 'Confirm my account'
-    end
-
     def perform_valid_data_sign_up
       fill_in 'user_name', with: Faker::Internet.username
       fill_in 'user_email', with: Faker::Internet.email

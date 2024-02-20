@@ -29,8 +29,22 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+.env
+
 
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
+/.idea
+/.vscode
+
 /node_modules
+
+
+.eslintrc.json
+.rubocop.yml
+.solargraph.yml
+.stylelintingnore
+.stylelintrc
+.prettierrc
+

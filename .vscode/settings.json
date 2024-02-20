@@ -1,6 +1,6 @@
 {
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "prettier.prettierPath": ".yarn/unplugged/prettier-npm-3.1.1-072c31ec21/node_modules/prettier/index.cjs",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {

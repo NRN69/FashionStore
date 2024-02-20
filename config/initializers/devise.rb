@@ -278,11 +278,11 @@ Devise.setup do |config|
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
 
   config.omniauth :mail_ru,
-                  Rails.application.credentials.development.mail_ru[:client_id],
-                  Rails.application.credentials.development.mail_ru[:client_secret]
+                  ENV.fetch('MAILRU_CLIENT_ID', nil),
+                  ENV.fetch('MAILRU_CLIENT_SECRET', nil)
   config.omniauth :google_oauth2,
-                  Rails.application.credentials.development.google_oauth2[:client_id],
-                  Rails.application.credentials.development.google_oauth2[:client_secret]
+                  ENV.fetch('GOOGLE_CLIENT_ID', nil),
+                  ENV.fetch('GOOGLE_CLIENT_SECRET', nil)
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or

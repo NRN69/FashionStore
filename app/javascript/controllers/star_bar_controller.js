@@ -3,15 +3,18 @@ import { Controller } from '@hotwired/stimulus';
 // Connects to data-controller="star-bar"
 export default class extends Controller {
   changeClass() {
-    let starActivatedValues = [];
-    let starActivated = document.getElementById('star-activated');
-    let starHiddenValue = document.getElementById('rating');
-    let starValues = document.querySelectorAll('[data-controller="star-bar"]');
+    const starActivatedValues = [];
+    const starActivated = document.getElementById('star-activated');
+    const starHiddenValue = document.getElementById('rating');
+    const starValues = document.querySelectorAll(
+      '[data-controller="star-bar"]',
+    );
 
     this.element.dataset.option = 'true';
     this.element.setAttribute('id', 'star-activated');
     this.element.setAttribute('class', 'bi bi-star-fill');
     starHiddenValue.setAttribute('value', this.element.getAttribute('value'));
+    // eslint-disable-next-line no-use-before-define
     changeClassAnotherStar();
 
     if (starActivated) {
@@ -29,7 +32,9 @@ export default class extends Controller {
           starActivatedValues.push(el);
         }
       });
-      starActivatedValues.forEach((el) => el.setAttribute('class', 'bi bi-star-fill'));
+      starActivatedValues.forEach((el) =>
+        el.setAttribute('class', 'bi bi-star-fill'),
+      );
     }
   }
 }
