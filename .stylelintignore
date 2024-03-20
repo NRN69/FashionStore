@@ -1,8 +1,0 @@
-*.tsx
-*.jsx
-*.ts
-*.js
-*.md
-*.svg
-*.erb
-/node_modules
