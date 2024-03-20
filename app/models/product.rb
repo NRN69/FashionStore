@@ -14,6 +14,7 @@ class Product < ApplicationRecord
 
   belongs_to  :category
   belongs_to  :user
+  has_many    :order_items
   has_many    :orderables,        dependent: :destroy
   has_many    :sizes,             dependent: :destroy
   has_many    :favorites,         dependent: :destroy

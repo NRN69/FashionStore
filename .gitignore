@@ -35,8 +35,8 @@
 /app/assets/builds/*
 !/app/assets/builds/.keep
 
-/.idea
-/.vscode
+/.idea/
+/.vscode/
 
 /node_modules
 
@@ -47,4 +47,4 @@
 .stylelintingnore
 .stylelintrc
 .prettierrc
-
+redis.sh

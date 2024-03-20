@@ -10,7 +10,7 @@
     </span>
     <%= link_to 'View Cart', cart_path, data: {turbo_frame: '_top'} %>
 
-    <% @cart.orderables.each do |orderable| %>
+    <% @cart.orderables.includes([:product]).each do |orderable| %>
       <% product = orderable.product %>
         <div id="<%= "cart-modal#{product.id}" %>" class="my-3">
           <ul class="shopping-list">

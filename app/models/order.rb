@@ -9,7 +9,8 @@ class Order < ApplicationRecord
   before_save :capitalize_name
 
   belongs_to :user
-  has_many   :orderables, dependent: :destroy
+  has_many   :orderables,  dependent: :destroy
+  has_many   :order_items, dependent: :destroy
 
   enum pay_type: {
     'Credit card' => 0,
@@ -25,10 +26,8 @@ class Order < ApplicationRecord
 
   def total(order)
     total = []
-    order.product.each do |product_id, hash|
-      Product.where(id: product_id.to_i).find_each do |product|
-        total << (product.price * hash.values.join.to_i)
-      end
+    order.order_items.each do |item|
+      total << (item.product.price * item.quantity)
     end
     total.sum
   end

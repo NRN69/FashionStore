@@ -9,6 +9,5 @@ FactoryBot.define do
     address { 'some address some address' }
     status { 1 }
     pay_type { 'Credit card' } # 1 - cash, 2 - card
-    product { { 1 => { 'S' => 1 } } } # { product_id => { size => quantity } }
   end
 end

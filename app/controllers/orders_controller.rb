@@ -6,7 +6,7 @@ class OrdersController < ApplicationController
   before_action :set_page_options
 
   def index
-    @orders = current_user.orders.order(created_at: :desc).page params[:page]
+    @orders = current_user.orders.includes(:order_items).order(created_at: :desc).page params[:page]
   end
 
   def show
@@ -21,14 +21,13 @@ class OrdersController < ApplicationController
 
   def create
     order = current_user.orders.build order_params
-    order.product = {}
     @cart.orderables.each do |item|
-      order.product[item.product.id] = { item.size => item.quantity }
+      order.order_items.build(product: item.product, quantity: item.quantity, size: item.size)
     end
 
     respond_to do |format|
       format.html do
-        if order.save
+        if order.save && order.order_items
           current_user.cart.destroy
           redirect_to orders_path
         else

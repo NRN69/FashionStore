@@ -17,18 +17,17 @@
           </tr>
         </table><br>
 
-          <% order.product.each do |product_id, hash| %>
-
+          <% order.order_items.includes([:product]).each do |item| %>
+            <% product = item.product %>
+            
             <table>
               <tr>
-                <% Product.where(id: product_id.to_i).each do |product| %>
-                  <td><span><%= link_to image_tag(product.images.first, size: 100), product, data: {turbo_frame: '_top'} %></span></td>
-                  <td><span><%= product.title %></span></td>
-                  <td><span>Color: <%= product.color.capitalize %></span></td>
-                  <td><span>Size: <%= hash.keys.join %></span></td>
-                  <td><span>Price: <%= product.price %>$</span></td>
-                  <td><span>Quantity: <%= hash.values.join %></span></td>
-                <% end %>
+                <td><span><%= link_to image_tag(item.product.images.first, size: 100), item.product, data: {turbo_frame: '_top'} %></span></td>
+                <td><span><%= product.title %></span></td>
+                <td><span>Color: <%= product.color.capitalize %></span></td>
+                <td><span>Size: <%= item.size %></span></td>
+                <td><span>Price: <%= product.price %>$</span></td>
+                <td><span>Quantity: <%= item.quantity %></span></td>
              </tr>
            </table><br>
 

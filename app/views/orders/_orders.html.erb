@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <% orders.each do |order| %>
+      <% orders.includes(:order_items).each do |order| %>
         <%= render order %>
       <% end %>
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_11_08_114442) do
+ActiveRecord::Schema[7.0].define(version: 2024_03_20_185401) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -114,6 +114,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_08_114442) do
     t.index ["recipient_type", "recipient_id"], name: "index_notifications_on_recipient"
   end
 
+  create_table "order_items", force: :cascade do |t|
+    t.string "size", null: false
+    t.integer "quantity", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "product_id", null: false
+    t.bigint "order_id", null: false
+    t.index ["order_id"], name: "index_order_items_on_order_id"
+    t.index ["product_id"], name: "index_order_items_on_product_id"
+  end
+
   create_table "orderables", force: :cascade do |t|
     t.bigint "product_id", null: false
     t.bigint "cart_id", null: false
@@ -133,7 +144,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_08_114442) do
     t.text "address", null: false
     t.text "phone", null: false
     t.integer "pay_type", null: false
-    t.json "product", null: false
     t.integer "status", default: 0, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -222,6 +232,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_11_08_114442) do
   add_foreign_key "carts", "users"
   add_foreign_key "favorites", "products"
   add_foreign_key "favorites", "users"
+  add_foreign_key "order_items", "orders"
+  add_foreign_key "order_items", "products"
   add_foreign_key "orderables", "carts"
   add_foreign_key "orderables", "orders"
   add_foreign_key "orderables", "products"
