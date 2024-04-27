@@ -1,10 +1,4 @@
-/*
-Template Name: ShopGrids - Bootstrap 5 eCommerce HTML Template.
-Author: GrayGrids
-*/
-
 (function () {
-  //===== Prealoader
 
   window.onload = function () {
     window.setTimeout(fadeout, 500);
@@ -15,15 +9,9 @@ Author: GrayGrids
     document.querySelector('.preloader').style.display = 'none';
   }
 
-  /*=====================================
-    Sticky
-    ======================================= */
-  window.onscroll = function () {
-    var header_navbar = document.querySelector('.navbar-area');
-    var sticky = header_navbar.offsetTop;
 
-    // show or hide the back-top-top button
-    var backToTo = document.querySelector('.scroll-top');
+  window.onscroll = function () {
+    let backToTo = document.querySelector('.scroll-top');
     if (
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
@@ -39,4 +27,4 @@ Author: GrayGrids
   navbarToggler.addEventListener('click', function () {
     navbarToggler.classList.toggle('active');
   });
-})();
+})
